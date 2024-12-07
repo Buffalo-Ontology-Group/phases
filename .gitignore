@@ -16,6 +16,8 @@ src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*
 src/ontology/target/
+src/ontology/tmp/
+tmp/
 
 # ontology products that may be created during the release process
 src/ontology/phases.owl
