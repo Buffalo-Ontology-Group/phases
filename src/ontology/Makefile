@@ -1,0 +1,534 @@
+# ----------------------------------------
+# Makefile for PHASES
+# ----------------------------------------
+
+
+# ----------------------------------------
+# Standard Constants
+# ----------------------------------------
+# these can be overwritten on the command line
+
+OBOBASE=                    http://purl.obolibrary.org/obo
+URIBASE=                    http://purl.obolibrary.org/obo
+ONT=                        phases
+ONTBASE=                    http://purl.obolibrary.org/obo/phases
+EDIT_FORMAT=                owl
+SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
+MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
+CATALOG=                    catalog-v001.xml
+ROBOT=                      robot --catalog $(CATALOG)
+
+OWLTOOLS=                   owltools --use-catalog
+RELEASEDIR=                 ../..
+REPORTDIR=                  reports
+TEMPLATEDIR=                ../templates
+TMPDIR=                     tmp
+MIRRORDIR=                  mirror
+IMPORTDIR=                  imports
+SCRIPTSDIR=                 ../scripts
+UPDATEREPODIR=              target
+SPARQLDIR =                 ../sparql
+COMPONENTSDIR =             components
+REPORT_FAIL_ON =            None
+REPORT_LABEL =              -l true
+REPORT_PROFILE_OPTS =       
+OBO_FORMAT_OPTIONS =        
+SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri multiple-replaced_by dc-properties 
+SPARQL_EXPORTS =            basic-report class-count-by-prefix edges xrefs obsoletes synonyms 
+
+TODAY ?=                    $(shell date +%Y-%m-%d)
+OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
+VERSION=                    $(TODAY)
+ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
+ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
+OTHER_SRC =                 $(COMPONENTSDIR)/dental_material.owl $(COMPONENTSDIR)/collaborators.owl 
+ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
+EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
+
+FORMATS = $(sort  owl obo json owl)
+FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
+RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full $(ONT)-non-classified )
+
+# ----------------------------------------
+# Top-level targets
+# ----------------------------------------
+
+.PHONY: .FORCE
+
+.PHONY: all
+all: test custom_reports all_assets
+
+.PHONY: test
+test: reason_test sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
+	echo "Finished running all tests successfully."
+
+.PHONY: test
+test_fast:
+	$(MAKE_FAST) test
+
+.PHONY: release_diff
+release_diff: $(REPORTDIR)/release-diff.md
+
+.PHONY: reason_test
+reason_test: $(EDIT_PREPROCESSED)
+	$(ROBOT) reason --input $< --reasoner ELK --equivalent-classes-allowed asserted-only \
+		--exclude-tautologies structural --output test.owl && rm test.owl
+
+
+$(TMPDIR) $(REPORTDIR) $(MIRRORDIR) $(IMPORTDIR) $(COMPONENTSDIR):
+	mkdir -p $@
+
+# ----------------------------------------
+# ODK-managed ROBOT plugins
+# ----------------------------------------
+
+# Make sure ROBOT knows where to find plugins
+export ROBOT_PLUGINS_DIRECTORY=$(TMPDIR)/plugins
+
+# Override this rule in ohd.Makefile to install custom plugins
+.PHONY: custom_robot_plugins
+custom_robot_plugins:
+
+
+.PHONY: extra_robot_plugins
+extra_robot_plugins: 
+
+
+# Install all ROBOT plugins to the runtime plugins directory
+.PHONY: all_robot_plugins
+all_robot_plugins: $(foreach plugin,$(notdir $(wildcard /tools/robot-plugins/*.jar)),$(ROBOT_PLUGINS_DIRECTORY)/$(plugin)) \
+		   $(foreach plugin,$(notdir $(wildcard ../../plugins/*.jar)),$(ROBOT_PLUGINS_DIRECTORY)/$(plugin)) \
+		   custom_robot_plugins extra_robot_plugins  \
+
+# Default rule to install plugins
+$(ROBOT_PLUGINS_DIRECTORY)/%.jar:
+	@mkdir -p $(ROBOT_PLUGINS_DIRECTORY)
+	@if [ -f ../../plugins/$*.jar ]; then        \
+		ln ../../plugins/$*.jar $@ ;         \
+	elif [ -f /tools/robot-plugins/$*.jar ]; then \
+		cp /tools/robot-plugins/$*.jar $@ ;  \
+	fi
+
+# Specific rules for supplementary plugins defined in configuration
+
+
+# ----------------------------------------
+# Release assets
+# ----------------------------------------
+
+MAIN_PRODUCTS = $(sort $(foreach r,$(RELEASE_ARTEFACTS), $(r)) $(ONT))
+MAIN_GZIPPED  = 
+MAIN_FILES    = $(foreach n,$(MAIN_PRODUCTS), $(foreach f,$(FORMATS), $(n).$(f))) $(MAIN_GZIPPED)
+SRCMERGED     = $(TMPDIR)/merged-$(SRC)
+
+.PHONY: all_main
+all_main: $(MAIN_FILES)
+
+# ----------------------------------------
+# Mapping assets
+# ----------------------------------------
+
+MAPPINGS = 
+MAPPING_FILES = $(patsubst %, $(MAPPINGDIR)/%.sssom.tsv, $(MAPPINGS))
+
+.PHONY: all_mappings
+all_mappings: $(MAPPING_FILES)
+
+
+# ----------------------------------------
+# QC Reports & Utilities
+# ----------------------------------------
+
+OBO_REPORT =  $(SRC)-obo-report
+REPORTS = $(OBO_REPORT)
+REPORT_FILES = $(patsubst %, $(REPORTDIR)/%.tsv, $(REPORTS))
+
+.PHONY: robot_reports
+robot_reports: $(REPORT_FILES)
+
+.PHONY: all_reports
+all_reports: custom_reports robot_reports
+
+# ----------------------------------------
+# ROBOT OWL Profile checking
+# ----------------------------------------
+
+# The merge step is necessary to avoid undeclared entity violations.
+$(REPORTDIR)/validate_profile_owl2dl_%.txt: % | $(REPORTDIR) $(TMPDIR)
+	$(ROBOT) merge -i $< convert -f ofn -o $(TMPDIR)/validate.ofn
+	$(ROBOT) validate-profile --profile DL -i $(TMPDIR)/validate.ofn -o $@ || { cat $@ && exit 1; }
+.PRECIOUS: $(REPORTDIR)/validate_profile_owl2dl_%.txt
+
+validate_profile_%: $(REPORTDIR)/validate_profile_owl2dl_%.txt
+	echo "$* profile validation completed."
+
+# ----------------------------------------
+# Sparql queries: Q/C
+# ----------------------------------------
+
+# these live in the ../sparql directory, and have suffix -violation.sparql
+# adding the name here will make the violation check live.
+
+SPARQL_VALIDATION_QUERIES = $(foreach V,$(SPARQL_VALIDATION_CHECKS),$(SPARQLDIR)/$(V)-violation.sparql)
+
+sparql_test:  $(EDIT_PREPROCESSED) | $(REPORTDIR)
+ifneq ($(SPARQL_VALIDATION_QUERIES),)
+  
+	$(ROBOT) verify -i $(EDIT_PREPROCESSED) --queries $(SPARQL_VALIDATION_QUERIES) -O $(REPORTDIR)
+endif
+
+# ----------------------------------------
+# ROBOT report
+# ----------------------------------------
+
+$(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/OHD_ --base-iri $(URIBASE)/ohd --print 5 -o $@
+
+$(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/OHD_ --base-iri $(URIBASE)/ohd --print 5 -o $@
+
+check_for_robot_updates:
+	echo "You are not using a custom profile, so you are getting the joy of the latest ROBOT report!"
+
+
+# ----------------------------------------
+# Release assets
+# ----------------------------------------
+
+ASSETS = \
+  $(IMPORT_FILES) \
+  $(MAIN_FILES) \
+  $(REPORT_FILES) \
+  $(MAPPING_FILES)
+
+RELEASE_ASSETS = \
+  $(MAIN_FILES) 
+
+.PHONY: all_assets
+all_assets: $(ASSETS) check_rdfxml_assets
+
+.PHONY: show_assets
+show_assets:
+	echo $(ASSETS)
+	du -sh $(ASSETS)
+
+check_rdfxml_%: %
+	@check-rdfxml  $<
+
+.PHONY: check_rdfxml_assets
+check_rdfxml_assets: $(foreach product,$(MAIN_PRODUCTS),check_rdfxml_$(product).owl)
+
+# ----------------------------------------
+# Release Management
+# ----------------------------------------
+
+CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED)
+# This should be executed by the release manager whenever time comes to make a release.
+# It will ensure that all assets/files are fresh, and will copy to release folder
+
+.PHONY: prepare_release
+prepare_release: all_odk
+	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
+	rm -f $(CLEANFILES) &&\
+	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release \
+        on your git hosting site such as GitHub or GitLab"
+
+.PHONY: prepare_initial_release
+prepare_initial_release: all_assets
+	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
+	rm -f $(patsubst %, ./%, $(CLEANFILES)) &&\
+	cd $(RELEASEDIR) && git add $(RELEASE_ASSETS)
+
+.PHONY: prepare_release_fast
+prepare_release_fast:
+	$(MAKE) prepare_release IMP=false PAT=false MIR=false COMP=false
+
+CURRENT_RELEASE=$(ONTBASE).owl
+
+$(TMPDIR)/current-release.owl:
+	wget $(CURRENT_RELEASE) -O $@
+
+$(REPORTDIR)/release-diff.md: $(ONT).owl $(TMPDIR)/current-release.owl
+	$(ROBOT) diff --labels true --left $(TMPDIR)/current-release.owl --right $(ONT).owl -f markdown -o $@
+
+# ------------------------
+# Imports: Seeding system 
+# ------------------------
+
+# seed.txt contains all referenced entities
+IMPORTSEED=$(TMPDIR)/seed.txt
+PRESEED=$(TMPDIR)/pre_seed.txt
+
+$(SRCMERGED): $(EDIT_PREPROCESSED) $(OTHER_SRC)
+	$(ROBOT) remove --input $< --select imports --trim false \
+		merge  $(patsubst %, -i %, $(OTHER_SRC)) -o $@
+
+$(EDIT_PREPROCESSED): $(SRC)
+	$(ROBOT) convert --input $< --format ofn --output $@
+
+$(PRESEED): $(SRCMERGED)
+	$(ROBOT) query -f csv -i $< --query ../sparql/terms.sparql $@.tmp &&\
+	cat $@.tmp | sort | uniq >  $@
+
+
+
+ALLSEED = $(PRESEED) \
+
+
+$(IMPORTSEED): $(ALLSEED) | $(TMPDIR)
+	if [ $(IMP) = true ]; then cat $(ALLSEED) | sort | uniq > $@; fi
+
+ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 IAO:0000116 IAO:0000111 oboInOwl:hasDbXref rdfs:comment 
+
+
+# ----------------------------------------
+# Components
+# ----------------------------------------
+# Some ontologies contain external and internal components. A component is included in the ontology in its entirety.
+
+COMP=true # Global parameter to bypass component generation
+
+.PHONY: all_components
+all_components: $(OTHER_SRC)
+
+.PHONY: recreate-components
+recreate-components:
+	$(MAKE) COMP=true IMP=false MIR=true PAT=true IMP_LARGE=false all_components -B
+
+.PHONY: no-mirror-recreate-components
+no-mirror-recreate-components:
+	$(MAKE) COMP=true IMP=false MIR=false PAT=true IMP_LARGE=false all_components -B
+
+.PHONY: recreate-%
+recreate-%:
+	$(MAKE) COMP=true IMP=false IMP_LARGE=false MIR=true PAT=true $(COMPONENTSDIR)/$*.owl -B
+
+.PHONY: no-mirror-recreate-%
+no-mirror-recreate-%:
+	$(MAKE) COMP=true IMP=false IMP_LARGE=false MIR=false PAT=true $(COMPONENTSDIR)/$*.owl -B
+
+$(COMPONENTSDIR)/%.owl: | $(COMPONENTSDIR)
+	test -f $@ || touch $@
+.PRECIOUS: $(COMPONENTSDIR)/%.owl
+
+# ---------------------------------------------
+# Sparql queries: Table exports / Query Reports
+# ---------------------------------------------
+
+SPARQL_EXPORTS_ARGS = $(foreach V,$(SPARQL_EXPORTS),-s $(SPARQLDIR)/$(V).sparql $(REPORTDIR)/$(V).tsv)
+# This combines all into one single command
+
+.PHONY: custom_reports
+custom_reports: $(EDIT_PREPROCESSED) | $(REPORTDIR)
+ifneq ($(SPARQL_EXPORTS_ARGS),)
+	$(ROBOT) query -f tsv --use-graphs true -i $< $(SPARQL_EXPORTS_ARGS)
+endif
+
+# ----------------------------------------
+# Release artefacts: export formats
+# ----------------------------------------
+
+$(ONT)-base.obo: $(ONT)-base.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+$(ONT)-base.json: $(ONT)-base.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+		mv $@.tmp.json $@
+$(ONT)-full.obo: $(ONT)-full.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+$(ONT)-full.json: $(ONT)-full.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+		mv $@.tmp.json $@
+$(ONT)-non-classified.obo: $(ONT)-non-classified.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+$(ONT)-non-classified.json: $(ONT)-non-classified.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+		mv $@.tmp.json $@
+
+# ----------------------------------------
+# Release artefacts: main release artefacts
+# ----------------------------------------
+
+$(ONT).owl: $(ONT)-full.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert -o $@.tmp.owl && mv $@.tmp.owl $@
+
+$(ONT).obo: $(ONT).owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+$(ONT).json: $(ONT).owl
+	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+		mv $@.tmp.json $@
+
+# -----------------------------------------------------
+# Release artefacts: variants (base, full, simple, etc)
+# -----------------------------------------------------
+SHARED_ROBOT_COMMANDS = 
+
+$(ONTOLOGYTERMS): $(SRCMERGED)
+	$(ROBOT) query -f csv -i $< --query ../sparql/ohd_terms.sparql $@
+
+# ROBOT pipeline that merges imports, including components.
+ROBOT_RELEASE_IMPORT_MODE=$(ROBOT) merge --input $< 
+
+# ROBOT pipeline that removes imports, then merges components. This is for release artefacts that start from "base"
+ROBOT_RELEASE_IMPORT_MODE_BASE=$(ROBOT) remove --input $< --select imports --trim false merge $(patsubst %, -i %, $(OTHER_SRC)) 
+
+# base: A version of the ontology that does not include any externally imported axioms.
+$(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+	reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural --annotate-inferred-axioms False \
+	relax \
+	reduce -r ELK \
+	remove --base-iri $(URIBASE)/OHD --axioms external --preserve-structure false --trim false \
+	$(SHARED_ROBOT_COMMANDS) \
+	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
+		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
+# Full: The full artefacts with imports merged, reasoned.
+$(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+		relax \
+		reduce -r ELK \
+		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+# foo-non-classified: (edit->imports-merged)
+$(ONT)-non-classified.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+
+# ----------------------------------------
+# Debugging Tools
+# ----------------------------------------
+
+explain_unsat: $(EDIT_PREPROCESSED) 
+	$(ROBOT) explain -i $< -M unsatisfiability --unsatisfiable random:10 --explanation $(TMPDIR)/$@.md
+
+RELEASE_ASSETS_AFTER_RELEASE=$(foreach n,$(RELEASE_ASSETS), ../../$(n))
+GHVERSION=v$(VERSION)
+
+.PHONY: public_release
+public_release:
+	@test $(GHVERSION)
+	ls -alt $(RELEASE_ASSETS_AFTER_RELEASE)
+	gh release create $(GHVERSION) --title "$(VERSION) Release" --draft $(RELEASE_ASSETS_AFTER_RELEASE) --generate-notes
+
+# ----------------------------------------
+# General Validation
+# ----------------------------------------
+TSV=
+ALL_TSV_FILES=
+
+validate-tsv: $(TSV) | $(TMPDIR)
+	for FILE in $< ; do \
+		tsvalid $$FILE > $(TMPDIR)/validate.txt; \
+		if [ -s $(TMPDIR)/validate.txt ]; then cat $(TMPDIR)/validate.txt && exit 1; fi ; \
+	done
+
+validate-all-tsv: $(ALL_TSV_FILES)
+	$(MAKE) validate-tsv TSV="$^"
+
+# ----------------------------------------
+# Editors Utilities
+# ----------------------------------------
+
+.PHONY: normalize_src
+normalize_src: $(SRC)
+	$(ROBOT) convert -i $< -f ofn -o $(TMPDIR)/normalise && mv $(TMPDIR)/normalise $<
+
+.PHONY: validate_idranges
+validate_idranges:
+	amm $(SCRIPTSDIR)/validate_id_ranges.sc ohd-idranges.owl
+
+update_docs:
+	mkdocs gh-deploy --config-file ../../mkdocs.yaml
+
+# Note to future generations: computing the real path relative to the
+# current directory is a way to ensure we only clean up directories that
+# are located below the current directory, regardless of the contents of
+# the *DIR variables.
+.PHONY: clean
+clean:
+	for dir in $(MIRRORDIR) $(TMPDIR) $(UPDATEREPODIR) ; do      \
+		reldir=$$(realpath --relative-to=$$(pwd) $$dir) ;    \
+		case $$reldir in .*|"") ;; *) rm -rf $$reldir/* ;; esac \
+	done
+	rm -f $(CLEANFILES)
+
+.PHONY: help
+help:
+	@echo "$$data"
+
+define data
+Usage: [IMAGE=(odklite|odkfull)] [ODK_DEBUG=yes] sh run.sh make [(IMP|MIR|IMP_LARGE|PAT)=(false|true)] command
+
+----------------------------------------
+	Command reference
+----------------------------------------
+
+Core commands:
+* prepare_release:	Run the entire release pipeline. Use make IMP=false prepare_release to avoid rerunning the imports
+* prepare_release_fast:	Run the entire release pipeline without refreshing imports, recreating components or recompiling patterns.
+* update_repo:		Update the ODK repository setup using the config file ohd-odk.yaml
+* test:			Running all validation tests
+* test_fast:		Runs the test suite, but without updating imports or components
+* clean:		Delete all temporary files
+* help:			Print ODK Usage information
+* public_release:	Uploads the release file to a release management system, such as GitHub releases. Must be configured.
+
+
+Imports management:
+* refresh-imports:			Refresh all imports and mirrors.
+* recreate-components:			Recreate all components.
+* no-mirror-refresh-imports:		Refresh all imports without downloading mirrors.
+* refresh-imports-excluding-large:	Refresh all imports and mirrors, but skipping the ones labelled as 'is_large'.
+* refresh-%:				Refresh a single import, i.e. refresh-go will refresh 'imports/go_import.owl'.
+* no-mirror-refresh-%:			Refresh a single import without updating the mirror, i.e. refresh-go will refresh 'imports/go_import.owl'.
+* mirror-%:				Refresh a single mirror.
+
+Editor utilities:
+* validate_idranges:	Make sure your ID ranges file is formatted correctly
+* normalize_src:	Load and save your ohd-edit file after you to make sure its serialised correctly
+* explain_unsat:	If you have unsatisfiable classes, this command will create a markdown file (tmp/explain_unsat.md) which will explain all your unsatisfiable classes
+* validate-all-tsv:	Check all your tsv files for possible problems in syntax. Use ALL_TSV_FILES variable to list files
+* validate-tsv:		Check a tsv file for syntactic problems with tsvalid. Use TSV variable to pass filepath, e.g. make TSV=../my.tsv validate-tsv.
+* release_diff:	Create a diff between the current release and the new release
+
+Additional build commands (advanced users)
+* all:			Run the entire pipeline (like prepare_release), but without copying the release files to the release directory.
+* custom_reports:	Generate all custom sparql reports you have configured in your ohd-odk.yaml file.
+* all_assets:		Build all assets
+* show_assets:		Print a list of all assets that would be build by the release pipeline
+* all_mappings:		Update all SSSOM mapping sets
+
+Additional QC commands (advanced users)
+* robot_reports:	Run all configured ROBOT reports
+* validate_profile_%:	Run an OWL2 DL profile validation check, for example validate_profile_ohd-edit.owl.
+* reason_test: Run a basic reasoning test
+
+Examples: 
+* make IMP=false prepare_release
+* make test
+
+Tricks:
+* Add -B to the end of your command to force re-running it even if nothing has changed
+
+endef
+export data
+
+include phases-mirror.Makefile
+include phases-imports.Makefile
+
+#### Make syntax cheatsheet
+# targets
+# .PHONY means a target that isn't a file to be created or checked
+
+# automatic variables
+# $@ means target
+# $< means first prerequisite
+# $^ means all prerequisites
+
+# := means simply expand
+# = means recursively/lazily expand
