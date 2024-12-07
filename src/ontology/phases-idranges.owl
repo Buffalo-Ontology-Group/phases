@@ -1,0 +1,775 @@
+Last login: Mon Dec  2 14:07:21 on ttys009
+[oh-my-zsh] Would you like to update? [Y/n] Y
+Updating Oh My Zsh
+master
+
+Features:
+
+ - 69a6359 [ngrok] Add completion plugin (#12826)
+ - 366d254 [wd]    Update to v0.9.2 (#12820)
+
+You can see the changelog with `omz changelog`
+         __                                     __   
+  ____  / /_     ____ ___  __  __   ____  _____/ /_  
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ 
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / 
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  
+                        /____/                       
+
+Hooray! Oh My Zsh has been updated!
+
+To keep up with the latest news and updates, follow us on X: https://x.com/ohmyzsh
+Want to get involved in the community? Join our Discord: https://discord.gg/ohmyzsh
+Get your Oh My Zsh swag at: https://shop.planetargon.com/collections/oh-my-zsh
+
+[duncanw@fdsb-d407-m1] ~/Downloads/circadian perio study/NH00016916_release2  
+❯ cd
+
+[duncanw@fdsb-d407-m1] ~  
+❯ cd repos/oral-health-and-disease-ontologies/ohd-ontology
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology (add-chebi-classes) ⚡ 
+❯ gh checkout pr 119
+unknown command "checkout" for "gh"
+
+Usage:  gh <command> <subcommand> [flags]
+
+Available commands:
+  alias
+  api
+  attestation
+  auth
+  browse
+  cache
+  co
+  codespace
+  completion
+  config
+  extension
+  gist
+  gpg-key
+  issue
+  label
+  org
+  pr
+  project
+  release
+  repo
+  ruleset
+  run
+  search
+  secret
+  ssh-key
+  status
+  variable
+  workflow
+
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology (add-chebi-classes) ⚡ 
+❯ gh pr checkout 119                                                                                                   ⏎
+branch 'issue-119' set up to track 'origin/issue-119'.
+Switched to a new branch 'issue-119'
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology (issue-119) ⚡ 
+❯ cd src/ontology 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (issue-119) ⚡ 
+❯ ls
+Makefile                  compare-fma-uberon-teeth/ ohd-edit.properties       run.bat
+Makefile.bak              components/               ohd-idranges.owl          run.sh*
+README-editors.md         exploratory/              ohd-odk.yaml              target/
+README.md                 imports/                  ohd.Makefile*             tmp/
+archive/                  mirror/                   release-ohd.sh*
+catalog-v001.xml          ohd-edit.owl              reports/
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (issue-119) ⚡ 
+❯ less ohd-edit.properties 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (issue-119) ⚡ 
+❯ git rm ohd-edit.properties 
+rm 'src/ontology/ohd-edit.properties'
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (issue-119) ⚡ 
+❯ git st
+On branch issue-119
+Your branch is up to date with 'origin/issue-119'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    ohd-edit.properties
+
+Untracked files not listed (use -u option to show untracked files)
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (issue-119) ⚡ 
+❯ git ci -am 'delete ohd-edit.properties file'
+[issue-119 722b286] delete ohd-edit.properties file
+ 1 file changed, 5 deletions(-)
+ delete mode 100644 src/ontology/ohd-edit.properties
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (issue-119) ⚡ ↑
+❯ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 374 bytes | 374.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/oral-health-and-disease-ontologies/ohd-ontology.git
+   240c976..722b286  issue-119 -> issue-119
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (issue-119) ⚡ 
+❯ cd imports 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ ls
+BFO2/                                  fma-mouth-mucosa_terms.txt             ogms_import.owl
+bfo2_classes_import.owl                fma-tmj_import.owl                     ogms_terms.txt
+bfo2_classes_terms.txt                 fma-tmj_terms.txt                      omo_import.owl
+caro_import.owl                        fma-tongue_import.owl                  omo_terms.txt
+caro_terms.txt                         fma-tongue_terms.txt                   omrse_import.owl
+cdt_import.owl                         fma_terms.txt                          omrse_terms.txt
+cdt_terms.txt                          iao_import.owl                         protege-dc.owl
+ecto_import.owl                        iao_terms.txt                          ro_import.owl
+ecto_terms.txt                         icd9_import.owl                        ro_terms.txt
+fma-jaws-teeth_import.owl              missing-information_import.owl         ugly/
+fma-jaws-teeth_terms.txt               ncbi_import.owl                        vdw-database-codes-import.owl
+fma-lymph_import.owl                   ncbi_terms.txt                         vdw-extra-cdt-codes-import.owl
+fma-lymph_terms.txt                    obi_import.owl                         vdw-incomplete-information-import.owl
+fma-mouth-mucosa_import.owl            obi_terms.txt                          vdw-medical-codes-import.owl
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ less ogms_import.owl 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ less ogms_terms.txt 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ git pll
+git: 'pll' is not a git command. See 'git --help'.
+
+The most similar command is
+	pull
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ git pull                                                                                                             ⏎
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 12 (delta 8), reused 12 (delta 8), pack-reused 0 (from 0)
+Unpacking objects: 100% (12/12), 1.30 KiB | 66.00 KiB/s, done.
+From https://github.com/oral-health-and-disease-ontologies/ohd-ontology
+   722b286..26d3f92  issue-119  -> origin/issue-119
+Updating 722b286..26d3f92
+Fast-forward
+ src/ontology/ohd-edit.owl        | 29 +++++++++++++++--------------
+ src/ontology/ohd-edit.properties |  5 +++++
+ 2 files changed, 20 insertions(+), 14 deletions(-)
+ create mode 100644 src/ontology/ohd-edit.properties
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ brew update
+==> Updating Homebrew...
+Updated 3 taps (homebrew/services, homebrew/core and homebrew/cask).
+==> New Formulae
+cobra-cli                     poselib                       templ                         weaviate
+==> New Casks
+steinberg-download-assistant                                 wizcli
+==> Outdated Formulae
+gh           jupyterlab   libomp       pixman       pyenv        python@3.10  python@3.11  python@3.9   uv
+
+You have 9 outdated formulae installed.
+You can upgrade them with brew upgrade
+or list them with brew outdated.
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ brew upgrade
+==> Upgrading 9 outdated packages:
+pyenv 2.4.19 -> 2.4.20
+gh 2.63.0 -> 2.63.1
+pixman 0.44.0 -> 0.44.2
+uv 0.5.5 -> 0.5.6
+python@3.10 3.10.15 -> 3.10.16
+jupyterlab 4.3.2_1
+libomp 19.1.4 -> 19.1.5
+python@3.11 3.11.10 -> 3.11.11
+python@3.9 3.9.20 -> 3.9.21
+==> Downloading https://ghcr.io/v2/homebrew/core/libomp/manifests/19.1.5
+################################################################################################################## 100.0%
+==> Fetching libomp
+==> Downloading https://ghcr.io/v2/homebrew/core/libomp/blobs/sha256:599340bb0348194a15e5999cea9db4c1dfbaa571350c2895f7a1
+################################################################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gh/manifests/2.63.1
+################################################################################################################## 100.0%
+==> Fetching gh
+==> Downloading https://ghcr.io/v2/homebrew/core/gh/blobs/sha256:6b9e66518a37d402ef948676d2ed68f16d318c57ca70b6368014aca0
+################################################################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pixman/manifests/0.44.2
+################################################################################################################## 100.0%
+==> Fetching pixman
+==> Downloading https://ghcr.io/v2/homebrew/core/pixman/blobs/sha256:9864683edbe6d854ac00331ede5a69e8fcd624dda02d27c7e240
+################################################################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/uv/manifests/0.5.6
+################################################################################################################## 100.0%
+==> Fetching uv
+==> Downloading https://ghcr.io/v2/homebrew/core/uv/blobs/sha256:300ecadd1939c18105761837cbb7b5cd5aed034029feea9d2980ac04
+################################################################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.10/manifests/3.10.16
+################################################################################################################## 100.0%
+==> Fetching python@3.10
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.10/blobs/sha256:8313e7f98f9b2d19dc2ea68e2cbb01c865b62c0fac8ee36
+################################################################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/jupyterlab/manifests/4.3.2_1
+################################################################################################################## 100.0%
+==> Fetching jupyterlab
+==> Downloading https://ghcr.io/v2/homebrew/core/jupyterlab/blobs/sha256:5e80e3ac7badda94cdf33b33c85df9d3a4686960171f4e9e
+################################################################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.11/manifests/3.11.11
+################################################################################################################## 100.0%
+==> Fetching python@3.11
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.11/blobs/sha256:b233aa4049c7412eeba3f0b5df05adf9389a4e2f6e2fe2e
+################################################################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pyenv/manifests/2.4.20
+################################################################################################################## 100.0%
+==> Fetching pyenv
+==> Downloading https://ghcr.io/v2/homebrew/core/pyenv/blobs/sha256:72875b0c62344c1352efadfc98cad00622c0a670f3ef0d3d805a8
+################################################################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.9/manifests/3.9.21
+################################################################################################################## 100.0%
+==> Fetching python@3.9
+==> Downloading https://ghcr.io/v2/homebrew/core/python/3.9/blobs/sha256:0d8938a8a41666982846e76338c2269dfaad5a1eed0d2c62
+################################################################################################################## 100.0%
+==> Upgrading libomp
+  19.1.4 -> 19.1.5 
+==> Pouring libomp--19.1.5.arm64_sonoma.bottle.tar.gz
+==> Caveats
+libomp is keg-only, which means it was not symlinked into /opt/homebrew,
+because it can override GCC headers and result in broken builds.
+
+For compilers to find libomp you may need to set:
+  export LDFLAGS="-L/opt/homebrew/opt/libomp/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/libomp/include"
+==> Summary
+🍺  /opt/homebrew/Cellar/libomp/19.1.5: 9 files, 1.7MB
+==> Running `brew cleanup libomp`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Removing: /opt/homebrew/Cellar/libomp/19.1.4... (9 files, 1.7MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/libomp_bottle_manifest--19.1.4... (9KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/libomp--19.1.4... (572.9KB)
+==> Upgrading gh
+  2.63.0 -> 2.63.1 
+==> Pouring gh--2.63.1.arm64_sonoma.bottle.tar.gz
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/gh/2.63.1: 207 files, 41.3MB
+==> Running `brew cleanup gh`...
+Removing: /opt/homebrew/Cellar/gh/2.63.0... (207 files, 41.3MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/gh_bottle_manifest--2.63.0... (7.2KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/gh--2.63.0... (11.8MB)
+==> Upgrading pixman
+  0.44.0 -> 0.44.2 
+==> Pouring pixman--0.44.2.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pixman/0.44.2: 10 files, 655.6KB
+==> Running `brew cleanup pixman`...
+Removing: /opt/homebrew/Cellar/pixman/0.44.0... (10 files, 655.6KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/pixman_bottle_manifest--0.44.0... (7.0KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/pixman--0.44.0... (176.5KB)
+==> Upgrading uv
+  0.5.5 -> 0.5.6 
+==> Pouring uv--0.5.6.arm64_sonoma.bottle.tar.gz
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> Summary
+🍺  /opt/homebrew/Cellar/uv/0.5.6: 17 files, 28.2MB
+==> Running `brew cleanup uv`...
+Removing: /opt/homebrew/Cellar/uv/0.5.5... (17 files, 27.7MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/uv_bottle_manifest--0.5.5... (7.5KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/uv--0.5.5... (12.2MB)
+==> Upgrading python@3.10
+  3.10.15 -> 3.10.16 
+==> Pouring python@3.10--3.10.16.arm64_sonoma.bottle.tar.gz
+==> /opt/homebrew/Cellar/python@3.10/3.10.16/bin/python3.10 -Im ensurepip
+==> /opt/homebrew/Cellar/python@3.10/3.10.16/bin/python3.10 -Im pip install -v --no-index --upgrade --isolated --target=/
+🍺  /opt/homebrew/Cellar/python@3.10/3.10.16: 3,081 files, 56.7MB
+==> Running `brew cleanup python@3.10`...
+Removing: /opt/homebrew/Cellar/python@3.10/3.10.15... (3,134 files, 57.3MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/python@3.10_bottle_manifest--3.10.15... (28.5KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/python@3.10--3.10.15... (14.4MB)
+==> Upgrading jupyterlab
+  -> 4.3.2_1 
+==> Pouring jupyterlab--4.3.2_1.arm64_sonoma.bottle.tar.gz
+==> jupyterlab cask is installed, skipping link.
+No such file or directory @ rb_sysopen - /opt/homebrew/opt/jupyterlab/.homebrew.jupyterlab.service20241205-22753-xh7mm7
+Error: Failed to install service files
+==> Caveats
+Additional kernels can be installed into the shared jupyter directory
+  /opt/homebrew/etc/jupyter
+
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+
+To start jupyterlab now and restart at login:
+  brew services start jupyterlab
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/jupyterlab/bin/jupyter-lab
+==> Summary
+🍺  /opt/homebrew/Cellar/jupyterlab/4.3.2_1: 8,322 files, 165.2MB
+==> Running `brew cleanup jupyterlab`...
+Removing: /opt/homebrew/Cellar/jupyterlab/4.3.1_2... (8,181 files, 119.7MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/jupyterlab_bottle_manifest--4.3.1_2... (33.3KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/jupyterlab--4.3.1_2... (33.7MB)
+==> Upgrading python@3.11
+  3.11.10 -> 3.11.11 
+==> Pouring python@3.11--3.11.11.arm64_sonoma.bottle.tar.gz
+==> /opt/homebrew/Cellar/python@3.11/3.11.11/bin/python3.11 -Im ensurepip
+==> /opt/homebrew/Cellar/python@3.11/3.11.11/bin/python3.11 -Im pip install -v --no-index --upgrade --isolated --target=/
+🍺  /opt/homebrew/Cellar/python@3.11/3.11.11: 3,306 files, 62MB
+==> Running `brew cleanup python@3.11`...
+Removing: /opt/homebrew/Cellar/python@3.11/3.11.10... (40,031 files, 493.9MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/python@3.11_bottle_manifest--3.11.10... (28.2KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/python@3.11--3.11.10... (15.1MB)
+==> Upgrading pyenv
+  2.4.19 -> 2.4.20 
+==> Pouring pyenv--2.4.20.arm64_sonoma.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pyenv/2.4.20: 1,249 files, 4MB
+==> Running `brew cleanup pyenv`...
+Removing: /opt/homebrew/Cellar/pyenv/2.4.19... (1,244 files, 4MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/pyenv_bottle_manifest--2.4.19... (21.3KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/pyenv--2.4.19... (1.3MB)
+==> Upgrading python@3.9
+  3.9.20 -> 3.9.21 
+==> Pouring python@3.9--3.9.21.arm64_sonoma.bottle.tar.gz
+==> /opt/homebrew/Cellar/python@3.9/3.9.21/bin/python3.9 -Im ensurepip
+==> /opt/homebrew/Cellar/python@3.9/3.9.21/bin/python3.9 -Im pip install -v --no-index --upgrade --isolated --target=/opt
+==> Caveats
+Python is installed as
+  /opt/homebrew/bin/python3.9
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.9`, `python3.9-config`, `pip3.9` etc., respectively, are installed into
+  /opt/homebrew/opt/python@3.9/libexec/bin
+
+You can install Python packages with
+  pip3.9 install <package>
+They will install into the site-package directory
+  /opt/homebrew/lib/python3.9/site-packages
+
+tkinter is no longer included with this formula, but it is available separately:
+  brew install python-tk@3.9
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /opt/homebrew/Cellar/python@3.9/3.9.21: 3,039 files, 56.7MB
+==> Running `brew cleanup python@3.9`...
+Removing: /opt/homebrew/Cellar/python@3.9/3.9.20... (3,039 files, 56.7MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/python@3.9_bottle_manifest--3.9.20... (27.6KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/python@3.9--3.9.20... (14.2MB)
+==> `brew cleanup` has not been run in the last 30 days, running now...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Removing: /Users/duncanw/Library/Caches/Homebrew/curl_bottle_manifest--8.11.0_1-1... (15.2KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/curl--8.11.0_1... (1.4MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/gdbm_bottle_manifest--1.24... (7.8KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/gdbm--1.24... (272.6KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/httpd_bottle_manifest--2.4.62... (44.7KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/httpd--2.4.62... (7.2MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/jpeg-turbo_bottle_manifest--3.0.4... (8KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/jpeg-turbo--3.0.4... (1.1MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/libsodium_bottle_manifest--1.0.20... (7.4KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/libsodium--1.0.20... (309.2KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/libtiff_bottle_manifest--4.7.0... (11.6KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/libtiff--4.7.0... (1.8MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/pcre2_bottle_manifest--10.44... (8.8KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/pcre2--10.44... (2MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/pkgconf_bottle_manifest--2.3.0_1... (7.5KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/pkgconf--2.3.0_1... (110.9KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/python@3.13_bottle_manifest--3.13.0_1... (20.3KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/python@3.13--3.13.0_1... (15.4MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/rustup_bottle_manifest--1.27.1_1... (11.4KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/rustup--1.27.1_1... (3MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/openjdk@11_bottle_manifest--11.0.24... (39.4KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/libgit2_bottle_manifest--1.8.1... (10.5KB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/portable-ruby-3.3.3.arm64_big_sur.bottle.tar.gz... (11MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/Cask/openrefine--3.8.6.dmg... (180.9MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/Cask/openrefine--3.8.5.dmg... (180.9MB)
+Removing: /Users/duncanw/Library/Caches/Homebrew/Cask/orange--3.37.0.dmg... (388.0MB)
+Removing: /Users/duncanw/Library/Logs/Homebrew/python@3.13... (2 files, 2KB)
+Removing: /Users/duncanw/Library/Logs/Homebrew/python@3.12... (2 files, 2KB)
+Removing: /Users/duncanw/Library/Logs/Homebrew/r... (64B)
+Removing: /Users/duncanw/Library/Logs/Homebrew/gcc... (64B)
+Removing: /Users/duncanw/Library/Logs/Homebrew/node... (64B)
+Removing: /Users/duncanw/Library/Logs/Homebrew/fuseki... (64B)
+Removing: /opt/homebrew/lib/python3.11/site-packages/__pycache__/cython.cpython-311.pyc... (826B)
+Removing: /opt/homebrew/lib/python3.11/site-packages/__pycache__/threadpoolctl.cpython-311.pyc... (52KB)
+Removing: /opt/homebrew/lib/python3.11/site-packages/__pycache__/wurlitzer.cpython-311.pyc... (25KB)
+Pruned 2 symbolic links from /opt/homebrew
+==> Caveats
+==> libomp
+libomp is keg-only, which means it was not symlinked into /opt/homebrew,
+because it can override GCC headers and result in broken builds.
+
+For compilers to find libomp you may need to set:
+  export LDFLAGS="-L/opt/homebrew/opt/libomp/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/libomp/include"
+==> gh
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> uv
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> jupyterlab
+Additional kernels can be installed into the shared jupyter directory
+  /opt/homebrew/etc/jupyter
+
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+
+To start jupyterlab now and restart at login:
+  brew services start jupyterlab
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/jupyterlab/bin/jupyter-lab
+==> python@3.9
+Python is installed as
+  /opt/homebrew/bin/python3.9
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.9`, `python3.9-config`, `pip3.9` etc., respectively, are installed into
+  /opt/homebrew/opt/python@3.9/libexec/bin
+
+You can install Python packages with
+  pip3.9 install <package>
+They will install into the site-package directory
+  /opt/homebrew/lib/python3.9/site-packages
+
+tkinter is no longer included with this formula, but it is available separately:
+  brew install python-tk@3.9
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+See: https://docs.brew.sh/Homebrew-and-Python
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ brew upgrade --cask                                                                                                  ⏎
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ git pull
+Already up to date.
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (issue-119) ⚡ 
+❯ git co main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (main) ⚡ 
+❯ git pull
+Already up to date.
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (main) ⚡ 
+❯ git br   
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (main) ⚡ 
+❯ git co   add-chebi-classes
+Switched to branch 'add-chebi-classes'
+Your branch is up to date with 'origin/add-chebi-classes'.
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (add-chebi-classes) ⚡ 
+❯ ..
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ code .
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ git st
+On branch add-chebi-classes
+Your branch is up to date with 'origin/add-chebi-classes'.
+
+nothing to commit (use -u to show untracked files)
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ git pull
+Already up to date.
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (main) ⚡ 
+❯ git co add-chebi-classes 
+Switched to branch 'add-chebi-classes'
+Your branch is up to date with 'origin/add-chebi-classes'.
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ git pull
+Already up to date.
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ ls
+Makefile                  compare-fma-uberon-teeth/ ohd-idranges.owl          run.sh*
+Makefile.bak              components/               ohd-odk.yaml              target/
+README-editors.md         exploratory/              ohd.Makefile*             tmp/
+README.md                 imports/                  release-ohd.sh*
+archive/                  mirror/                   reports/
+catalog-v001.xml          ohd-edit.owl              run.bat
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ ..
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src (add-chebi-classes) ⚡ 
+❯ ls
+analysis/        oor/             scripts/         tools/
+ontology/        r21-study/       sparql/          vdw-translation/
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src (add-chebi-classes) ⚡ 
+❯ cd scripts 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/scripts (add-chebi-classes) ⚡ 
+❯ ls
+run-command.sh*        update_repo.sh         validate_id_ranges.sc
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/scripts (add-chebi-classes) ⚡ 
+❯ less validate_id_ranges.sc 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/scripts (add-chebi-classes) ⚡ 
+❯ less update_repo.sh 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/scripts (add-chebi-classes) ⚡ 
+❯ less run-command.sh 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/scripts (add-chebi-classes) ⚡ 
+❯ ../ontology 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ ls
+Makefile                  compare-fma-uberon-teeth/ ohd-idranges.owl          run.sh*
+Makefile.bak              components/               ohd-odk.yaml              target/
+README-editors.md         exploratory/              ohd.Makefile*             tmp/
+README.md                 imports/                  release-ohd.sh*
+archive/                  mirror/                   reports/
+catalog-v001.xml          ohd-edit.owl              run.bat
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ less README.md 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ ../sparql 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/sparql (add-chebi-classes) ⚡ 
+❯ ls
+README.md                               iri-range-violation.sparql              postprocess-module.ru
+basic-report.sparql                     label-with-iri-violation.sparql         preprocess-module.ru
+class-count-by-prefix.sparql            labels.sparql                           simple-seed.sparql
+dc-properties-violation.sparql          multiple-replaced_by-violation.sparql   subsets-labeled.sparql
+edges.sparql                            obsoletes.sparql                        synonyms.sparql
+inject-subset-declaration.ru            ohd_terms.sparql                        terms.sparql
+inject-synonymtype-declaration.ru       owldef-self-reference-violation.sparql  xrefs.sparql
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/sparql (add-chebi-classes) ⚡ 
+❯ less README.md 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/sparql (add-chebi-classes) ⚡ 
+❯ less basic-report.sparql 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/sparql (add-chebi-classes) ⚡ 
+❯ less class-count-by-prefix.sparql 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/sparql (add-chebi-classes) ⚡ 
+❯ ..
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src (add-chebi-classes) ⚡ 
+❯ cd ontology/imports 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (add-chebi-classes) ⚡ 
+❯ ls
+BFO2/                                  fma-lymph_terms.txt                    ogms_import.owl
+bfo2_classes_import.owl                fma-mouth-mucosa_import.owl            ogms_terms.txt
+bfo2_classes_terms.txt                 fma-mouth-mucosa_terms.txt             omo_import.owl
+caro_import.owl                        fma-tmj_import.owl                     omo_terms.txt
+caro_terms.txt                         fma-tmj_terms.txt                      omrse_import.owl
+cdt_import.owl                         fma-tongue_import.owl                  omrse_terms.txt
+cdt_terms.txt                          fma-tongue_terms.txt                   protege-dc.owl
+chebi_import.owl                       fma_terms.txt                          ro_import.owl
+chebi_terms.txt                        iao_import.owl                         ro_terms.txt
+ecto_import.owl                        iao_terms.txt                          ugly/
+ecto_terms.txt                         icd9_import.owl                        vdw-database-codes-import.owl
+envo_import.owl                        missing-information_import.owl         vdw-extra-cdt-codes-import.owl
+envo_terms.txt                         ncbi_import.owl                        vdw-incomplete-information-import.owl
+fma-jaws-teeth_import.owl              ncbi_terms.txt                         vdw-medical-codes-import.owl
+fma-jaws-teeth_terms.txt               obi_import.owl
+fma-lymph_import.owl                   obi_terms.txt
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology/imports (add-chebi-classes) ⚡ 
+❯ ..
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ ls
+Makefile                  compare-fma-uberon-teeth/ ohd-idranges.owl          run.sh*
+Makefile.bak              components/               ohd-odk.yaml              target/
+README-editors.md         exploratory/              ohd.Makefile*             tmp/
+README.md                 imports/                  release-ohd.sh*
+archive/                  mirror/                   reports/
+catalog-v001.xml          ohd-edit.owl              run.bat
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ la
+total 840
+-rw-r--r--@  1 duncanw  1166719947    10K Oct 11 17:33 .DS_Store
+drwxr-xr-x   3 duncanw  1166719947    96B Nov 22 17:00 .vscode/
+-rw-r--r--   1 duncanw  1166719947    30K Dec  7 11:16 Makefile
+-rw-r--r--   1 duncanw  1166719947    30K Oct 11 15:54 Makefile.bak
+-rw-r--r--   1 duncanw  1166719947   747B Sep 13 14:56 README-editors.md
+-rw-r--r--   1 duncanw  1166719947   433B Oct 10  2022 README.md
+drwxr-xr-x  12 duncanw  1166719947   384B Oct 10  2022 archive/
+-rw-r--r--   1 duncanw  1166719947   2.5K Dec  7 11:16 catalog-v001.xml
+drwxr-xr-x  12 duncanw  1166719947   384B Jun 23  2023 compare-fma-uberon-teeth/
+drwxr-xr-x  10 duncanw  1166719947   320B Dec  7 11:16 components/
+drwxr-xr-x   8 duncanw  1166719947   256B Oct 10  2022 exploratory/
+drwxr-xr-x  49 duncanw  1166719947   1.5K Dec  7 11:16 imports/
+drwxr-xr-x  28 duncanw  1166719947   896B Nov 22 10:28 mirror/
+-rw-r--r--   1 duncanw  1166719947   302K Dec  7 11:16 ohd-edit.owl
+-rw-r--r--   1 duncanw  1166719947   2.0K Nov 26 16:31 ohd-idranges.owl
+-rw-r--r--   1 duncanw  1166719947   1.2K Dec  7 11:16 ohd-odk.yaml
+-rwxr-xr-x   1 duncanw  1166719947   5.9K Dec  7 11:16 ohd.Makefile*
+-rwxr-xr-x   1 duncanw  1166719947   105B Jul 22  2023 release-ohd.sh*
+drwxr-xr-x  12 duncanw  1166719947   384B Sep 13 14:56 reports/
+-rw-r--r--   1 duncanw  1166719947   134B Sep 13 14:56 run.bat
+-rwxr-xr-x   1 duncanw  1166719947   3.9K Dec  7 11:16 run.sh*
+drwxr-xr-x   3 duncanw  1166719947    96B Oct 11 17:00 target/
+drwxr-xr-x  21 duncanw  1166719947   672B Nov 25 14:23 tmp/
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ gitroot
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology (add-chebi-classes) ⚡ 
+❯ la
+total 19040
+-rw-r--r--@  1 duncanw  1166719947   6.0K Jul  7  2023 .DS_Store
+drwxr-xr-x  16 duncanw  1166719947   512B Dec  7 11:16 .git/
+drwxr-xr-x   3 duncanw  1166719947    96B Sep 13 14:56 .github/
+-rw-r--r--   1 duncanw  1166719947   856B Sep 13 14:56 .gitignore
+-rw-r--r--   1 duncanw  1166719947   3.3K Sep 13 14:56 CODE_OF_CONDUCT.md
+-rw-r--r--   1 duncanw  1166719947   6.1K Jul 24  2023 CONTRIBUTING.md
+-rw-r--r--   1 duncanw  1166719947    18K Jul 25  2022 LICENSE
+-rw-r--r--   1 duncanw  1166719947    13B Jul 24  2023 MAINTAINERS.md
+-rw-r--r--   1 duncanw  1166719947   4.5K Sep 13 14:56 README.md
+drwxr-xr-x   8 duncanw  1166719947   256B Oct 10  2022 articles/
+drwxr-xr-x   6 duncanw  1166719947   192B Sep 13 14:56 docs/
+-rw-r--r--   1 duncanw  1166719947   1.4K Sep 13 14:56 mkdocs.yaml
+-rw-r--r--   1 duncanw  1166719947   500K Sep 13 14:56 ohd-base.owl
+-rw-r--r--   1 duncanw  1166719947   4.2M Sep 13 14:56 ohd-non-classified.owl
+-rw-r--r--   1 duncanw  1166719947   4.5M Sep 13 14:56 ohd.owl
+drwxr-xr-x  11 duncanw  1166719947   352B Sep 13 14:56 src/
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology (add-chebi-classes) ⚡ 
+❯ less .gitignore 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology (add-chebi-classes) ⚡ 
+❯ less .gitignore
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology (add-chebi-classes) ⚡ 
+❯ cd .git/  
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/.git (add-chebi-classes) 
+❯ ls
+COMMIT_EDITMSG  HEAD            config          hooks/          info/           logs/           packed-refs
+FETCH_HEAD      ORIG_HEAD       description     index           lfs/            objects/        refs/
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/.git (add-chebi-classes) 
+❯ ..
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology (add-chebi-classes) ⚡ 
+❯ cd .github 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/.github (add-chebi-classes) ⚡ 
+❯ ls
+workflows/
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/.github (add-chebi-classes) ⚡ 
+❯ la
+total 0
+drwxr-xr-x  4 duncanw  1166719947   128B Dec  7 11:16 workflows/
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/.github (add-chebi-classes) ⚡ 
+❯ cd workflows 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/.github/workflows (add-chebi-classes) ⚡ 
+❯ ls
+docs.yml  qc.yml
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/.github/workflows (add-chebi-classes) ⚡ 
+❯ less qc.yml 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/.github/workflows (add-chebi-classes) ⚡ 
+❯ gitroot 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology (add-chebi-classes) ⚡ 
+❯ cd src/ontology 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ ls
+Makefile                  compare-fma-uberon-teeth/ ohd-idranges.owl          run.sh*
+Makefile.bak              components/               ohd-odk.yaml              target/
+README-editors.md         exploratory/              ohd.Makefile*             tmp/
+README.md                 imports/                  release-ohd.sh*
+archive/                  mirror/                   reports/
+catalog-v001.xml          ohd-edit.owl              run.bat
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ less ohd-idranges.owl 
+
+[duncanw@fdsb-d407-m1] ~/repos/oral-health-and-disease-ontologies/ohd-ontology/src/ontology (add-chebi-classes) ⚡ 
+❯ vim ohd-idranges.owl 
+
+## ID Ranges File                                                                                                      
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: idsfor: <http://purl.obolibrary.org/obo/IAO_0000598>
+Prefix: dce: <http://purl.org/dc/elements/1.1/>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: allocatedto: <http://purl.obolibrary.org/obo/IAO_0000597>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: idprefix: <http://purl.obolibrary.org/obo/IAO_0000599>
+Prefix: iddigits: <http://purl.obolibrary.org/obo/IAO_0000596>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: idrange: <http://purl.obolibrary.org/obo/ro/idrange/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+
+Ontology: <http://purl.obolibrary.org/obo/ohd/phases-idranges.owl>
+
+
+Annotations:
+    idsfor: "PHASES",
+    idprefix: "http://purl.obolibrary.org/obo/PHASES_",
+    iddigits: 7
+
+AnnotationProperty: idprefix:
+
+
+AnnotationProperty: iddigits:
+
+
+AnnotationProperty: idsfor:
+
+
+AnnotationProperty: allocatedto:
+
+Datatype: idrange:1
+
+    Annotations:
+        allocatedto: "Bill Duncan"
+
+    EquivalentTo: 
+        xsd:integer[>= 0 , <= 999]
+                                                                                                                          
+Datatype: idrange:2
+
+    Annotations: 
+        allocatedto: "John Beverley"
+    
+    EquivalentTo: 
+        xsd:integer[>= 1000 , <= 1999]
