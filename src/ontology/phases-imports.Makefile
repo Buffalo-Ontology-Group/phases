@@ -57,8 +57,9 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
         remove \
             --select classes \
         annotate \
-			--remove-annotations \
             --annotate-defined-by true \
+        annotate \
+			--remove-annotations \
             --ontology-iri $(URIBASE)/$(ONT)/$@ \
             --version-iri $(URIBASE)/$(ONT)/$@ \
 		convert --format ofn \
@@ -71,8 +72,9 @@ $(IMPORTDIR)/bcio_import.owl: $(MIRRORDIR)/bcio.owl
             --input $< \
             --select "owl:deprecated='true'^^xsd:boolean" \
         annotate \
-            --remove-annotations \
             --annotate-defined-by true \
+        annotate \
+            --remove-annotations \
             --ontology-iri $(URIBASE)/$(ONT)/$@ \
             --version-iri $(URIBASE)/$(ONT)/$@ \
         --output $@.tmp.owl && mv $@.tmp.owl $@; fi
@@ -88,8 +90,9 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
             --method MIREOT \
             --lower-terms $(IMPORTDIR)/ro_terms.txt \
         annotate \
-			--remove-annotations \
             --annotate-defined-by true \
+        annotate \
+			--remove-annotations \
             --ontology-iri $(URIBASE)/$(ONT)/$@ \
 			--version-iri $(URIBASE)/$(ONT)/$@ \
         --output $@.tmp.owl && mv $@.tmp.owl $@; fi
