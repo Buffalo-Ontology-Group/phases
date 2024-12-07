@@ -8,7 +8,7 @@ Our project aims to bridge the gap between these literatures and thus spur novel
 
 ## Our Team
 - [John Beverley](https://johnbeverley.com/) (PI)
-- [William Duncan](https://scholar.google.com/citations?user=JmK0_REAAAAJ) (PI)
+- [Bill Duncan](https://www.linkedin.com/in/biduncan/) (PI)
 - [Julie Bowker](https://arts-sciences.buffalo.edu/psychology/faculty/faculty-directory/bowker.html)
 - [Hollen Reischer](https://arts-sciences.buffalo.edu/psychology/faculty/faculty-directory/reischer.html)
 - [Yongqun "Oliver" He](https://hegroup.org/aboutUs/Oliver.html)
