@@ -1,3 +1,33 @@
+.idea/
+.DS_Store
+semantic.cache
+bin/
+
+# various temp files
+*.tmp
+*.tmp.obo
+*.tmp.owl
+*.tmp.json
+
+.github/token.txt
+
+# utility directories
+src/ontology/mirror
+src/ontology/mirror/*
+src/ontology/reports/*
+src/ontology/target/
+
+# ontology products that may be created during the release process
+src/ontology/phases.owl
+src/ontology/phases.obo
+src/ontology/phases.json
+src/ontology/phases-base.*
+src/ontology/phases-basic.*
+src/ontology/phases-full.*
+src/ontology/phases-simple.*
+src/ontology/phases-simple-non-classified.*
+src/ontology/merged-phases-edit.owl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
