@@ -11,4 +11,19 @@ Import(<http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
 Import(<http://purl.obolibrary.org/obo/phases/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/phases/imports/ro_import.owl>)
 
+Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0000000>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/OHD_0000000> (foo bar)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OHD_0000000> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OHD_0000000> "2025-01-06T19:59:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0000000> "foo bar"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OHD_0000000> <http://purl.obolibrary.org/obo/BFO_0000050>)
+
+
 )
