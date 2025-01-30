@@ -103,7 +103,7 @@ If you do not have an ORCID ID please create one by [registering here](https://o
 - Click **OK** to save.
 
 
-![image](https://github.com/user-attachments/assets/6be0729b-a5cf-483e-a084-301a8d91e082)
+![image](https://github.com/user-attachments/assets/01341668-e45b-4f77-bf59-aead1dcdcceb)
 
 **_Update configuration for new entities metadata_**
 
