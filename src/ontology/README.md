@@ -80,7 +80,7 @@ If you do not have an ORCID ID please create one by [registering here](https://o
   - Click **OK** to save.
 
 
-![image](https://github.com/user-attachments/assets/d6d68ff0-7d19-443a-826f-5b35131c5056)
+![image](https://github.com/user-attachments/assets/6ec3a0d1-4ec1-464b-935e-4bfd69d35939)
 
 
 **_Update configuration for new entities_**
@@ -103,7 +103,8 @@ If you do not have an ORCID ID please create one by [registering here](https://o
 - Click **OK** to save.
 
 
-![image](https://github.com/user-attachments/assets/01341668-e45b-4f77-bf59-aead1dcdcceb)
+![image](https://github.com/user-attachments/assets/b8cbe708-7127-4450-95c3-915b883f754b)
+
 
 **_Update configuration for new entities metadata_**
 
@@ -119,4 +120,4 @@ If you do not have an ORCID ID please create one by [registering here](https://o
 - For **Date property** enable **ISO-8601**.
 - lick **OK** to save.
   
-![image](https://github.com/user-attachments/assets/111d65e5-cc69-41bb-b1bf-26ba7e327f6e)
+![image](https://github.com/user-attachments/assets/c24c6360-c471-4634-b9d9-42ea883ef050)
