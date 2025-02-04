@@ -81,7 +81,7 @@ If you do not have an ORCID ID please create one by [registering here](https://o
   - Click on the **User details** tab.
   - Enable **Use supplied user name**.
   - Enter your full name in the field indicated.
-  - The user name should match with the user name given in the id-range 
+  - The **user name should match with the user name given in the Id range**. 
   - Enter your ORCID ID in the field for **ORCID**.
   - Click **OK** to save.
 
@@ -117,7 +117,7 @@ If you do not have an ORCID ID please create one by [registering here](https://o
 **_Update configuration for new entities metadata_**
 
 - Go to Protégé **Preferences**.
-- Click the **New entities metadata tab**.
+- Click the **New entities metadata** tab.
 - Enable **Annotate new entities with creator (user)**.
 - For **Creator property** enter the following IRI the field:
     `http://purl.org/dc/terms/contributor`
