@@ -49,7 +49,7 @@ Datatype: idrange:2
 Datatype: idrange:3
 
     Annotations: 
-        allocatedto: "Damayanthi Jesudas"
+        allocatedto: "Damayanthi Beera"
     
     EquivalentTo: 
         xsd:integer[>= 2000 , <= 2999]
