@@ -81,7 +81,7 @@ If you do not have an ORCID ID please create one by [registering here](https://o
   - Click on the **User details** tab.
   - Enable **Use supplied user name**.
   - Enter your full name in the field indicated.
-  - Enable **Use Git user name when available**.
+  - The user name should match with the user name given in the id-range 
   - Enter your ORCID ID in the field for **ORCID**.
   - Click **OK** to save.
 
