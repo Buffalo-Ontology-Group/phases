@@ -9,6 +9,7 @@ To make changes to the OHD, edit `phases-edit.owl`. **DO NOT** edit the `phases.
 ## Releasing PHASES
 
 **TO DO**
+
 ## Contributing to the Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology
 
 ### Robot and Protégé
@@ -46,26 +47,31 @@ From time to time, the [imports](https://github.com/Buffalo-Ontology-Group/phase
 
 ### Configuring Protégé for PHASES Contributions
 
-**Rationale** 
+**Rationale**
+
 When a new entity is created using Protégé the entities are created using the default settings of Protégé. For example, using the default settings when a new entity called 'test' is created the IRI for the entity may look like this.
 
 `http://www.semanticweb.org/user/ontologies/2025/6/untitled-ontology-43#test`
 
-Ideally, we want the new entity created in the PHASES ontology to look similar to the IRI below:
+Ideally, we want the new entity created in the PHASES ontology to look similar to the IRI below based on OBO Foundary principles:
 
 `http://purl.obolibrary.org/obo/PHASES_0000024`
 
 **Prerequisites**
 
 **_Protégé_**
+
 If you do not have installed Protégé ontology editor on your machine, please download and install it from this [link](https://protege.stanford.edu/).
 
 **_Create ORCID identifier_**
+
 If you do not have an ORCID ID please create one by [registering here](https://orcid.org/) ORCID ID is a free-of-charge identifier for researchers.
+
 
 **Update Preferences**
 
 **_Where can I find Protégé preferences?_**
+
   - Open Protégé.
   - Go to **File > Preferences**.
     
@@ -88,10 +94,12 @@ If you do not have an ORCID ID please create one by [registering here](https://o
 - Go to Protégé **Preferences**.
 - Click the **New entities** tab.
 - Update **Entity IRI**.
-    For **Start with**: enable 'Specified IRI' and enter the following IRI in the field:
-        `http://purl.obolibrary.org/obo`
-    For **Followed by**: enable the forward slash option (/).
-    For **End with**: enable 'Auto-generated ID'.
+  
+   - For **Start with**: enable 'Specified IRI' and enter the following IRI in the field:
+     
+      -`http://purl.obolibrary.org/obo`
+   - For **Followed by**: enable the forward slash option (/).
+   - For **End with**: enable 'Auto-generated ID'.
 - Update **Entity Label**.
     Enable **Same as label renderer**.
 - Update **Auto-generated ID**.
