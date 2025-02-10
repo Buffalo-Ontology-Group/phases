@@ -11,4 +11,38 @@ Import(<http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
 Import(<http://purl.obolibrary.org/obo/phases/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/phases/imports/ro_import.owl>)
 
+Declaration(Class(<http://purl.obolibrary.org/obo/PHASES_0002000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PHASES_0002001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PHASES_0002003>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/PHASES_0002000> (solitude)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002000> "A <mental disposition> that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002000> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002000> "2025-02-05T17:49:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002000> "solitude"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002000> <http://purl.obolibrary.org/obo/MF_0000033>)
+
+# Class: <http://purl.obolibrary.org/obo/PHASES_0002001> (gerotranscendence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002001> "A <mental disposition> borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002001> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002001> "2025-02-05T17:54:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002001> "gerotranscendence"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002001> <http://purl.obolibrary.org/obo/MF_0000033>)
+
+# Class: <http://purl.obolibrary.org/obo/PHASES_0002003> (loneliness)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002003> "A <subjective affective feeling> of dissatisfaction with a lack of social interactions and relationships.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002003> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002003> "2025-02-05T17:58:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002003> "loneliness"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002003> <http://purl.obolibrary.org/obo/MFOEM_000006>)
+
+
 )
