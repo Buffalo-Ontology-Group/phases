@@ -4,5 +4,6 @@
         <uri name="http://purl.obolibrary.org/obo/phases/imports/omo_import.owl" uri="imports/omo_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl" uri="imports/bcio_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/phases/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/phases/components/phases_contributors.owl" uri="components/phases_contributors.owl"/>
     </group>
 </catalog>
