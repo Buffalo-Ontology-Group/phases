@@ -53,3 +53,27 @@ Datatype: idrange:3
     
     EquivalentTo: 
         xsd:integer[>= 2000 , <= 2999]
+
+Datatype: idrange:4
+
+    Annotations: 
+        allocatedto: "Oliver He"
+    
+    EquivalentTo: 
+        xsd:integer[>= 3000 , <= 3999]
+
+Datatype: idrange:5
+
+    Annotations: 
+        allocatedto: "Jie Zheng"
+    
+    EquivalentTo: 
+        xsd:integer[>= 4000 , <= 4999]
+
+Datatype: idrange:6
+
+    Annotations: 
+        allocatedto: "Sam Smith"
+    
+    EquivalentTo: 
+        xsd:integer[>= 5000 , <= 5999]
