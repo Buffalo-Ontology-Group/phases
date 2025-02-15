@@ -1,0 +1,54 @@
+Prefix(:=<http://example.com/untitled-ontology-937/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/phases/components/phases_contributors.owl>
+
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/http://orcid.org/0000-0001-9189-9661>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-1118-1738>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-2999-0103>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0009-9778-4641>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/http://orcid.org/0000-0001-9189-9661> (Oliver He)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/http://orcid.org/0000-0001-9189-9661> "Oliver He"@en)
+
+# Individual: <http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548> (Damayanthi Beera)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548> "Damayanthi Beera"@en)
+
+# Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9625-1899> "Bill Duncan"@en)
+
+# Individual: <https://orcid.org/0000-0002-1118-1738> (John Beverley)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-1118-1738> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://orcid.org/0000-0002-1118-1738> "2025-02-15T00:23:06Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1118-1738> "John Beverley"@en)
+
+# Individual: <https://orcid.org/0000-0002-2999-0103> (Jie Zheng)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2999-0103> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://orcid.org/0000-0002-2999-0103> "2025-02-15T00:20:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-2999-0103> "Jie Zheng"@en)
+
+# Individual: <https://orcid.org/0009-0009-9778-4641> (Sam Smith)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0009-9778-4641> "Sam Smith"@en)
+
+
+)
