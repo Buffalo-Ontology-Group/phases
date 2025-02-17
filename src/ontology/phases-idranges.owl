@@ -77,3 +77,11 @@ Datatype: idrange:6
     
     EquivalentTo: 
         xsd:integer[>= 5000 , <= 5999]
+
+Datatype: idrange:7
+
+    Annotations: 
+        allocatedto: "Leo Yeh"
+    
+    EquivalentTo: 
+        xsd:integer[>= 6000 , <= 6999]
