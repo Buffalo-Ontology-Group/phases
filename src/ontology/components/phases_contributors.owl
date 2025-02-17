@@ -10,6 +10,7 @@ Ontology(<http://purl.obolibrary.org/obo/phases/components/phases_contributors.o
 
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/http://orcid.org/0000-0001-9189-9661>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/https://orcid.org/0000-0003-2294-3571>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-1118-1738>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-2999-0103>))
@@ -30,20 +31,20 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/http://orcid.org/
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548> "Damayanthi Beera"@en)
 
+# Individual: <http://purl.obolibrary.org/obo/https://orcid.org/0000-0003-2294-3571> (Leo Yeh)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/https://orcid.org/0000-0003-2294-3571> "Leo Yeh"@en)
+
 # Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9625-1899> "Bill Duncan"@en)
 
 # Individual: <https://orcid.org/0000-0002-1118-1738> (John Beverley)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-1118-1738> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://orcid.org/0000-0002-1118-1738> "2025-02-15T00:23:06Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1118-1738> "John Beverley"@en)
 
 # Individual: <https://orcid.org/0000-0002-2999-0103> (Jie Zheng)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2999-0103> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://orcid.org/0000-0002-2999-0103> "2025-02-15T00:20:10Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-2999-0103> "Jie Zheng"@en)
 
 # Individual: <https://orcid.org/0009-0009-9778-4641> (Sam Smith)
