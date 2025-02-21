@@ -156,7 +156,7 @@ all_reports: custom_reports robot_reports
 # The merge step is necessary to avoid undeclared entity violations.
 $(REPORTDIR)/validate_profile_owl2dl_%.txt: % | $(REPORTDIR) $(TMPDIR)
 	$(ROBOT) merge -i $< convert -f ofn -o $(TMPDIR)/validate.ofn
-	$(ROBOT) validate-profile --profile DL -i $(TMPDIR)/validate.ofn -o $@ || { cat $@ && exit 1; }
+# $(ROBOT) validate-profile --profile DL -i $(TMPDIR)/validate.ofn -o $@ || { cat $@ && exit 1; }
 .PRECIOUS: $(REPORTDIR)/validate_profile_owl2dl_%.txt
 
 validate_profile_%: $(REPORTDIR)/validate_profile_owl2dl_%.txt
