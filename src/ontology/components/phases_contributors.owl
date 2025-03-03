@@ -8,9 +8,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/phases/components/phases_contributors.owl>
 
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/http://orcid.org/0000-0001-9189-9661>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/https://orcid.org/0000-0003-2294-3571>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9189-9661>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-6906-5548>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0003-2294-3571>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-1118-1738>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-2999-0103>))
@@ -23,17 +23,17 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
 #   Named Individuals
 ############################
 
-# Individual: <http://purl.obolibrary.org/obo/http://orcid.org/0000-0001-9189-9661> (Oliver He)
+# Individual: <https://orcid.org/0000-0001-9189-9661> (Oliver He)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/http://orcid.org/0000-0001-9189-9661> "Oliver He"@en)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9189-9661> "Oliver He"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548> (Damayanthi Beera)
+# Individual: <https://orcid.org/0000-0001-6906-5548> (Damayanthi Jesudas)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548> "Damayanthi Beera"@en)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6906-5548> "Damayanthi Jesudas"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/https://orcid.org/0000-0003-2294-3571> (Leo Yeh)
+# Individual: <https://orcid.org/0000-0003-2294-3571> (Leo Yeh)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/https://orcid.org/0000-0003-2294-3571> "Leo Yeh"@en)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-2294-3571> "Leo Yeh"@en)
 
 # Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
 
