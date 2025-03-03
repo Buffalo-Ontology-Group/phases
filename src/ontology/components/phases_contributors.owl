@@ -27,9 +27,9 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/http://orcid.org/0000-0001-9189-9661> "Oliver He"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548> (Damayanthi Beera)
+# Individual: <http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548> (Damayanthi Jesudas)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548> "Damayanthi Beera"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/https://orcid.org/0000-0001-6906-5548> "Damayanthi Jesudas"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/https://orcid.org/0000-0003-2294-3571> (Leo Yeh)
 
