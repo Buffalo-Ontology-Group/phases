@@ -39,7 +39,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000000> <http://humanbehaviou
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002000> (solitude)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002000> "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Oliveira, J., Guerra, S., Sousa, L., & Ribeiro, O. (2024). Solitude in old age: a scoping review of conceptualisations, associated factors and impacts. Aging & Mental Health, 29(2), 220–227. https://doi.org/10.1080/13607863.2024.2379408") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002000> "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002000> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002000> "2025-02-05T17:49:47Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002000> "solitude"@en)
@@ -47,7 +47,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002000> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002001> (gerotranscendence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002001> "A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466938/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002001> "A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002001> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002001> "2025-02-05T17:54:30Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002001> "gerotranscendence"@en)
@@ -55,7 +55,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002001> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002002> (social isolation)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002002> "Social alienation that, if realized, is realized in being physically alone and desiring not to be.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.nia.nih.gov/health/loneliness-and-social-isolation/loneliness-and-social-isolation-tips-staying-connected") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002002> "Social alienation that, if realized, is realized in being physically alone and desiring not to be.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002002> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002002> "2025-02-26T21:16:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002002> "social isolation"@en)
@@ -63,7 +63,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002002> <http://humanbehaviou
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002003> (loneliness)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002003> "A <subjective affective feeling> of dissatisfaction with a lack of social interactions and relationships.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Asher, S. R., Hymel, S., & Renshaw, P. D. (1984). Loneliness in children. Child development, 1456-1464.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002003> "A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002003> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002003> "2025-02-05T17:58:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002003> "loneliness"@en)
@@ -87,7 +87,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002005> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002006> (social convoy model)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002006> "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Antonucci, T. C., Ajrouch, K. J., & Birditt, K. S. (2014). The convoy model: Explaining social relations from a multidisciplinary perspective. The Gerontologist, 54(1), 82-92.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002006> "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002006> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002006> "2025-02-26T21:21:13Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002006> "social convoy model"@en)
@@ -95,7 +95,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002006> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002007> (ego integrity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002007> "A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Erikson E.H. The Life Cycle Completed. Norton; New York, NY, USA: 1982.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002007> "A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002007> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002007> "2025-02-26T21:24:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002007> "ego integrity"@en)
@@ -103,7 +103,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002007> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002008> (self-transcendence theory)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002008> "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Reed, P.G. (1991). Toward a nursing theory of self-transcendence: Deductive reformulation using developmental theories. Advances in Nursing Science, 13 (4), 64-77.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002008> "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002008> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002008> "2025-02-26T21:26:30Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002008> "self-transcendence theory"@en)
