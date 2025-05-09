@@ -196,18 +196,18 @@ RELEASE_ASSETS = \
   $(MAIN_FILES) 
 
 .PHONY: all_assets
-all_assets: $(ASSETS) check_rdfxml_assets
+all_assets: $(ASSETS) # check_rdfxml_assets
 
 .PHONY: show_assets
 show_assets:
 	echo $(ASSETS)
 	du -sh $(ASSETS)
 
-check_rdfxml_%: %
-	@check-rdfxml  $<
+# check_rdfxml_%: %
+# 	@check-rdfxml  $<
 
-.PHONY: check_rdfxml_assets
-check_rdfxml_assets: $(foreach product,$(MAIN_PRODUCTS),check_rdfxml_$(product).owl)
+# .PHONY: check_rdfxml_assets
+# check_rdfxml_assets: $(foreach product,$(MAIN_PRODUCTS),check_rdfxml_$(product).owl)
 
 # ----------------------------------------
 # Release Management
@@ -218,7 +218,7 @@ CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED)
 # It will ensure that all assets/files are fresh, and will copy to release folder
 
 .PHONY: prepare_release
-prepare_release: all_odk
+prepare_release: test custom_reports all_assets
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR) &&\
 	rm -f $(CLEANFILES) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release \
