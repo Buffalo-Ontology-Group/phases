@@ -85,15 +85,6 @@ $(TMPDIR) $(REPORTDIR) $(MIRRORDIR) $(IMPORTDIR) $(COMPONENTSDIR):
 # Make sure ROBOT knows where to find plugins
 export ROBOT_PLUGINS_DIRECTORY=$(TMPDIR)/plugins
 
-# Override this rule in ohd.Makefile to install custom plugins
-.PHONY: custom_robot_plugins
-custom_robot_plugins:
-
-
-.PHONY: extra_robot_plugins
-extra_robot_plugins: 
-
-
 # Install all ROBOT plugins to the runtime plugins directory
 .PHONY: all_robot_plugins
 all_robot_plugins: $(foreach plugin,$(notdir $(wildcard /tools/robot-plugins/*.jar)),$(ROBOT_PLUGINS_DIRECTORY)/$(plugin)) \
@@ -182,10 +173,10 @@ endif
 # ----------------------------------------
 
 $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/OHD_ --base-iri $(URIBASE)/ohd --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/PHASES_ --base-iri $(URIBASE)/phases --print 5 -o $@
 
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/OHD_ --base-iri $(URIBASE)/ohd --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/PHASES_ --base-iri $(URIBASE)/phases --print 5 -o $@
 
 check_for_robot_updates:
 	echo "You are not using a custom profile, so you are getting the joy of the latest ROBOT report!"
@@ -368,7 +359,7 @@ $(ONT).json: $(ONT).owl
 SHARED_ROBOT_COMMANDS = 
 
 $(ONTOLOGYTERMS): $(SRCMERGED)
-	$(ROBOT) query -f csv -i $< --query ../sparql/ohd_terms.sparql $@
+	$(ROBOT) query -f csv -i $< --query ../sparql/phases_terms.sparql $@
 
 # ROBOT pipeline that merges imports, including components.
 ROBOT_RELEASE_IMPORT_MODE=$(ROBOT) merge --input $< 
@@ -382,7 +373,7 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural --annotate-inferred-axioms False \
 	relax \
 	reduce -r ELK \
-	remove --base-iri $(URIBASE)/OHD --axioms external --preserve-structure false --trim false \
+	remove --base-iri $(URIBASE)/PHASES --axioms external --preserve-structure false --trim false \
 	$(SHARED_ROBOT_COMMANDS) \
 	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
 		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
@@ -440,7 +431,7 @@ normalize_src: $(SRC)
 
 .PHONY: validate_idranges
 validate_idranges:
-	amm $(SCRIPTSDIR)/validate_id_ranges.sc ohd-idranges.owl
+	amm $(SCRIPTSDIR)/validate_id_ranges.sc phases-idranges.owl
 
 update_docs:
 	mkdocs gh-deploy --config-file ../../mkdocs.yaml
@@ -471,7 +462,6 @@ Usage: [IMAGE=(odklite|odkfull)] [ODK_DEBUG=yes] sh run.sh make [(IMP|MIR|IMP_LA
 Core commands:
 * prepare_release:	Run the entire release pipeline. Use make IMP=false prepare_release to avoid rerunning the imports
 * prepare_release_fast:	Run the entire release pipeline without refreshing imports, recreating components or recompiling patterns.
-* update_repo:		Update the ODK repository setup using the config file ohd-odk.yaml
 * test:			Running all validation tests
 * test_fast:		Runs the test suite, but without updating imports or components
 * clean:		Delete all temporary files
@@ -490,7 +480,7 @@ Imports management:
 
 Editor utilities:
 * validate_idranges:	Make sure your ID ranges file is formatted correctly
-* normalize_src:	Load and save your ohd-edit file after you to make sure its serialised correctly
+* normalize_src:	Load and save your phases-edit file after you to make sure its serialised correctly
 * explain_unsat:	If you have unsatisfiable classes, this command will create a markdown file (tmp/explain_unsat.md) which will explain all your unsatisfiable classes
 * validate-all-tsv:	Check all your tsv files for possible problems in syntax. Use ALL_TSV_FILES variable to list files
 * validate-tsv:		Check a tsv file for syntactic problems with tsvalid. Use TSV variable to pass filepath, e.g. make TSV=../my.tsv validate-tsv.
@@ -498,14 +488,13 @@ Editor utilities:
 
 Additional build commands (advanced users)
 * all:			Run the entire pipeline (like prepare_release), but without copying the release files to the release directory.
-* custom_reports:	Generate all custom sparql reports you have configured in your ohd-odk.yaml file.
 * all_assets:		Build all assets
 * show_assets:		Print a list of all assets that would be build by the release pipeline
 * all_mappings:		Update all SSSOM mapping sets
 
 Additional QC commands (advanced users)
 * robot_reports:	Run all configured ROBOT reports
-* validate_profile_%:	Run an OWL2 DL profile validation check, for example validate_profile_ohd-edit.owl.
+* validate_profile_%:	Run an OWL2 DL profile validation check, for example validate_profile_phases-edit.owl.
 * reason_test: Run a basic reasoning test
 
 Examples: 
