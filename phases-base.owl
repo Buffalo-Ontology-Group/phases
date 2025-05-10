@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/phases/phases-base.owl#"
+     xml:base="http://purl.obolibrary.org/obo/phases/phases-base.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/phases/phases-base.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-05-10/phases-base.owl"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <owl:versionInfo>2025-05-10</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_003000 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006014 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006014"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000033"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000000">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_003000"/>
+        <obo:IAO_0000115>A behavior change intervention that uses life histories—written, oral, or both—to improve psychological well-being. The therapy is often used with older people.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-03T21:39:49Z</terms:created>
+        <rdfs:label xml:lang="en">reminiscence therapy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A behavior change intervention that uses life histories—written, oral, or both—to improve psychological well-being. The therapy is often used with older people.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/reminiscence-therapy</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000115>A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:49:47Z</terms:created>
+        <rdfs:label xml:lang="en">solitude</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.</owl:annotatedTarget>
+        <obo:IAO_0000119>Oliveira, J., Guerra, S., Sousa, L., &amp; Ribeiro, O. (2024). Solitude in old age: a scoping review of conceptualisations, associated factors and impacts. Aging &amp; Mental Health, 29(2), 220–227. https://doi.org/10.1080/13607863.2024.2379408</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000115>A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one&apos;s life narrative.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:54:30Z</terms:created>
+        <rdfs:label xml:lang="en">gerotranscendence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one&apos;s life narrative.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10466938/</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002002">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006014"/>
+        <obo:IAO_0000115>Social alienation that, if realized, is realized in being physically alone and desiring not to be.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:16:23Z</terms:created>
+        <rdfs:label xml:lang="en">social isolation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Social alienation that, if realized, is realized in being physically alone and desiring not to be.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.nia.nih.gov/health/loneliness-and-social-isolation/loneliness-and-social-isolation-tips-staying-connected</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115>A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:58:33Z</terms:created>
+        <rdfs:label xml:lang="en">loneliness</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships.</owl:annotatedTarget>
+        <obo:IAO_0000119>Asher, S. R., Hymel, S., &amp; Renshaw, P. D. (1984). Loneliness in children. Child development, 1456-1464.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:31Z</terms:created>
+        <rdfs:label xml:lang="en">theory</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/theory</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002004"/>
+        <obo:IAO_0000115>A theory that summarizes and explains mental and behavioral patterns within the context of society and culture.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:56Z</terms:created>
+        <rdfs:label xml:lang="en">psychological theory</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A theory that summarizes and explains mental and behavioral patterns within the context of society and culture.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/psychology/psychological-theory</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
+        <obo:IAO_0000115>A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:21:13Z</terms:created>
+        <rdfs:label xml:lang="en">social convoy model</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.</owl:annotatedTarget>
+        <obo:IAO_0000119>Antonucci, T. C., Ajrouch, K. J., &amp; Birditt, K. S. (2014). The convoy model: Explaining social relations from a multidisciplinary perspective. The Gerontologist, 54(1), 82-92.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
+        <obo:IAO_0000115>A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:24:11Z</terms:created>
+        <rdfs:label xml:lang="en">ego integrity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.</owl:annotatedTarget>
+        <obo:IAO_0000119>Erikson E.H. The Life Cycle Completed. Norton; New York, NY, USA: 1982.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
+        <obo:IAO_0000115>A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:26:30Z</terms:created>
+        <rdfs:label xml:lang="en">self-transcendence theory</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.</owl:annotatedTarget>
+        <obo:IAO_0000119>Reed, P.G. (1991). Toward a nursing theory of self-transcendence: Deductive reformulation using developmental theories. Advances in Nursing Science, 13 (4), 64-77.</obo:IAO_0000119>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

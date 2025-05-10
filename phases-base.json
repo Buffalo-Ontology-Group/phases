@@ -1,0 +1,255 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/phases/phases-base.json",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/type",
+        "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2025-05-10"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-05-10/phases-base.json"
+    },
+    "nodes" : [ {
+      "id" : "http://humanbehaviourchange.org/ontology/BCIO_003000",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://humanbehaviourchange.org/ontology/BCIO_006014",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000030",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MFOEM_000006",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MF_0000033",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000000",
+      "lbl" : "reminiscence therapy",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A behavior change intervention that uses life histories—written, oral, or both—to improve psychological well-being. The therapy is often used with older people."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-03-03T21:39:49Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002000",
+      "lbl" : "solitude",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-05T17:49:47Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002001",
+      "lbl" : "gerotranscendence",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-05T17:54:30Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002002",
+      "lbl" : "social isolation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Social alienation that, if realized, is realized in being physically alone and desiring not to be."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:16:23Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002003",
+      "lbl" : "loneliness",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-05T17:58:33Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002004",
+      "lbl" : "theory",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:20:31Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002005",
+      "lbl" : "psychological theory",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A theory that summarizes and explains mental and behavioral patterns within the context of society and culture."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:20:56Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002006",
+      "lbl" : "social convoy model",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:21:13Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002007",
+      "lbl" : "ego integrity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:24:11Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002008",
+      "lbl" : "self-transcendence theory",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:26:30Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/type",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/created",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000000",
+      "pred" : "is_a",
+      "obj" : "http://humanbehaviourchange.org/ontology/BCIO_003000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002000",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002001",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002002",
+      "pred" : "is_a",
+      "obj" : "http://humanbehaviourchange.org/ontology/BCIO_006014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MFOEM_000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    } ]
+  } ]
+}
