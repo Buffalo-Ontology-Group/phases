@@ -11,6 +11,18 @@ Import(<http://purl.obolibrary.org/obo/phases/components/phases_contributors.owl
 Import(<http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
 Import(<http://purl.obolibrary.org/obo/phases/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/phases/imports/ro_import.owl>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-6906-5548>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-9189-9661>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-9625-1899>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-1118-1738>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2999-0103>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0003-2294-3571>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0009-0009-9778-4641>)
+Annotation(<http://purl.org/dc/terms/description> "Research on solitude often highlights the risks of spending time alone with a focus on negative outcomes, such as mortality and depression, and research on gerotranscendence, which focuses on a sense of psychological connectedness beyond oneself in aging, emphasizes healthy aging and positive outcomes such as enhanced psychological well-being. 
+
+PHASES provides an onotology for integrating reseach in solitude and gerotranscendence. By integrating these areas of study, of study, we aim to deepen our understanding of each and how they promote healthy aging.")
+Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/>)
+Annotation(<http://purl.org/dc/terms/title> <Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PHASES_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PHASES_0002000>))
@@ -22,6 +34,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PHASES_0002005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PHASES_0002006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PHASES_0002007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PHASES_0002008>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 
 
 ############################

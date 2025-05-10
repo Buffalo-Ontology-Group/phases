@@ -3,10 +3,40 @@
     "id" : "http://purl.obolibrary.org/obo/phases.json",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0001-6906-5548"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0001-9189-9661"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0001-9625-1899"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-1118-1738"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-2999-0103"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0003-2294-3571"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0009-0009-9778-4641"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "Research on solitude often highlights the risks of spending time alone with a focus on negative outcomes, such as mortality and depression, and research on gerotranscendence, which focuses on a sense of psychological connectedness beyond oneself in aging, emphasizes healthy aging and positive outcomes such as enhanced psychological well-being. \n\nPHASES provides an onotology for integrating reseach in solitude and gerotranscendence. By integrating these areas of study, of study, we aim to deepen our understanding of each and how they promote healthy aging."
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/publicdomain/zero/1.0/"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "http://example.com/untitled-ontology-880/Promoting%20Health%20Aging%20through%20Semantic%20Enrichment%20of%20Solitude%20Research%20(PHASES)%20Ontology"
+      }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-05-10"
+        "val" : "2025-05-09"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-05-10/phases.json"
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-05-09/phases.json"
     },
     "nodes" : [ {
       "id" : "http://addictovocab.org/ADDICTO_0000241",
@@ -48448,6 +48478,10 @@
           "val" : "http://purl.obolibrary.org/obo/omo.owl"
         } ]
       }
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
       "type" : "PROPERTY",

@@ -10,9 +10,21 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/phases/phases-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-05-10/phases-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-05-09/phases-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <owl:versionInfo>2025-05-10</owl:versionInfo>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9189-9661"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2999-0103"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-2294-3571"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0009-9778-4641"/>
+        <terms:description>Research on solitude often highlights the risks of spending time alone with a focus on negative outcomes, such as mortality and depression, and research on gerotranscendence, which focuses on a sense of psychological connectedness beyond oneself in aging, emphasizes healthy aging and positive outcomes such as enhanced psychological well-being. 
+
+PHASES provides an onotology for integrating reseach in solitude and gerotranscendence. By integrating these areas of study, of study, we aim to deepen our understanding of each and how they promote healthy aging.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:title rdf:resource="http://example.com/untitled-ontology-880/Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology"/>
+        <owl:versionInfo>2025-05-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -55,6 +67,24 @@
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
