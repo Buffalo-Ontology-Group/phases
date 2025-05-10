@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2025-05-09
+data-version: releases/2025-05-10
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
 synonymtypedef: OMO:0003002 "dubious synonym"
@@ -23,7 +23,7 @@ idspace: sdg http://purl.unep.org/sdg/
 idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: phases
-property_value: owl:versionInfo "2025-05-09" xsd:string
+property_value: owl:versionInfo "2025-05-10" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
 property_value: terms:contributor https://orcid.org/0000-0001-9189-9661
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -31,9 +31,9 @@ property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0000-0002-2999-0103
 property_value: terms:contributor https://orcid.org/0000-0003-2294-3571
 property_value: terms:contributor https://orcid.org/0009-0009-9778-4641
-property_value: terms:description "Research on solitude often highlights the risks of spending time alone with a focus on negative outcomes, such as mortality and depression, and research on gerotranscendence, which focuses on a sense of psychological connectedness beyond oneself in aging, emphasizes healthy aging and positive outcomes such as enhanced psychological well-being. \n\nPHASES provides an onotology for integrating reseach in solitude and gerotranscendence. By integrating these areas of study, of study, we aim to deepen our understanding of each and how they promote healthy aging." xsd:string
+property_value: terms:description "PHASES provides an ontology for integrating research in solitude and gerotranscendence. By integrating these areas of study, we aim to deepen our understanding of each and how they promote healthy aging." xsd:string
 property_value: terms:license https://creativecommons.org/publicdomain/zero/1.0/
-property_value: terms:title http://example.com/untitled-ontology-880/Promoting%20Health%20Aging%20through%20Semantic%20Enrichment%20of%20Solitude%20Research%20(PHASES)%20Ontology
+property_value: terms:title "Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology" xsd:string
 
 [Term]
 id: ADDICTO:0000241
