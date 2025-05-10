@@ -18,9 +18,7 @@ Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-1
 Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2999-0103>)
 Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0003-2294-3571>)
 Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0009-0009-9778-4641>)
-Annotation(<http://purl.org/dc/terms/description> "Research on solitude often highlights the risks of spending time alone with a focus on negative outcomes, such as mortality and depression, and research on gerotranscendence, which focuses on a sense of psychological connectedness beyond oneself in aging, emphasizes healthy aging and positive outcomes such as enhanced psychological well-being. 
-
-PHASES provides an onotology for integrating reseach in solitude and gerotranscendence. By integrating these areas of study, of study, we aim to deepen our understanding of each and how they promote healthy aging.")
+Annotation(<http://purl.org/dc/terms/description> "PHASES provides an ontology for integrating research in solitude and gerotranscendence. By integrating these areas of study, we aim to deepen our understanding of each and how they promote healthy aging.")
 Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(<http://purl.org/dc/terms/title> "Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology")
 
