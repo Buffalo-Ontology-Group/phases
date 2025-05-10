@@ -1,0 +1,99 @@
+format-version: 1.2
+data-version: phases/releases/2025-05-09/phases-base.owl
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: terms http://purl.org/dc/terms/ 
+ontology: phases/phases-base
+property_value: dc:type IAO:8000001
+property_value: owl:versionInfo "2025-05-09" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9189-9661
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0000-0002-2999-0103
+property_value: terms:contributor https://orcid.org/0000-0003-2294-3571
+property_value: terms:contributor https://orcid.org/0009-0009-9778-4641
+property_value: terms:description "Research on solitude often highlights the risks of spending time alone with a focus on negative outcomes, such as mortality and depression, and research on gerotranscendence, which focuses on a sense of psychological connectedness beyond oneself in aging, emphasizes healthy aging and positive outcomes such as enhanced psychological well-being. \n\nPHASES provides an onotology for integrating reseach in solitude and gerotranscendence. By integrating these areas of study, of study, we aim to deepen our understanding of each and how they promote healthy aging." xsd:string
+property_value: terms:license https://creativecommons.org/publicdomain/zero/1.0/
+property_value: terms:title http://example.com/untitled-ontology-880/Promoting%20Health%20Aging%20through%20Semantic%20Enrichment%20of%20Solitude%20Research%20(PHASES)%20Ontology
+
+[Term]
+id: PHASES:0000000
+name: reminiscence therapy
+def: "A behavior change intervention that uses life histories—written, oral, or both—to improve psychological well-being. The therapy is often used with older people." [] {IAO:0000119="https://dictionary.apa.org/reminiscence-therapy"}
+is_a: BCIO:003000
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2025-03-03T21:39:49Z" xsd:dateTime
+
+[Term]
+id: PHASES:0002000
+name: solitude
+def: "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not." [] {IAO:0000119="Oliveira, J., Guerra, S., Sousa, L., & Ribeiro, O. (2024). Solitude in old age: a scoping review of conceptualisations, associated factors and impacts. Aging & Mental Health, 29(2), 220–227. https://doi.org/10.1080/13607863.2024.2379408"}
+is_a: MF:0000033
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:created "2025-02-05T17:49:47Z" xsd:dateTime
+
+[Term]
+id: PHASES:0002001
+name: gerotranscendence
+def: "A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative." [] {IAO:0000119="https://pmc.ncbi.nlm.nih.gov/articles/PMC10466938/"}
+is_a: MF:0000033
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:created "2025-02-05T17:54:30Z" xsd:dateTime
+
+[Term]
+id: PHASES:0002002
+name: social isolation
+def: "Social alienation that, if realized, is realized in being physically alone and desiring not to be." [] {IAO:0000119="https://www.nia.nih.gov/health/loneliness-and-social-isolation/loneliness-and-social-isolation-tips-staying-connected"}
+is_a: BCIO:006014
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:created "2025-02-26T21:16:23Z" xsd:dateTime
+
+[Term]
+id: PHASES:0002003
+name: loneliness
+def: "A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships." [] {IAO:0000119="Asher, S. R., Hymel, S., & Renshaw, P. D. (1984). Loneliness in children. Child development, 1456-1464."}
+is_a: MFOEM:000006
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:created "2025-02-05T17:58:33Z" xsd:dateTime
+
+[Term]
+id: PHASES:0002004
+name: theory
+def: "An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena." [] {IAO:0000119="https://dictionary.apa.org/theory"}
+is_a: IAO:0000030
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:created "2025-02-26T21:20:31Z" xsd:dateTime
+
+[Term]
+id: PHASES:0002005
+name: psychological theory
+def: "A theory that summarizes and explains mental and behavioral patterns within the context of society and culture." [] {IAO:0000119="https://www.sciencedirect.com/topics/psychology/psychological-theory"}
+is_a: PHASES:0002004 ! theory
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:created "2025-02-26T21:20:56Z" xsd:dateTime
+
+[Term]
+id: PHASES:0002006
+name: social convoy model
+def: "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age." [] {IAO:0000119="Antonucci, T. C., Ajrouch, K. J., & Birditt, K. S. (2014). The convoy model: Explaining social relations from a multidisciplinary perspective. The Gerontologist, 54(1), 82-92."}
+is_a: PHASES:0002005 ! psychological theory
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:created "2025-02-26T21:21:13Z" xsd:dateTime
+
+[Term]
+id: PHASES:0002007
+name: ego integrity
+def: "A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults." [] {IAO:0000119="Erikson E.H. The Life Cycle Completed. Norton; New York, NY, USA: 1982."}
+is_a: PHASES:0002005 ! psychological theory
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:created "2025-02-26T21:24:11Z" xsd:dateTime
+
+[Term]
+id: PHASES:0002008
+name: self-transcendence theory
+def: "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors." [] {IAO:0000119="Reed, P.G. (1991). Toward a nursing theory of self-transcendence: Deductive reformulation using developmental theories. Advances in Nursing Science, 13 (4), 64-77."}
+is_a: PHASES:0002005 ! psychological theory
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:created "2025-02-26T21:26:30Z" xsd:dateTime
+
