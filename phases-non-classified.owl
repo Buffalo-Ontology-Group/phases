@@ -17,7 +17,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:owlready_ontology="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/phases/phases-non-classified.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-05-10/phases-non-classified.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-05-16/phases-non-classified.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9189-9661"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
@@ -28,7 +28,7 @@
         <terms:description>PHASES provides an ontology for integrating research in solitude and gerotranscendence. By integrating these areas of study, we aim to deepen our understanding of each and how they promote healthy aging.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title>Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology</terms:title>
-        <owl:versionInfo>2025-05-10</owl:versionInfo>
+        <owl:versionInfo>2025-05-16</owl:versionInfo>
     </owl:Ontology>
     
 

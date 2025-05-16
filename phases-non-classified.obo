@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: phases/releases/2025-05-10/phases-non-classified.owl
+data-version: phases/releases/2025-05-16/phases-non-classified.owl
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
 synonymtypedef: OMO:0003002 "dubious synonym"
@@ -23,7 +23,7 @@ idspace: sdg http://purl.unep.org/sdg/
 idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: phases/phases-non-classified
-property_value: owl:versionInfo "2025-05-10" xsd:string
+property_value: owl:versionInfo "2025-05-16" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
 property_value: terms:contributor https://orcid.org/0000-0001-9189-9661
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -198,7 +198,7 @@ id: BCIO:003000
 name: behaviour change intervention
 def: "An intervention that has the aim of influencing human behaviour." []
 is_a: BCIO:037000 ! intervention
-relationship: BFO:0000055 BCIO:028000 ! realises behaviour change intervention scenario plan
+relationship: BFO:0000055 BCIO:028000 ! realizes behaviour change intervention scenario plan
 relationship: BFO:0000117 BCIO:002000 ! has process part behaviour change intervention outcome behaviour
 property_value: example_of_usage "Involves use of products, services, activities, rules or environmental objects." xsd:string
 property_value: IAO:0000114 "Published" xsd:string
@@ -12974,7 +12974,7 @@ comment:  it is concerned with moving skeletal parts to which it is usually atta
 comment: Striated muscles referred to in the definition do not ordinarily involve cardiac muscles.\n\nBehaviours are usually in response to an internal or external stimuli.\n\nEvery behaviour is associated with mental processes, but not every mental process is associated with behaviour. For instance, a verbal communication behaviour will involve mental processes to produce speech. However, mental processes associated with listening can occur without a person performing a behaviour.\n\n'behaviours' can involve a series of activities (e.g., more granular behaviours).\n\n'A 'striated muscle' can defined as 'a type of contractile tissue that is marked by transverse striations
 is_a: OGMS:0000060 ! bodily process
 relationship: BCIOR:000010 BCIO:050435 ! has behavioural attribute behavioural attribute
-relationship: BFO:0000055 BCIO:036001 ! realises human life function
+relationship: BFO:0000055 BCIO:036001 ! realizes human life function
 property_value: example_of_usage "Also referred to in definitions as human behaviour or just behaviour." xsd:string
 property_value: example_of_usage "walks for 15 mins/day, never eats meat, attends school daily" xsd:string
 property_value: IAO:0000114 "Published" xsd:string
@@ -22373,7 +22373,7 @@ def: "Realises the human life function of an individual human behaviour." []
 property_value: isDefinedBy http://humanbehaviourchange.org/ontology/bcio.owl
 domain: BCIO:036000 ! individual human behaviour
 range: BFO:0000034 ! function
-is_a: BFO:0000055 ! realises
+is_a: BFO:0000055 ! realizes
 
 [Typedef]
 id: BCIOR:000012

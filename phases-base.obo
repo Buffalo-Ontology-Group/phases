@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: phases/releases/2025-05-10/phases-base.owl
+data-version: phases/releases/2025-05-16/phases-base.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: phases/phases-base
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2025-05-10" xsd:string
+property_value: owl:versionInfo "2025-05-16" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
 property_value: terms:contributor https://orcid.org/0000-0001-9189-9661
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
