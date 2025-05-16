@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2025-05-10
+data-version: releases/2025-05-16
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
 synonymtypedef: OMO:0003002 "dubious synonym"
@@ -23,7 +23,7 @@ idspace: sdg http://purl.unep.org/sdg/
 idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: phases
-property_value: owl:versionInfo "2025-05-10" xsd:string
+property_value: owl:versionInfo "2025-05-16" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
 property_value: terms:contributor https://orcid.org/0000-0001-9189-9661
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -198,7 +198,7 @@ id: BCIO:003000
 name: behaviour change intervention
 def: "An intervention that has the aim of influencing human behaviour." []
 is_a: BCIO:037000 ! intervention
-relationship: BFO:0000055 BCIO:028000 ! realises behaviour change intervention scenario plan
+relationship: BFO:0000055 BCIO:028000 ! realizes behaviour change intervention scenario plan
 relationship: BFO:0000117 BCIO:002000 ! has process part behaviour change intervention outcome behaviour
 property_value: example_of_usage "Involves use of products, services, activities, rules or environmental objects." xsd:string
 property_value: IAO:0000114 "Published" xsd:string
@@ -12984,7 +12984,7 @@ comment: Striated muscles referred to in the definition do not ordinarily involv
 is_a: BCIO:042000 ! human behaviour
 is_a: OGMS:0000060 ! bodily process
 relationship: BCIOR:000010 BCIO:050435 ! has behavioural attribute behavioural attribute
-relationship: BFO:0000055 BCIO:036001 ! realises human life function
+relationship: BFO:0000055 BCIO:036001 ! realizes human life function
 property_value: example_of_usage "Also referred to in definitions as human behaviour or just behaviour." xsd:string
 property_value: example_of_usage "walks for 15 mins/day, never eats meat, attends school daily" xsd:string
 property_value: IAO:0000114 "Published" xsd:string
@@ -22383,7 +22383,7 @@ def: "Realises the human life function of an individual human behaviour." []
 property_value: isDefinedBy http://humanbehaviourchange.org/ontology/bcio.owl
 domain: BCIO:036000 ! individual human behaviour
 range: BFO:0000034 ! function
-is_a: BFO:0000055 ! realises
+is_a: BFO:0000055 ! realizes
 
 [Typedef]
 id: BCIOR:000012

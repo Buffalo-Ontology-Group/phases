@@ -37,9 +37,9 @@
         "val" : "Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-05-10"
+        "val" : "2025-05-16"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-05-10/phases-base.json"
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-05-16/phases-base.json"
     },
     "nodes" : [ {
       "id" : "http://humanbehaviourchange.org/ontology/BCIO_003000",
