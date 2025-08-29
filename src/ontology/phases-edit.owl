@@ -90,13 +90,40 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/phases.owl/PHASES_00
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PHASES_0002010>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PHASES_0002012>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#SubsetProperty>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 Declaration(AnnotationProperty(<https://www.wikidata.org/wiki/Property:P5191>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PHASES_0002010> (GERO)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002010> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002010> "2025-08-29T15:03:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002010> "GERO"@en)
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PHASES_0002010> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PHASES_0002012> (SOLO)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002012> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002012> "2025-08-29T15:21:53Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/PHASES_0002012> "Solitude Ontology")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002012> "SOLO"@en)
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PHASES_0002012> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#SubsetProperty> (subset_property)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#SubsetProperty> "subset_property")
+
 
 
 ############################
@@ -164,54 +191,54 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000010> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000011> (social withdrawal)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0000011> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000011> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000011> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000011> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000011> "social withdrawal"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000011> "A mental disposition that, if realized, is realized in the consistent avoidance of social interactions with both familiar and unfamiliar peers due to psychological traits such as social fear or anxiety."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000011> <http://purl.obolibrary.org/obo/MF_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000012> (self-transcendence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0000012> "Gerotranscendence Ontology (GERO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000012> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000012> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000012> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000012> "self-transcendence"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000012> "A transcendence disposition that, if realized, is realized in shifting one’s focus beyond the self toward broader existential, moral, or spiritual concerns, including care for others, connection with nature, or alignment with perceived universal values."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000012> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000021> (elective solitude)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0000021> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000021> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000021> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000021> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000021> "elective solitude"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000021> "A mental disposition that, if realized, is realized in intentionally withdrawing from social interaction in order to pursue self-reflection, restoration, or personal goals."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000021> <http://purl.obolibrary.org/obo/MF_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000022> (imposed solitude)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0000022> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000022> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000022> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000022> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000022> "imposed solitude"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000022> "A state of social disconnection that is realized in being physically or socially alone due to external constraints or circumstances, and not by personal choice."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000022> <http://purl.obolibrary.org/obo/OGMS_0000060>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000023> (ambient sociability)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0000023> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000023> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000023> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000023> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000023> "ambient sociability"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000023> "A mental disposition that is realized in being physically co-located with others in a public or semi-public space without direct social engagement, while retaining the sense of social presence."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000023> <http://purl.obolibrary.org/obo/MF_0000033>)
 
-# Class: <http://purl.obolibrary.org/obo/PHASES_0000024> (healthy aging)
+# Class: <http://purl.obolibrary.org/obo/PHASES_0000024> (healthy aging process)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000024> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000024> "2025-06-14T22:20:08Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000024> "healthy aging"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000024> "healthy aging process"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000024> "A biological process that is realized in maintaining functional ability, emotional well-being, and social engagement in later life, relative to cultural and personal expectations."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000024> <http://purl.obolibrary.org/obo/GO_0008150>)
 
@@ -225,36 +252,36 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000025> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000026> (aloneliness)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0000026> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000026> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000026> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000026> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000026> "aloneliness"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000026> "A mental disposition that, if realized, is realized in experiencing discomfort or distress due to a perceived lack of desired time alone."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000026> <http://purl.obolibrary.org/obo/MF_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000027> (social detachment)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0000027> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000027> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000027> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000027> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000027> "social detachment"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000027> "A mental disposition that, if realized, is realized in reduced motivation to engage in or maintain social relationships, often without distress or social fear."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000027> <http://purl.obolibrary.org/obo/MF_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000028> (shyness)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0000028> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000028> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000028> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000028> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000028> "shyness"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000028> "A mental disposition to social anxiety that, if realized, is realized in the inhibition of behavior during potential social interaction due to fear of negative evaluation."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000028> <http://purl.obolibrary.org/obo/MF_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000029> (solitude affinity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0000029> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000029> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000029> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000029> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000029> "solitude affinity"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000029> "A mental disposition that, if realized, is realized in seeking out and enjoying time spent alone for reflection, creativity, or restoration."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000029> <http://purl.obolibrary.org/obo/MF_0000033>)
@@ -348,15 +375,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002000> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002001> (gerotranscendence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002001> "A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466938/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002001> "A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002001> <https://orcid.org/0000-0001-6906-5548>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002001> "2025-02-05T17:54:30+00:00"^^xsd:dateTime)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002001> "2025-02-05T17:54:30Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0002001> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002001> "gerotranscendence"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002001> <http://purl.obolibrary.org/obo/MF_0000033>)
 
-# Class: <http://purl.obolibrary.org/obo/PHASES_0002002> (social isolation)
+# Class: <http://purl.obolibrary.org/obo/PHASES_0002002> (social isolation behavior disposition)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002002> "Social alienation that, if realized, is realized in being physically alone and desiring not to be.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.nia.nih.gov/health/loneliness-and-social-isolation/loneliness-and-social-isolation-tips-staying-connected") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002002> "Social alienation that, if realized, is realized in being physically alone and desiring not to be.")
@@ -364,7 +390,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002002> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002002> "2025-02-26T21:16:23+00:00"^^xsd:dateTime)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002002> "2025-02-26T21:16:23Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002002> "social isolation"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002002> "social isolation behavior disposition"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/PHASES_0002002> "social isolation")
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002002> <http://humanbehaviourchange.org/ontology/BCIO_006014>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002003> (loneliness)
@@ -407,49 +434,46 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002006> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002006> "2025-02-26T21:21:13+00:00"^^xsd:dateTime)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002006> "2025-02-26T21:21:13Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0002006> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002006> "social convoy model"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002006> <http://purl.obolibrary.org/obo/PHASES_0002005>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002007> (ego integrity theory (Erikson))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002007> "A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Erikson E.H. The Life Cycle Completed. Norton; New York, NY, USA: 1982.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002007> "A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002007> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002007> <https://orcid.org/0000-0001-6906-5548>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002007> "2025-02-26T21:24:11+00:00"^^xsd:dateTime)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002007> "2025-02-26T21:24:11Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002007> "ego integrity"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0002007> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002007> "ego integrity theory (Erikson)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002007> <http://purl.obolibrary.org/obo/PHASES_0002005>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002008> (self-transcendence theory)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002008> "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Reed, P.G. (1991). Toward a nursing theory of self-transcendence: Deductive reformulation using developmental theories. Advances in Nursing Science, 13 (4), 64-77.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002008> "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002008> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002008> <https://orcid.org/0000-0001-6906-5548>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002008> "2025-02-26T21:26:30+00:00"^^xsd:dateTime)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002008> "2025-02-26T21:26:30Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0002008> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002008> "self-transcendence theory"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002008> <http://purl.obolibrary.org/obo/PHASES_0002005>)
 
 # Class: <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050> (transcendence disposition)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050> "A  mental disposition borne by agents such that, if realized, is realized in shifting in goals, values, and attachments towards connections to past and future generations and in seeking coherence in one’s life narrative."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050> "Gerotranscendence Ontology (GERO)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050> "transcendence"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050> "transcendence disposition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050> <http://purl.obolibrary.org/obo/MF_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051> (social isolation state)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051> "A process in which an individual objectively lacks social connection such that there is little or no opportunity for social interaction."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051> "social isolation"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051> "social isolation state"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
@@ -472,13 +496,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/phases.owl/PHASES_0000055> <http://hu
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000016> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000016> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000016> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000016> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000016> "Self-Transcendence Scale"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/PHASES_0000017> (Gerotranscendence Scale)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000017> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000017> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000017> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000017> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000017> "Gerotranscendence Scale"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/PHASES_0000018> (Adult Self-Transcendence Inventory)
@@ -486,6 +511,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000017> "
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000018> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000018> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000018> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000018> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000018> "Adult Self-Transcendence Inventory"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/PHASES_0000020> (Quiet Ego Scale)
@@ -493,26 +519,29 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000018> "
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000020> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000020> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000020> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000020> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000020> "Quiet Ego Scale"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/PHASES_0000034> (Narrative Identity Indicators of Self-Transcendence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000034> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000034> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000034> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000034> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000034> "Narrative Identity Indicators of Self-Transcendence"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/PHASES_0000035> (Clonginger Temperament and Character Inventory)
+# Individual: <http://purl.obolibrary.org/obo/PHASES_0000035> (Cloninger Temperament and Character Inventory)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000035> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000035> "2025-06-14T22:20:08Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000035> "Clonginger Temperament and Character Inventory"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000035> <http://purl.obolibrary.org/obo/PHASES_0002010>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000035> "Cloninger Temperament and Character Inventory"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/PHASES_0000037> (The Nondual Awareness Dimensional Assessment)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000037> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000037> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000037> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000037> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000037> "The Nondual Awareness Dimensional Assessment"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/PHASES_0000037> "NADA"@en)
 
@@ -521,6 +550,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000040> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000040> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000040> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000040> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000040> "The Non-attachment to Self Scale"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/PHASES_0000043> (Loneliness Scale)
@@ -528,6 +558,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000040> "
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000043> "Solitude Ontology (SOLO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000043> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000043> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000043> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000043> "Loneliness Scale"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/PHASES_0000044> (Social Preference Scale-Revised)
@@ -535,6 +566,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000043> "
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000044> "Solitude Ontology (SOLO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000044> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000044> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000044> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000044> "Social Preference Scale-Revised"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/PHASES_0002006> (social convoy model)
@@ -555,14 +587,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052> "The Likert scale designed to assess an individual's subjective feelings of loneliness and social isolation, as well as perceived disconnects between desired and actual social relationships.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052> "UCLA Loneliness Scale"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000053> (Positive Solitude Scale)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000053> "Solitude Ontology (SOLO)")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000053> "The Likert scale designed to assess the degree to which individuals experience solitude as a beneficial, reflecting dimensions such as emotional restoration, creativity, inner peace, and personal growth in the absence of social interaction.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000053> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000053> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000053> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000053> "Positive Solitude Scale"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000054> (reminiscence therapy)
@@ -571,6 +604,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000054> "The behaviour change intervention that uses life histories to improve well-being")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000054> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000054> "2025-06-14T22:20:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000054> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000054> "reminiscence therapy"@en)
 
 
