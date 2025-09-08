@@ -8,7 +8,83 @@ To make changes to the OHD, edit `phases-edit.owl`. **DO NOT** edit the `phases.
 
 ## Releasing PHASES
 
-**TO DO**
+### Steps for Creating a Release
+
+1. Create a New Branch for the Release
+
+   Use the current date or a descriptive tag as the branch name:
+
+     ```bash
+      git checkout -b release-YYYY-MM-DD
+      ```
+2. Run the Release Preparation Command
+
+   Execute the following from the src/ontology:
+
+      ```bash
+      make prepare-release
+      ```
+
+   This command:
+      - Runs validation and quality checks.
+      - Generates the release products, including:
+      - `phases.owl`
+      - `phases.obo`
+      - `phases.json`
+      - `phases-base.owl`, etc.
+      - Updates the version IRIs and metadata.
+
+3. Review and Commit the Generated Files
+
+   Run a Hermit reasoner (if possible) locally to check-in on phases.owl
+
+   Inspect the release files. Changes may be minimal (typically just version updates if no content was added).
+
+   Then commit the release:
+
+   ```copy these files to the root
+   git commit -m "Prepare release for YYYY-MM-DD"
+   ```
+
+4. Push the Release Branch
+
+   ```bash
+   git push origin release-YYYY-MM-DD
+   ```
+
+5. Create a Pull Request
+
+   - Go to GitHub and open a pull request from the release branch into `main`.
+   - Use a title like:  `Release: YYYY-MM-DD`.
+   - Wait for automated checks (if configured).
+   - Merge the PR once checks pass.
+
+6. Draft the GitHub Release
+
+   After merging to `main`:
+
+   - Go to the **Releases** tab in the GitHub UI.
+   - Click **“Draft a new release.”**
+   - Set the **tag** name:
+      ```text
+      v2025-05-16
+      ```
+   - Set the **release title**:
+      ```text
+      Release: 2025-05-16
+      ```
+   - Add **release notes**.
+   - Mark it as the **latest release**.
+   - Click **Publish Release**.
+
+
+### Notes on Release Artifacts
+
+The `make prepare-release` command generates several formats:
+
+- `.obo`, `.owl`, `.json`: Standard ontology formats.
+- `*-base` versions: Contain only locally defined classes (no imports).
+- These are the canonical files used by portals like OLS or OntoBee.
 
 ## Contributing to the Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology
 
