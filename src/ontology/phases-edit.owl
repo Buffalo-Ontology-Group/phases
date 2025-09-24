@@ -308,9 +308,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000032> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000036> (self-identity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000036> "
-      Psychological identity consisting of an individual's sense of self defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles.
-    "@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000036> "Psychological identity consisting of an individual's sense of self defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000036> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000036> "2025-06-14T22:20:08Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000036> "self-identity"@en)
@@ -320,9 +318,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000036> <http://addictovocab.
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000038> (narrative identity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000038> "
-      Self-identity consisting of the internalized, evolving, story of oneself that individuals construct to make sense and meaning out of life.
-    "@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000038> "Self-identity consisting of the internalized, evolving, story of oneself that individuals construct to make sense and meaning out of life."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000038> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000038> "2025-06-14T22:20:08Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000038> "narrative identity"@en)
@@ -363,7 +359,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000046> <http://purl.obolibra
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002000> "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Oliveira, J., Guerra, S., Sousa, L., & Ribeiro, O. (2024). Solitude in old age: a scoping review of conceptualisations, associated factors and impacts. Aging & Mental Health, 29(2), 220–227. https://doi.org/10.1080/13607863.2024.2379408") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002000> "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002000> "A mental disposition that, if realized, is realized in being physically alone or in the absence of social interactions, whether desired or not.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0002000> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002000> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002000> "2025-02-05T17:49:47+00:00"^^xsd:dateTime)
