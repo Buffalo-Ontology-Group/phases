@@ -147,6 +147,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000005> "2025-06-14T22:20:08Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000005> "cognitive appraisal representational pattern quality"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000005> "Cognitive representation which consists of an evaluation of the relevance of some entity to another entity.")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/PHASES_0000005> "appraisal quality")
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000005> <http://purl.obolibrary.org/obo/PHASES_0000031>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000006> (self-appraisal representational pattern quality)
@@ -173,11 +174,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000008> "
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/PHASES_0000008> "construct"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000008> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <http://purl.obolibrary.org/obo/PHASES_0000009> (psychoanalytic identity construct)
+# Class: <http://purl.obolibrary.org/obo/PHASES_0000009> (psychoanalytic psychological identity construct)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000009> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000009> "2025-06-14T22:20:08Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000009> "psychoanalytic identity construct"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000009> "psychoanalytic psychological identity construct"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000009> "A construct in which it is hypothesized that human consciousness consists of the id, ego, and superego."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000009> <http://purl.obolibrary.org/obo/PHASES_0000008>)
 
@@ -268,13 +269,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000027> "
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000027> "A mental disposition that, if realized, is realized in reduced motivation to engage in or maintain social relationships, often without distress or social fear."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000027> <http://purl.obolibrary.org/obo/MF_0000033>)
 
-# Class: <http://purl.obolibrary.org/obo/PHASES_0000028> (shyness)
+# Class: <http://purl.obolibrary.org/obo/PHASES_0000028> (shyness behavior disposition)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000028> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000028> "2025-06-14T22:20:08Z")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000028> <http://purl.obolibrary.org/obo/PHASES_0002012>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000028> "shyness"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000028> "shyness behavior disposition"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000028> "A mental disposition to social anxiety that, if realized, is realized in the inhibition of behavior during potential social interaction due to fear of negative evaluation."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/PHASES_0000028> "shyness")
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000028> <http://purl.obolibrary.org/obo/MF_0000033>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000029> (solitude affinity)
