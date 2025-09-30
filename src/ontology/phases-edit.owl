@@ -166,12 +166,12 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000007> "
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000007> "Self-appraisal consisting of an evaluation of the agent's capability to achieve objectives or satisfy desires."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000007> <http://purl.obolibrary.org/obo/PHASES_0000006>)
 
-# Class: <http://purl.obolibrary.org/obo/PHASES_0000008> (construct information content entity)
+# Class: <http://purl.obolibrary.org/obo/PHASES_0000008> (psychological construct information content entity)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000008> <https://orcid.org/0000-0002-1118-1738>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000008> "2025-06-14T22:20:08Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000008> "construct information content entity"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.obolibrary.org/obo/PHASES_0000008> "construct"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000008> "psychological construct information content entity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/PHASES_0000008> "construct"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000008> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000009> (psychoanalytic psychological identity construct)
@@ -359,7 +359,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000046> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002000> (solitude)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002000> "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Oliveira, J., Guerra, S., Sousa, L., & Ribeiro, O. (2024). Solitude in old age: a scoping review of conceptualisations, associated factors and impacts. Aging & Mental Health, 29(2), 220–227. https://doi.org/10.1080/13607863.2024.2379408") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002000> "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PHASES_0002000> "Solitude Ontology (SOLO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002000> <https://orcid.org/0000-0001-6906-5548>)
@@ -404,7 +403,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002003> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002004> (theory information content entity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002004> "An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/theory") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002004> "An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002004> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002004> "2025-02-26T21:20:31+00:00"^^xsd:dateTime)
@@ -415,19 +413,18 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002004> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002005> (psychological theory)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002005> "A theory that summarizes and explains mental and behavioral patterns within the context of society and culture.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://www.sciencedirect.com/topics/psychology/psychological-theory") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002005> "A theory that summarizes and explains mental and behavioral patterns within the context of society and culture.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002005> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002005> "2025-02-26T21:20:56+00:00"^^xsd:dateTime)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002005> "2025-02-26T21:20:56Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0002005> <http://purl.obolibrary.org/obo/PHASES_0002010>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0002005> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002005> "psychological theory"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002005> <http://purl.obolibrary.org/obo/PHASES_0002004>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002006> (social convoy model)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002006> "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Antonucci, T. C., Ajrouch, K. J., & Birditt, K. S. (2014). The convoy model: Explaining social relations from a multidisciplinary perspective. The Gerontologist, 54(1), 82-92.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002006> "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002006> "Solitude Ontology (SOLO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002006> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002006> "2025-02-26T21:21:13+00:00"^^xsd:dateTime)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002006> "2025-02-26T21:21:13Z"^^xsd:dateTime)
@@ -447,7 +444,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0002007> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/PHASES_0002008> (self-transcendence theory)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Reed, P.G. (1991). Toward a nursing theory of self-transcendence: Deductive reformulation using developmental theories. Advances in Nursing Science, 13 (4), 64-77.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002008> "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0002008> "Gerotranscendence Ontology (GERO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002008> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002008> "2025-02-26T21:26:30Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0002008> <http://purl.obolibrary.org/obo/PHASES_0002010>)
