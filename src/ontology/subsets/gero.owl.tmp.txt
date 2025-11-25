@@ -1,0 +1,15 @@
+http://purl.obolibrary.org/obo/PHASES_0002007
+http://purl.obolibrary.org/obo/phases.owl/PHASES_0000054
+http://purl.obolibrary.org/obo/PHASES_0000035
+http://purl.obolibrary.org/obo/PHASES_0002005
+http://purl.obolibrary.org/obo/PHASES_0002008
+http://purl.obolibrary.org/obo/PHASES_0000012
+http://purl.obolibrary.org/obo/PHASES_0000040
+http://purl.obolibrary.org/obo/PHASES_0000020
+http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050
+http://purl.obolibrary.org/obo/PHASES_0002001
+http://purl.obolibrary.org/obo/PHASES_0000018
+http://purl.obolibrary.org/obo/PHASES_0000037
+http://purl.obolibrary.org/obo/PHASES_0000034
+http://purl.obolibrary.org/obo/PHASES_0000017
+http://purl.obolibrary.org/obo/PHASES_0000016
