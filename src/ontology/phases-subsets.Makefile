@@ -32,15 +32,15 @@ $(SUBSETDIR)/gero.owl: $(ONT).owl $(SPARQLDIR)/subset-terms-gero.rq $(SUBSETDIR)
 	$(ROBOT) extract --method BOT \
 			--input $< \
 			--term-file $@.tmp.txt \
-		annotate \
-			--ontology-iri $(URIBASE)/$(ONT)/$(notdir $@) \
-			--version-iri $(URIBASE)/$(ONT)/$(VERSION)/$(notdir $@) \
-			--annotation owl:versionInfo $(VERSION) \
 		--output $@.tmp.owl &&\
 	$(ROBOT) merge \
 			--include-annotations true \
 			--input $(word 3, $^) \
 			--input  $@.tmp.owl \
+		annotate \
+			--ontology-iri $(URIBASE)/$(ONT)/$(notdir $@) \
+			--version-iri $(URIBASE)/$(ONT)/releases/$(VERSION)/$(notdir $@) \
+			--annotation owl:versionInfo $(VERSION) \
 		--output $@ &&\
 	rm $@.tmp.owl
 .PRECIOUS: $(SUBSETDIR)/gero.owl
@@ -54,15 +54,15 @@ $(SUBSETDIR)/solo.owl: $(ONT).owl $(SPARQLDIR)/subset-terms-solo.rq $(SUBSETDIR)
 	$(ROBOT) extract --method BOT \
 			--input $< \
 			--term-file $@.tmp.txt \
-		annotate \
-			--ontology-iri $(URIBASE)/$(ONT)/$(notdir $@) \
-			--version-iri $(URIBASE)/$(ONT)/$(VERSION)/$(notdir $@) \
-			--annotation owl:versionInfo $(VERSION) \
 		--output $@.tmp.owl &&\
 	$(ROBOT) merge \
 			--include-annotations true \
 			--input $(word 3, $^) \
 			--input  $@.tmp.owl \
+		annotate \
+			--ontology-iri $(URIBASE)/$(ONT)/$(notdir $@) \
+			--version-iri $(URIBASE)/$(ONT)/releases/$(VERSION)/$(notdir $@) \
+			--annotation owl:versionInfo $(VERSION) \
 		--output $@ &&\
 	rm $@.tmp.owl
 .PRECIOUS: $(SUBSETDIR)/solo.owl

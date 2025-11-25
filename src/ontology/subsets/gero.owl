@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/gero.owl#"
-     xml:base="http://purl.obolibrary.org/obo/gero.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/phases/gero.owl#"
+     xml:base="http://purl.obolibrary.org/obo/phases/gero.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,8 +13,8 @@
      xmlns:schema="https://schema.org/"
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gero.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gero.owl/1.0.0"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/phases/gero.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-11-25/gero.owl"/>
         <terms:contributor rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000000"/>
         <terms:contributor rdf:resource="http://purl.obolibrary.org/obo/PHASES_0001000"/>
         <terms:contributor rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002000"/>
