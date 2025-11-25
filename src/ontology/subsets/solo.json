@@ -1,21 +1,48 @@
 {
   "graphs" : [ {
-    "id" : "http://purl.obolibrary.org/obo/solo.owl",
+    "id" : "http://purl.obolibrary.org/obo/phases/solo.owl",
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://purl.org/dc/terms/contributor",
-        "val" : "http://purl.obolibrary.org/obo/PHASES_0000000"
+        "val" : "https://orcid.org/0000-0001-6906-5548"
       }, {
         "pred" : "http://purl.org/dc/terms/contributor",
-        "val" : "http://purl.obolibrary.org/obo/PHASES_0001000"
+        "val" : "https://orcid.org/0000-0001-7055-9158"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0001-9189-9661"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0001-9625-1899"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-1118-1738"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-2999-0103"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-6538-0265"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0003-2294-3571"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0009-0009-9778-4641"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "The Solitude Ontology contains terms for defining and classifying concepts related to solitude, including its dimensions, experiences, and outcomes. Its concepts and relationships support the development of tools and resources that enhance understanding of solitude. The Solitude Ontology is developed as a subset of (http://purl.obolibrary.org/obo/phases.owl). Issues and term requests can be submitted at (https://github.com/Buffalo-Ontology-Group/phases/issues)."
       }, {
         "pred" : "http://purl.org/dc/terms/license",
         "val" : "https://creativecommons.org/publicdomain/zero/1.0/"
       }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "Solitude Ontology"
+      }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
         "val" : "2025-11-25"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/solo.owl/1.0.0"
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-11-25/solo.owl"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -853,19 +880,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/PHASES_0000000",
-      "lbl" : "Bill Duncan",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0001-9625-1899"
-        }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-11-23T22:27:57Z"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0000043",
       "lbl" : "Loneliness Scale",
       "type" : "INDIVIDUAL",
@@ -897,32 +911,6 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PHASES_0001000",
-      "lbl" : "John Beverley",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-1118-1738"
-        }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-11-23T22:29:07Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PHASES_0002000",
-      "lbl" : "Damayanthi Jesudas",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0001-6906-5548"
-        }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-11-23T22:29:57Z"
         } ]
       }
     }, {
@@ -960,58 +948,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/PHASES_0003000",
-      "lbl" : "Oliver He",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0001-9189-9661"
-        }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-11-23T22:30:51Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PHASES_0004000",
-      "lbl" : "Jie Zheng",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0002-2999-0103"
-        }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-11-23T22:31:51Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PHASES_0005000",
-      "lbl" : "Sam Smith",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0009-0009-9778-4641"
-        }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-11-23T22:34:43Z"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PHASES_0006000",
-      "lbl" : "Leo Yeh",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/contributor",
-          "val" : "https://orcid.org/0000-0003-2294-3571"
-        }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-11-23T22:35:40Z"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052",
       "lbl" : "UCLA Loneliness Scale",
       "type" : "INDIVIDUAL",
@@ -1045,6 +981,51 @@
           "val" : "2025-06-14T22:20:08Z"
         } ]
       }
+    }, {
+      "id" : "https://orcid.org/0000-0001-6906-5548",
+      "lbl" : "Damayanthi Jesudas",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0001-7055-9158",
+      "lbl" : "Julie C. Bowker",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-11-25T19:52:16Z"
+        } ]
+      }
+    }, {
+      "id" : "https://orcid.org/0000-0001-9189-9661",
+      "lbl" : "Oliver He",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0001-9625-1899",
+      "lbl" : "Bill Duncan",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0002-1118-1738",
+      "lbl" : "John Beverley",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0002-2999-0103",
+      "lbl" : "Jie Zheng",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0002-6538-0265",
+      "lbl" : "Hollen N. Reischer",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0003-2294-3571",
+      "lbl" : "Leo Yeh",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0009-0009-9778-4641",
+      "lbl" : "Sam Smith",
+      "type" : "INDIVIDUAL"
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000179",
       "type" : "PROPERTY",

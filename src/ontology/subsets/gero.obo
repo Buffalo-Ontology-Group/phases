@@ -1,22 +1,25 @@
 format-version: 1.2
-data-version: gero.owl/1.0.0
+data-version: phases/releases/2025-11-25/gero.owl
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: Property https://www.wikidata.org/wiki/Property: 
 idspace: schema https://schema.org/ 
 idspace: sdg http://purl.unep.org/sdg/ 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
-ontology: gero
+ontology: phases/gero
 property_value: owl:versionInfo "2025-11-25" xsd:string
-property_value: terms:contributor PHASES:0000000
-property_value: terms:contributor PHASES:0001000
-property_value: terms:contributor PHASES:0002000
-property_value: terms:contributor PHASES:0003000
-property_value: terms:contributor PHASES:0004000
-property_value: terms:contributor PHASES:0005000
-property_value: terms:contributor PHASES:0006000
+property_value: terms:contributor http://www.semanticweb.org/dbeera/ontologies/2025/10/untitled-ontology-76/0000-0001-7055-9158
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9189-9661
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0000-0002-2999-0103
+property_value: terms:contributor https://orcid.org/0000-0002-6538-0265
+property_value: terms:contributor https://orcid.org/0000-0003-2294-3571
+property_value: terms:contributor https://orcid.org/0009-0009-9778-4641
 property_value: terms:description "The Gerotranscendence Ontology contains terms for defining and classifying concepts related to gerotranscendence, including its dimensions, experiences, and outcomes. Its concepts and relations support the development of tools and resources to better understand gerotranscendence and enable integration and interoperability of data across studies.\n\nThe Gerotranscendence Ontology is developed as a subset of (http://purl.obolibrary.org/obo/phases.owl). Issues and term requests can be submitted at (https://github.com/Buffalo-Ontology-Group/phases/issues)" xsd:string
 property_value: terms:license "https://creativecommons.org/publicdomain/zero/1.0/" xsd:string
+property_value: terms:title "Gerotranscendence Ontology" xsd:string
 
 [Term]
 id: BFO:0000001

@@ -8,25 +8,30 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/gero.owl>
 <http://purl.obolibrary.org/obo/gero.owl/1.0.0>
-Annotation(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000000>)
-Annotation(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0001000>)
-Annotation(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002000>)
-Annotation(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0003000>)
-Annotation(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0004000>)
-Annotation(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0005000>)
-Annotation(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0006000>)
+Annotation(<http://purl.org/dc/terms/contributor> <http://www.semanticweb.org/dbeera/ontologies/2025/10/untitled-ontology-76/0000-0001-7055-9158>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-6906-5548>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-9189-9661>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-9625-1899>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-1118-1738>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2999-0103>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-6538-0265>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0003-2294-3571>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0009-0009-9778-4641>)
 Annotation(<http://purl.org/dc/terms/description> "The Gerotranscendence Ontology contains terms for defining and classifying concepts related to gerotranscendence, including its dimensions, experiences, and outcomes. Its concepts and relations support the development of tools and resources to better understand gerotranscendence and enable integration and interoperability of data across studies.
 
 The Gerotranscendence Ontology is developed as a subset of (http://purl.obolibrary.org/obo/phases.owl). Issues and term requests can be submitted at (https://github.com/Buffalo-Ontology-Group/phases/issues)")
 Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/publicdomain/zero/1.0/")
+Annotation(<http://purl.org/dc/terms/title> "Gerotranscendence Ontology")
 
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0000000>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0001000>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0002000>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0003000>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0004000>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0005000>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0006000>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dbeera/ontologies/2025/10/untitled-ontology-76/0000-0001-7055-9158>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-6906-5548>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9189-9661>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-1118-1738>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-2999-0103>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-6538-0265>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0003-2294-3571>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0009-9778-4641>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
@@ -38,47 +43,41 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 #   Named Individuals
 ############################
 
-# Individual: <http://purl.obolibrary.org/obo/PHASES_0000000> (Bill Duncan)
+# Individual: <http://www.semanticweb.org/dbeera/ontologies/2025/10/untitled-ontology-76/0000-0001-7055-9158> (Julie C. Bowker)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000000> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0000000> "2025-11-23T22:27:57Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000000> "Bill Duncan"@en)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dbeera/ontologies/2025/10/untitled-ontology-76/0000-0001-7055-9158> "Julie C. Bowker"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/PHASES_0001000> (John Beverley)
+# Individual: <https://orcid.org/0000-0001-6906-5548> (Damayanthi Jesudas)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0001000> <https://orcid.org/0000-0002-1118-1738>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0001000> "2025-11-23T22:29:07Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0001000> "John Beverley"@en)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6906-5548> "Damayanthi Jesudas"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/PHASES_0002000> (Damayanthi Jesudas)
+# Individual: <https://orcid.org/0000-0001-9189-9661> (Oliver He)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0002000> <https://orcid.org/0000-0001-6906-5548>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0002000> "2025-11-23T22:29:57Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0002000> "Damayanthi Jesudas"@en)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9189-9661> "Oliver He"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/PHASES_0003000> (Oliver He)
+# Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0003000> <https://orcid.org/0000-0001-9189-9661>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0003000> "2025-11-23T22:30:51Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0003000> "Oliver He"@en)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9625-1899> "Bill Duncan"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/PHASES_0004000> (Jie Zheng)
+# Individual: <https://orcid.org/0000-0002-1118-1738> (John Beverley)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0004000> <https://orcid.org/0000-0002-2999-0103>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0004000> "2025-11-23T22:31:51Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0004000> "Jie Zheng"@en)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1118-1738> "John Beverley"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/PHASES_0005000> (Sam Smith)
+# Individual: <https://orcid.org/0000-0002-2999-0103> (Jie Zheng)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0005000> <https://orcid.org/0009-0009-9778-4641>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0005000> "2025-11-23T22:34:43Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0005000> "Sam Smith"@en)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-2999-0103> "Jie Zheng"@en)
 
-# Individual: <http://purl.obolibrary.org/obo/PHASES_0006000> (Leo Yeh)
+# Individual: <https://orcid.org/0000-0002-6538-0265> (Hollen N. Reischer)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0006000> <https://orcid.org/0000-0003-2294-3571>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/PHASES_0006000> "2025-11-23T22:35:40Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0006000> "Leo Yeh"@en)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-6538-0265> "Hollen N. Reischer"@en)
+
+# Individual: <https://orcid.org/0000-0003-2294-3571> (Leo Yeh)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-2294-3571> "Leo Yeh"@en)
+
+# Individual: <https://orcid.org/0009-0009-9778-4641> (Sam Smith)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0009-9778-4641> "Sam Smith"@en)
 
 
 )

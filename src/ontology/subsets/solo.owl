@@ -15,9 +15,18 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/phases/solo.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-11-25/solo.owl"/>
-        <terms:contributor rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000000"/>
-        <terms:contributor rdf:resource="http://purl.obolibrary.org/obo/PHASES_0001000"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-7055-9158"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9189-9661"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2999-0103"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-6538-0265"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-2294-3571"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0009-9778-4641"/>
+        <terms:description>The Solitude Ontology contains terms for defining and classifying concepts related to solitude, including its dimensions, experiences, and outcomes. Its concepts and relationships support the development of tools and resources that enhance understanding of solitude. The Solitude Ontology is developed as a subset of (http://purl.obolibrary.org/obo/phases.owl). Issues and term requests can be submitted at (https://github.com/Buffalo-Ontology-Group/phases/issues).</terms:description>
         <terms:license>https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
+        <terms:title>Solitude Ontology</terms:title>
         <owl:versionInfo>2025-11-25</owl:versionInfo>
     </owl:Ontology>
     
@@ -931,16 +940,6 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PHASES_0000000 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000000">
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-23T22:27:57Z</terms:created>
-        <rdfs:label xml:lang="en">Bill Duncan</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PHASES_0000043 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000043">
@@ -961,26 +960,6 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">Social Preference Scale-Revised</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PHASES_0001000 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0001000">
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-23T22:29:07Z</terms:created>
-        <rdfs:label xml:lang="en">John Beverley</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PHASES_0002000 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0002000">
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-23T22:29:57Z</terms:created>
-        <rdfs:label xml:lang="en">Damayanthi Jesudas</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1031,46 +1010,6 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PHASES_0003000 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0003000">
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9189-9661"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-23T22:30:51Z</terms:created>
-        <rdfs:label xml:lang="en">Oliver He</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PHASES_0004000 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0004000">
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-2999-0103"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-23T22:31:51Z</terms:created>
-        <rdfs:label xml:lang="en">Jie Zheng</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PHASES_0005000 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0005000">
-        <terms:contributor rdf:resource="https://orcid.org/0009-0009-9778-4641"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-23T22:34:43Z</terms:created>
-        <rdfs:label xml:lang="en">Sam Smith</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PHASES_0006000 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0006000">
-        <terms:contributor rdf:resource="https://orcid.org/0000-0003-2294-3571"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-23T22:35:40Z</terms:created>
-        <rdfs:label xml:lang="en">Leo Yeh</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052">
@@ -1092,6 +1031,80 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">Positive Solitude Scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0001-6906-5548 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-6906-5548">
+        <rdfs:label xml:lang="en">Damayanthi Jesudas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0001-7055-9158 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-7055-9158">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-25T19:52:16Z</terms:created>
+        <rdfs:label xml:lang="en">Julie C. Bowker</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0001-9189-9661 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-9189-9661">
+        <rdfs:label xml:lang="en">Oliver He</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0001-9625-1899 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-9625-1899">
+        <rdfs:label xml:lang="en">Bill Duncan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0002-1118-1738 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-1118-1738">
+        <rdfs:label xml:lang="en">John Beverley</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0002-2999-0103 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-2999-0103">
+        <rdfs:label xml:lang="en">Jie Zheng</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0002-6538-0265 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-6538-0265">
+        <rdfs:label xml:lang="en">Hollen N. Reischer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0003-2294-3571 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0003-2294-3571">
+        <rdfs:label xml:lang="en">Leo Yeh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0009-0009-9778-4641 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0009-0009-9778-4641">
+        <rdfs:label xml:lang="en">Sam Smith</rdfs:label>
     </owl:NamedIndividual>
     
 
