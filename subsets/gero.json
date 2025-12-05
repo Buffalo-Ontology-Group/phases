@@ -1,0 +1,1056 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/phases/gero.owl",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "http://www.semanticweb.org/dbeera/ontologies/2025/10/untitled-ontology-76/0000-0001-7055-9158"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0001-6906-5548"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0001-9189-9661"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0001-9625-1899"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-1118-1738"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-2999-0103"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0002-6538-0265"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0000-0003-2294-3571"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0009-0009-9778-4641"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "The Gerotranscendence Ontology contains terms for defining and classifying concepts related to gerotranscendence, including its dimensions, experiences, and outcomes. Its concepts and relations support the development of tools and resources to better understand gerotranscendence and enable integration and interoperability of data across studies.\n\nThe Gerotranscendence Ontology is developed as a subset of (http://purl.obolibrary.org/obo/phases.owl). Issues and term requests can be submitted at (https://github.com/Buffalo-Ontology-Group/phases/issues)"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/publicdomain/zero/1.0/"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "Gerotranscendence Ontology"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2025-12-05"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-12-05/gero.owl"
+    },
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
+      "lbl" : "entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An entity is anything that exists or has existed or will exist."
+        },
+        "xrefs" : [ {
+          "val" : "https://www.wikidata.org/wiki/Q35120"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
+          "val" : "entity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
+          "val" : "Entity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "entity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Julius Caesar"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Verdi’s Requiem"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the Second World War"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "your body mass index"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/dron.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/envo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ico.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/oae.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obib.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ogms.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/omrse.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        }, {
+          "pred" : "https://schema.org/alternateName",
+          "val" : "entities"
+        }, {
+          "pred" : "https://www.wikidata.org/wiki/Property:P5191",
+          "val" : "entitātem"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000002",
+      "lbl" : "continuant",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
+          "val" : "continuant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
+          "val" : "Continuant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "continuant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster's other portions of reality, questions are raised as to whether universals are continuants"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/dron.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/envo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/oae.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obib.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ogms.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/omrse.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/pato.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ro.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
+          "val" : "if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
+          "val" : "if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
+          "val" : "if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] "
+        }, {
+          "pred" : "http://purl.unep.org/sdg/SDGIO_00010069",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000016",
+      "lbl" : "disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
+          "val" : "disposition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
+          "val" : "Disposition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "an atom of element X has the disposition to decay to an atom of element Y"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "certain people have a predisposition to colon cancer"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "children are innately disposed to categorize objects in certain ways."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the cell wall is disposed to filter chemicals in endocytosis and exocytosis"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
+          "val" : "If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] "
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000017",
+      "lbl" : "realizable entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
+          "val" : "realizable"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
+          "val" : "RealizableEntity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the disposition of this piece of metal to conduct electricity."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the disposition of your blood to coagulate"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the function of your reproductive organs"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the role of being a doctor"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the role of this boundary to delineate where Utah and Colorado meet"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/dron.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/envo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obib.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ogms.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/omrse.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
+          "val" : "All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] "
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000020",
+      "lbl" : "specifically dependent continuant",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "b is a specifically dependent continuant = Def. b is a continuant and there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"
+        },
+        "comments" : [ "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
+          "val" : "sdc"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
+          "val" : "SpecificallyDependentContinuant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "specifically dependent continuant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "of one-sided specifically dependent continuants: the mass of this tomato"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the disposition of this fish to decay"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the function of this heart: to pump blood"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the mutual dependence of proton donors and acceptors in chemical reactions [79"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the pink color of a medium rare piece of grilled filet mignon at its center"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the role of being a doctor"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the shape of this hole."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the smell of this portion of mozzarella"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "External"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/dron.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/envo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/oae.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obib.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ogms.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/omrse.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/pato.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ro.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] "
+        }, {
+          "pred" : "http://purl.unep.org/sdg/SDGIO_00010069",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://github.com/OBOFoundry/COB/issues/65"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://github.com/oborel/obo-relations/pull/284"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000031",
+      "lbl" : "generically dependent continuant",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
+          "val" : "gdc"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
+          "val" : "GenericallyDependentContinuant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] "
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000030",
+      "lbl" : "information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A generically dependent continuant that is about some thing."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "information content entity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Examples of information content entites include journal articles, data, graphical layouts, and graphs."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2014-03-10: The use of \"thing\" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ)."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).\n\nPrevious. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Chris Stoeckert"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "OBI_0000142"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MF_0000032",
+      "lbl" : "bodily disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A disposition that inheres in some extended organism."
+        },
+        "comments" : [ "Bodily disposition includes features that can be used in a specific context, such as a person's strength, but not a person's weight. A person has a specific weight independent of the circumstances they are in.", "Extended organism refers to an organism and its microbiome (e.g., the bacteria that live in one's digestive system)\n\nBodily disposition would include features, such as a person's strength (which can be used in a specific context), but not weight. A person would have a certain weight independent of most circumstances they are in.", "Extended organism refers to an organism and its microbiome (e.g., the bacteria that live in one's digestive system)." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "External"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "personal disposition"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MF_0000033",
+      "lbl" : "mental disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental disposition is a bodily disposition that is realized in a mental process. "
+        },
+        "comments" : [ "'Mental disposition' is a subclass of 'bodily disposition', as mental dispositions occur in the body.", "Mental disposition' is a subclass of 'bodily disposition', as mental dispositions occur in the body." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "External"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000012",
+      "lbl" : "self-transcendence",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A transcendence disposition that, if realized, is realized in shifting one’s focus beyond the self toward broader existential, moral, or spiritual concerns, including care for others, connection with nature, or alignment with perceived universal values."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002001",
+      "lbl" : "gerotranscendence",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-05T17:54:30Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002004",
+      "lbl" : "theory information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:20:31+00:00"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:20:31Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002005",
+      "lbl" : "psychological theory",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A theory that summarizes and explains mental and behavioral patterns within the context of society and culture."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:20:56+00:00"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:20:56Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002007",
+      "lbl" : "ego integrity theory (Erikson)",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:24:11Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002008",
+      "lbl" : "self-transcendence theory",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:26:30Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050",
+      "lbl" : "transcendence disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A  mental disposition borne by agents such that, if realized, is realized in shifting in goals, values, and attachments towards connections to past and future generations and in seeking coherence in one’s life narrative."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "transcendence"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000016",
+      "lbl" : "Self-Transcendence Scale",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000017",
+      "lbl" : "Gerotranscendence Scale",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000018",
+      "lbl" : "Adult Self-Transcendence Inventory",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000020",
+      "lbl" : "Quiet Ego Scale",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000034",
+      "lbl" : "Narrative Identity Indicators of Self-Transcendence",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000035",
+      "lbl" : "Cloninger Temperament and Character Inventory",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000037",
+      "lbl" : "The Nondual Awareness Dimensional Assessment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "NADA"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000040",
+      "lbl" : "The Non-attachment to Self Scale",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002006",
+      "lbl" : "social convoy model",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:21:13+00:00"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:21:13Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/phases.owl/PHASES_0000054",
+      "lbl" : "reminiscence therapy",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The behaviour change intervention that uses life histories to improve well-being"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://www.semanticweb.org/dbeera/ontologies/2025/10/untitled-ontology-76/0000-0001-7055-9158",
+      "lbl" : "Julie C. Bowker",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0001-6906-5548",
+      "lbl" : "Damayanthi Jesudas",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0001-9189-9661",
+      "lbl" : "Oliver He",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0001-9625-1899",
+      "lbl" : "Bill Duncan",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0002-1118-1738",
+      "lbl" : "John Beverley",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0002-2999-0103",
+      "lbl" : "Jie Zheng",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0002-6538-0265",
+      "lbl" : "Hollen N. Reischer",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0003-2294-3571",
+      "lbl" : "Leo Yeh",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0009-0009-9778-4641",
+      "lbl" : "Sam Smith",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000179",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000180",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000114",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000116",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000412",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000600",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000601",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000602",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0010000",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/created",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.unep.org/sdg/SDGIO_00010069",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://schema.org/alternateName",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://www.wikidata.org/wiki/Property:P5191",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000002",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000016",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000017"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000017",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000020",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000002"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000002"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MF_0000032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MF_0000033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002001",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002006",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002007",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002008",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    } ]
+  } ]
+}
