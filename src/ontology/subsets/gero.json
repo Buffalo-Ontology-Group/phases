@@ -40,9 +40,9 @@
         "val" : "Gerotranscendence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-11-25"
+        "val" : "2025-12-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-11-25/gero.owl"
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-12-05/gero.owl"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
