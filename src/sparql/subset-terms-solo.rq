@@ -1,0 +1,5 @@
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT ?term WHERE {
+  ?term oboInOwl:inSubset <http://purl.obolibrary.org/obo/PHASES_0002012> .
+}

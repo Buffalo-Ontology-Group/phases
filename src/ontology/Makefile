@@ -510,6 +510,7 @@ export data
 
 include phases-mirror.Makefile
 include phases-imports.Makefile
+include phases-subsets.Makefile
 
 #### Make syntax cheatsheet
 # targets
