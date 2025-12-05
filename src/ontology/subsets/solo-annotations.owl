@@ -1,0 +1,83 @@
+Prefix(:=<http://www.semanticweb.org/dbeera/ontologies/2025/10/untitled-ontology-76/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/solo.owl>
+<http://purl.obolibrary.org/obo/solo.owl/1.0.0>
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-6906-5548>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-7055-9158>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-9189-9661>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-9625-1899>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-1118-1738>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2999-0103>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-6538-0265>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0003-2294-3571>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0009-0009-9778-4641>)
+Annotation(<http://purl.org/dc/terms/description> "The Solitude Ontology contains terms for defining and classifying concepts related to solitude, including its dimensions, experiences, and outcomes. Its concepts and relationships support the development of tools and resources that enhance understanding of solitude. The Solitude Ontology is developed as a subset of (http://purl.obolibrary.org/obo/phases.owl). Issues and term requests can be submitted at (https://github.com/Buffalo-Ontology-Group/phases/issues).")
+Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/publicdomain/zero/1.0/")
+Annotation(<http://purl.org/dc/terms/title> "Solitude Ontology")
+
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-6906-5548>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-7055-9158>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9189-9661>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-1118-1738>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-2999-0103>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-6538-0265>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0003-2294-3571>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0009-9778-4641>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://orcid.org/0000-0001-6906-5548> (Damayanthi Jesudas)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6906-5548> "Damayanthi Jesudas"@en)
+
+# Individual: <https://orcid.org/0000-0001-7055-9158> (Julie C. Bowker)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-7055-9158> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://orcid.org/0000-0001-7055-9158> "2025-11-25T19:52:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-7055-9158> "Julie C. Bowker"@en)
+
+# Individual: <https://orcid.org/0000-0001-9189-9661> (Oliver He)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9189-9661> "Oliver He"@en)
+
+# Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9625-1899> "Bill Duncan"@en)
+
+# Individual: <https://orcid.org/0000-0002-1118-1738> (John Beverley)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1118-1738> "John Beverley"@en)
+
+# Individual: <https://orcid.org/0000-0002-2999-0103> (Jie Zheng)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-2999-0103> "Jie Zheng"@en)
+
+# Individual: <https://orcid.org/0000-0002-6538-0265> (Hollen N. Reischer)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-6538-0265> "Hollen N. Reischer"@en)
+
+# Individual: <https://orcid.org/0000-0003-2294-3571> (Leo Yeh)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-2294-3571> "Leo Yeh"@en)
+
+# Individual: <https://orcid.org/0009-0009-9778-4641> (Sam Smith)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0009-9778-4641> "Sam Smith"@en)
+
+
+)
