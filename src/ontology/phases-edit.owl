@@ -159,7 +159,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000006> <http://purl.obolibrary.org/obo/PHASES_0002010>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PHASES_0000006> <http://purl.obolibrary.org/obo/PHASES_0002012>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PHASES_0000006> "self-appraisal representational pattern quality"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000006> "A cognitive appraisal representational pattern qualit consisting of an evaluation of the appraiser themselves."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.obolibrary.org/obo/PHASES_0000006> "A cognitive appraisal representational pattern quality consisting of an evaluation of the appraiser themselves."@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000006> <http://purl.obolibrary.org/obo/PHASES_0000005>)
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000007> (self-efficacy representational pattern quality)
