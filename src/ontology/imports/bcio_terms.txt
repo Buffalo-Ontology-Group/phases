@@ -1,0 +1,3 @@
+http://humanbehaviourchange.org/ontology/BCIO_003000	#	behaviour change intervention
+http://humanbehaviourchange.org/ontology/BCIO_006014	#	social alienation
+http://humanbehaviourchange.org/ontology/BCIO_006064	#	psychological need
