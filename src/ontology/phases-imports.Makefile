@@ -67,12 +67,12 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 
 ## Behaviour Change Intervention Ontology (BCIO)
 .PRECIOUS: $(IMPORTDIR)/bcio_import.owl
-
 $(IMPORTDIR)/bcio_import.owl: $(MIRRORDIR)/bcio.owl $(IMPORTDIR)/bcio_terms.txt
-	@echo "*** building $@ ***"
-	$(ROBOT) \
-		extract \
+	if [ $(IMP) = true ]; then $(ROBOT) \
+		remove \
 			--input $< \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		extract \
 			--method bot \
 			--term-file $(word 2, $^) \
 		remove \
@@ -85,9 +85,9 @@ $(IMPORTDIR)/bcio_import.owl: $(MIRRORDIR)/bcio.owl $(IMPORTDIR)/bcio_terms.txt
 			--annotate-defined-by true \
 		annotate \
 			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/imports/$(VERSION)/$(notdir $@) \
 		convert --format ofn \
-		--output $@.tmp.owl && mv $@.tmp.owl $@
+		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 ## Relation Ontology (RO)
 $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
