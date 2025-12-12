@@ -31,10 +31,17 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000144>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MFOEM_000195>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
@@ -73,17 +80,24 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000232>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000233>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000589>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000601>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/MFOEM_000010>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0001900>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://purl.unep.org/sdg/SDGIO_00010069>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
 Declaration(AnnotationProperty(rdf:type))
@@ -137,6 +151,10 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000232> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (<http://purl.obolibrary.org/obo/IAO_0000233>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000412> (<http://purl.obolibrary.org/obo/IAO_0000412>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000412> <http://humanbehaviourchange.org/ontology/bcio.owl>)
@@ -161,6 +179,10 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
+# Annotation Property: <http://purl.obolibrary.org/obo/MFOEM_000010> (<http://purl.obolibrary.org/obo/MFOEM_000010>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000010> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0001900> (<http://purl.obolibrary.org/obo/RO_0001900>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0001900> <http://humanbehaviourchange.org/ontology/bcio.owl>)
@@ -173,13 +195,33 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/source> <http://h
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.unep.org/sdg/SDGIO_00010069> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#created_by> (<http://www.geneontology.org/formats/oboInOwl#created_by>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#created_by> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#creation_date> (<http://www.geneontology.org/formats/oboInOwl#creation_date>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#creation_date> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> (<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (<http://www.geneontology.org/formats/oboInOwl#hasDbXref>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> (<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#id> (<http://www.geneontology.org/formats/oboInOwl#id>)
 
@@ -288,7 +330,7 @@ SubObjectPropertyOf(<http://humanbehaviourchange.org/ontology/BCIOR_000020> <htt
 ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000020> <http://purl.obolibrary.org/obo/BFO_0000003>)
 ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000020> <http://purl.obolibrary.org/obo/BFO_0000003>)
 
-# Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realizes)
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realises)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000055> "this disease course realizes this disease"@en)
@@ -847,6 +889,22 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/BFO_0000020> "h
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/BFO_0000020> "https://github.com/oborel/obo-relations/pull/284")
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000031> "gdc")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000031> "GenericallyDependentContinuant")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000031> "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000031> "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000031> "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000031> "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/074-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000031> "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/074-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000031> "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] ")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/BFO_0000031> "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000034> (function)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000034> "function")
@@ -919,6 +977,121 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000144
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000144> "process profile"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000144> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
+# Class: <http://purl.obolibrary.org/obo/GO_0008150> (biological_process)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pdt") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0008150> "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0008150> "https://github.com/geneontology/go-ontology/issues/24968"^^xsd:anyURI)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_0008150> "jl")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_0008150> "2012-09-19T15:05:24Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0000004")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0007582")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0044699")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0008150> "Wikipedia:Biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "biological process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "physiological process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "single organism process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "single-organism process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0008150")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_candida>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_chembl>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_metagenomics>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_pir>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_plant>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_pombe>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_yeast>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008150> "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0008150> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000030> "Examples of information content entites include journal articles, data, graphical layouts, and graphs."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000030> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000030> "A generically dependent continuant that is about some thing.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000030> "A generically dependent continuant that is about some thing."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000030> "2014-03-10: The use of \"thing\" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000030> "information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000030> "PERSON: Chris Stoeckert"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000030> "OBI_0000142"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/ogms.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000033> (directive information entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000033> "directive information entity"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000033> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000033> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000033> "An information content entity whose concretizations indicate to their bearer how to realize them in a process.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000033> "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000033> "2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000033> "2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000033> "8/6/2009 Alan Ruttenberg: Changed label from \"information entity about a realizable\" after discussions at ICBO"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000033> "Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000033> "PERSON: Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000033> "PERSON: Bjoern Peters"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000033> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000033> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000033> "directive information entity")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000033> "directive information entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000033> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/MFOEM_000006> (subjective affective feeling)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/MFOEM_000006> " \"Regulatory fit\" in the Regulatory Fit Theory")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/MFOEM_000006> "\"Wants\" in the PRIME theory")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/MFOEM_000006> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000006> "An <affective process> that involves the experience of internal or external sensory stimuli.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000006> "An affective process that involves the experience of internal or external sensory stimuli.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000006> "The subjective emotional feeling is that (fiat) part of the emotion process by which the organism experiences its own emotion.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/MFOEM_000006> "pain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/MFOEM_000010> <http://purl.obolibrary.org/obo/MFOEM_000006> "affective consciousness")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/MFOEM_000006> "http://purl.obolibrary.org/obo/MFOEM_000202")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "'Subjective affective feeling can have greater or weaker physiological or mental components. The bodily process that are experienced will usually involve some mental process.
+
+Bodily sensation and the experiences of emotions (e.g., feeling calm) would both qualify as examples of 'subjective affective feeling'.
+
+As a subclass of 'affective process', subjective affective feelings have valence. Valence refers to the 'the subjective value of an event, object, person, or other entity in the life space of the individual' (https://dictionary.apa.org/valence). Valence ranges from negative to positive.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "As a subclass of 'affective process', subjective affective feelings have valence. Valence refers to the 'the subjective value of an event, object, person, or other entity in the life space of the individual' (https://dictionary.apa.org/valence). Valence ranges from negative to positive.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "Bodily sensations and the experiences of emotions (e.g., feeling calm) would both qualify as examples of 'subjective affective feeling'.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "Excluded the following subjective feelings which appear on the GRID questionnaire since they seem debatable to what extent they are really *feelings* and to what extent they are actually *evaluations* or other things:
+
+-- felt submissive/dominant
+-- felt powerless/powerful
+
+
+
+")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000006> "Subjective affective feeling can have greater or weaker physiological or mental components. The bodily processes that are experienced will usually involve some mental process.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000006> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000006> "subjective affective feeling")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000006> "subjective emotional feeling")
+SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000006> <http://purl.obolibrary.org/obo/MFOEM_000195>)
+
+# Class: <http://purl.obolibrary.org/obo/MFOEM_000195> (affective process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/MFOEM_000195> " \"Affect\" in the Health Promotion Model")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/MFOEM_000195> " \"Mood / arousal\" in the Social Action Theory (Ewart)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/MFOEM_000195> "\"Feelings\" in the Risk as Feelings")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/MFOEM_000195> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000195> "A <mental process> that has positive or negative valence.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000195> "A mental process that has positive or negative valence.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MFOEM_000195> "An affective process is any process that has positive or negative valence. ")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MFOEM_000195> "Valence refers to the 'the subjective value of an event, object, person, or other entity in the life space of the individual' (https://dictionary.apa.org/valence). Valence ranges from negative to positive.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MFOEM_000195> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000195> "affective process")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MFOEM_000195> "affective process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/MFOEM_000195> <http://purl.obolibrary.org/obo/MF_0000020>)
+
 # Class: <http://purl.obolibrary.org/obo/MF_0000016> (human being)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/MF_0000016> "External")
@@ -928,6 +1101,24 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000016>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000016> "human being")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000016> "person")
 SubClassOf(<http://purl.obolibrary.org/obo/MF_0000016> <http://purl.obolibrary.org/obo/OGMS_0000087>)
+
+# Class: <http://purl.obolibrary.org/obo/MF_0000020> (mental process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/MF_0000020> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MF_0000020> "A <bodily process> that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MF_0000020> "A bodily process that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MF_0000020> "Valence is a process profile of an emotion, mood, or affective bodily feeling (such as pleasure and pain). Valence can be positive or negative, with different strengths in both directions. For example, pleasure is positively valenced while pain is negatively valenced.  ")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "A 'mental process' is a subclass of 'bodily process', as mental processes occur within the body, specifically involving the brain.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "A bodily process which brings into being, sustains or modifies a cognitive representation or a behavior inducing state.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "Examples include thinking, feeling pain, remembering and emotion as occurrent experiences.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "Mental processes can vary in the degree to which they involve consciousness.
+
+A 'mental process' is a subclass of 'bodily process', as mental processes occur within the body, specifically involving the brain.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000020> "Mental processes can varying in the degree to which they involve consciousness.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000020> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000020> "mental process")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/MF_0000020> "GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.' ")
+SubClassOf(<http://purl.obolibrary.org/obo/MF_0000020> <http://purl.obolibrary.org/obo/OGMS_0000060>)
 
 # Class: <http://purl.obolibrary.org/obo/MF_0000032> (bodily disposition)
 
