@@ -67,22 +67,23 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 
 ## Behaviour Change Intervention Ontology (BCIO)
 .PRECIOUS: $(IMPORTDIR)/bcio_import.owl
+
 $(IMPORTDIR)/bcio_import.owl: $(MIRRORDIR)/bcio.owl $(IMPORTDIR)/bcio_terms.txt
 	@echo "*** building $@ ***"
 	$(ROBOT) \
-		filter \
+		extract \
 			--input $< \
+			--method bot \
 			--term-file $(word 2, $^) \
-			--select "annotations self ancestors" \
-			--axioms logical \
-			--signature true \
-			--trim true \
 		remove \
-			--select "owl:deprecated='true'^^xsd:boolean" \
-		remove \
-			--select "<http://purl.obolibrary.org/obo/NCBITaxon_*>" \
+			--term http://purl.obolibrary.org/obo/BFO_0000008 \
+			--term http://purl.obolibrary.org/obo/BFO_0000038 \
+			--term http://humanbehaviourchange.org/ontology/BCIO_039000 \
+			--term http://humanbehaviourchange.org/ontology/BCIO_050806 \
+			--term http://humanbehaviourchange.org/ontology/BCIO_002000 \
 		annotate \
 			--annotate-defined-by true \
+		annotate \
 			--ontology-iri $(URIBASE)/$(ONT)/$@ \
 			--version-iri $(URIBASE)/$(ONT)/$@ \
 		convert --format ofn \
@@ -105,3 +106,4 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
             --ontology-iri $(URIBASE)/$(ONT)/$@ \
 			--version-iri $(URIBASE)/$(ONT)/$@ \
         --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+

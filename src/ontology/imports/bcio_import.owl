@@ -12,17 +12,56 @@ Ontology(<http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_003000>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_006014>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_006064>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_006085>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_028000>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_034000>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_036000>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_036001>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_036107>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_037000>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_042000>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_043000>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_050435>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000144>))
+Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000260>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000087>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000010>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000011>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000013>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000014>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000015>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000016>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000017>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000018>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000019>))
+Declaration(ObjectProperty(<http://humanbehaviourchange.org/ontology/BCIOR_000020>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000066>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000108>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000117>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000155>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002092>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002222>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002410>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002506>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
@@ -35,13 +74,18 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000232>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000589>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000601>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0001900>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://purl.unep.org/sdg/SDGIO_00010069>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
 Declaration(AnnotationProperty(rdf:type))
 Declaration(AnnotationProperty(<https://schema.org/alternateName>))
 Declaration(AnnotationProperty(<https://www.wikidata.org/wiki/Property:P5191>))
@@ -51,87 +95,356 @@ Declaration(AnnotationProperty(<https://www.wikidata.org/wiki/Property:P5191>))
 
 # Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000179> (<http://purl.obolibrary.org/obo/BFO_0000179>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000180> (<http://purl.obolibrary.org/obo/BFO_0000180>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000111> (<http://purl.obolibrary.org/obo/IAO_0000111>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000111> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (<http://purl.obolibrary.org/obo/IAO_0000112>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000114> (<http://purl.obolibrary.org/obo/IAO_0000114>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (<http://purl.obolibrary.org/obo/IAO_0000115>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (<http://purl.obolibrary.org/obo/IAO_0000116>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (<http://purl.obolibrary.org/obo/IAO_0000117>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (<http://purl.obolibrary.org/obo/IAO_0000118>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000118> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (<http://purl.obolibrary.org/obo/IAO_0000119>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (<http://purl.obolibrary.org/obo/IAO_0000232>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000232> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000412> (<http://purl.obolibrary.org/obo/IAO_0000412>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000412> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000589> (<http://purl.obolibrary.org/obo/IAO_0000589>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000589> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000600> (<http://purl.obolibrary.org/obo/IAO_0000600>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000601> (<http://purl.obolibrary.org/obo/IAO_0000601>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000601> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000602> (<http://purl.obolibrary.org/obo/IAO_0000602>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (<http://purl.obolibrary.org/obo/IAO_0010000>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/RO_0001900> (<http://purl.obolibrary.org/obo/RO_0001900>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0001900> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
+# Annotation Property: <http://purl.org/dc/terms/source> (<http://purl.org/dc/terms/source>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/source> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://purl.unep.org/sdg/SDGIO_00010069> (<http://purl.unep.org/sdg/SDGIO_00010069>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.unep.org/sdg/SDGIO_00010069> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.unep.org/sdg/SDGIO_00010069> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (<http://www.geneontology.org/formats/oboInOwl#hasDbXref>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> (<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#id> (<http://www.geneontology.org/formats/oboInOwl#id>)
 
-AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#id> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#inSubset> (<http://www.geneontology.org/formats/oboInOwl#inSubset>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <https://schema.org/alternateName> (<https://schema.org/alternateName>)
 
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/alternateName> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/alternateName> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 
 # Annotation Property: <https://www.wikidata.org/wiki/Property:P5191> (<https://www.wikidata.org/wiki/Property:P5191>)
 
-AnnotationAssertion(rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P5191> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P5191> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000010> (has behavioural attribute)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000010> "A relation that links an individual human behaviour to a behavioural attribute.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000010> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000010> "has behavioural attribute")
+ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000010> <http://humanbehaviourchange.org/ontology/BCIO_036000>)
+ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000010> <http://humanbehaviourchange.org/ontology/BCIO_050435>)
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000011> (serves behavioural function)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000011> "Realises the human life function of an individual human behaviour.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000011> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000011> "serves behavioural function")
+SubObjectPropertyOf(<http://humanbehaviourchange.org/ontology/BCIOR_000011> <http://purl.obolibrary.org/obo/BFO_0000055>)
+ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000011> <http://humanbehaviourchange.org/ontology/BCIO_036000>)
+ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000011> <http://humanbehaviourchange.org/ontology/BCIO_036001>)
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000013> (has behavioural outcome)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000013> "Causally relation between two entities in which a behaviour brings into existence, causes to occur, destroys, prevents from occurring, or changes an entity.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000013> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000013> "has behavioural outcome")
+SubObjectPropertyOf(<http://humanbehaviourchange.org/ontology/BCIOR_000013> <http://purl.obolibrary.org/obo/RO_0002506>)
+ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000013> <http://humanbehaviourchange.org/ontology/BCIO_036000>)
+ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000013> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000014> (is enacted by)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000014> "Has participant that relates a behaviour to the person enacting the behaviour.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000014> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000014> "is enacted by")
+SubObjectPropertyOf(<http://humanbehaviourchange.org/ontology/BCIOR_000014> <http://purl.obolibrary.org/obo/RO_0000057>)
+ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000014> <http://humanbehaviourchange.org/ontology/BCIO_036000>)
+ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000014> <http://purl.obolibrary.org/obo/MF_0000016>)
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000015> (uses)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000015> "Has participant that relates a behaviour to a material entity that the person enacting the behaviour intends to enable or facilitate the behaviour.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000015> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000015> "uses")
+SubObjectPropertyOf(<http://humanbehaviourchange.org/ontology/BCIOR_000015> <http://purl.obolibrary.org/obo/RO_0000057>)
+ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000015> <http://humanbehaviourchange.org/ontology/BCIO_036000>)
+ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000015> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000016> (has behavioural companion)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000016> "Has participant that relates a behaviour to another sentient being that accompanies the person enacting the behaviour.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000016> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000016> "has behavioural companion")
+SubObjectPropertyOf(<http://humanbehaviourchange.org/ontology/BCIOR_000016> <http://purl.obolibrary.org/obo/RO_0000057>)
+ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000016> <http://humanbehaviourchange.org/ontology/BCIO_036000>)
+ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000016> <http://purl.obolibrary.org/obo/OGMS_0000087>)
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000017> (has behavioural target)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000017> "Has participant that relates the behaviour to an object that the person enacting the behaviour intends to influence.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000017> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000017> "has behavioural target")
+SubObjectPropertyOf(<http://humanbehaviourchange.org/ontology/BCIOR_000017> <http://purl.obolibrary.org/obo/RO_0000057>)
+ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000017> <http://humanbehaviourchange.org/ontology/BCIO_036000>)
+ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000017> <http://purl.obolibrary.org/obo/MF_0000016>)
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000018> (is behavioural outcome of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000018> "Inverse of has behavioural outcome relation.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000018> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000018> "is behavioural outcome of")
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000019> (has end time)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000019> "A relation between an occurrent x and a one-dimensional temporal entity such that the one-dimensional temporal entity designates the latest boundary of x's existence or manifestation.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000019> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000019> "has end time")
+SubObjectPropertyOf(<http://humanbehaviourchange.org/ontology/BCIOR_000019> <http://purl.obolibrary.org/obo/RO_0002222>)
+ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000019> <http://purl.obolibrary.org/obo/BFO_0000003>)
+ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000019> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Object Property: <http://humanbehaviourchange.org/ontology/BCIOR_000020> (has start time)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIOR_000020> "A relation between an occurrent x and a one-dimensional temporal entity such that the one-dimensional temporal entity designates the earliest boundary of x's existence or manifestation.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIOR_000020> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIOR_000020> "has start time")
+SubObjectPropertyOf(<http://humanbehaviourchange.org/ontology/BCIOR_000020> <http://purl.obolibrary.org/obo/RO_0002222>)
+ObjectPropertyDomain(<http://humanbehaviourchange.org/ontology/BCIOR_000020> <http://purl.obolibrary.org/obo/BFO_0000003>)
+ObjectPropertyRange(<http://humanbehaviourchange.org/ontology/BCIOR_000020> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000055> (realises)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000055> "this disease course realizes this disease"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000055> "this investigation realizes this investigator role"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000055> "this shattering realizes this fragility"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000055> "To say that b realizes c at t is to assert that there is some material entity d and b is a process which has participant d at t and c is a disposition or role of which d is bearer_of at tand the type instantiated by b is correlated with the type instantiated by c.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000055> "to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/BFO_0000055> "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "realises")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000055> "realizes"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000055> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000066> (occurs in)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/BFO_0000066> "occurs in"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000066> "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000066> "b occurs_in c =def b is a process and c is a material entity or immaterial entityand there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.and forall(t) if b exists_at t then c exists_at t and there exist spatial regions s and s’ where and b spatially_projects_onto s at tand c is occupies_spatial_region s’ at tand s is a proper_continuant_part_of s’ at t")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000066> "occurs_in"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000066> "unfolds in"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000066> "unfolds_in"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/valid_for_go_annotation_extension>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/valid_for_go_ontology>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/valid_for_gocam>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/BFO_0000066> "Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000066> "occurs in")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000066> "occurs in"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/BFO_0000066> "https://wiki.geneontology.org/Occurs_in"^^xsd:anyURI)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000066> owl:topObjectProperty)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/BFO_0000003>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000066> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000108> (exists at)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000108> "exists-at")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000108> "existsAt")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000108> "BFO2 Reference: entity")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000108> "BFO2 Reference: temporal region")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/118-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000108> "b exists_at t means: b is an entity which exists at some temporal region t. (axiom label in BFO2 Reference: [118-002])"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000108> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000108> "exists at"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000108> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000117> (has process part)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000117> "o-has-part")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000117> "hasOccurrentPart")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000117> "[copied from inverse property 'part of occurrent'] Mary’s 5th birthday occurrent_part_of Mary’s life")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000117> "[copied from inverse property 'part of occurrent'] The process of a footballer’s heart beating once is an occurrent part but not a temporal_part of a game of football.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000117> "[copied from inverse property 'part of occurrent'] the first set of the tennis match occurrent_part_of the tennis match.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000117> "Inverse of occurrent_part_of which is defined as: b occurrent_part_of c =Def. b is a part of c and b and c are occurrents.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/007-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000117> "b has_occurrent_part c = Def. c occurrent_part_of b. (axiom label in BFO2 Reference: [007-001])"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000117> "[copied from inverse property 'part of occurrent'] BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000117> "[copied from inverse property 'part of occurrent'] BFO2 Reference: occurrent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000117> "[copied from inverse property 'part of occurrent'] b occurrent_part_of c =Def. b is a part of c & b and c are occurrents. (axiom label in BFO2 Reference: [003-002])")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/007-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000117> "(iff (hasOccurrentPart a b) (occurrentPartOf b a)) // axiom label in BFO2 CLIF: [007-001] ")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000117> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000117> "has occurrent part"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000117> "has process part")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000117> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000155> (occupies temporal region)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000155> "p occupies_temporal_region t. This is a primitive relation between an occurrent p and the temporal region t upon which the spatiotemporal region p occupies_spatiotemporal_region projects.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000155> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000155> "occupies temporal region")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000155> <http://purl.obolibrary.org/obo/BFO_0000108>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000155> <http://purl.obolibrary.org/obo/BFO_0000003>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000155> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (characteristic of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/RO_0000052> "inheres in"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000052> "this fragility is a characteristic of this vase"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000052> "this red color is a characteristic of this apple"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000052> "A relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000052> "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000052> "inheres_in"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0001901>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0000052> "Note that this relation was previously called \"inheres in\", but was changed to be called \"characteristic of\" because BFO2 uses \"inheres in\" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000052> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000052> "characteristic of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000052> "is attribute of")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000052> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000057> (has participant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/RO_0000057> "has participant"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000057> "this blood coagulation has participant this blood clot"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000057> "this investigation has participant this investigator"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0000057> "this process has participant this input material (or this output material)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0000057> "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0000057> "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000057> "has_participant"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/RO_0000057> "http://www.obofoundry.org/ro/#OBO_REL:has_participant")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0000057> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000057> "has participant"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0000057> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002092> (happens during)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002092> "X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002092> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002092> "happens during")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/BFO_0000003>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002092> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002222> (temporally related to)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/RO_0002222> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002222> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002222> <https://en.wikipedia.org/wiki/Allen%27s_interval_algebra>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/RO_0002222> "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends.")
+AnnotationAssertion(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/RO_0002222> "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1"^^xsd:anyURI)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002222> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002222> "A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002222> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002222> "temporally related to"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002222> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002410> (causally related to)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://en.wikipedia.org/wiki/Causality") Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002410> "relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002410> "This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an 'activity flow-centric approach', with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.
+
+To define causal relations in an activity-flow type network, we make use of 3 primitives:
+
+ * Temporal: how do the intervals of the two occurrents relate? 
+ * Is the causal relation regulatory?
+ * Is the influence positive or negative?
+
+The first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are 'direct', 'indirect' or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under 'temporally related to'). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.
+
+For the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.
+
+For the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.
+
+Each of these 3 primitives can be composed to yield a cross-product of different relation types.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002410> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/RO_0002410> "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002410> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002410> "causally related to"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002410> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002506> (causal relation between entities)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002506> "The intent is that the process branch of the causal property hierarchy is primary (causal relations hold between occurrents/processes), and that the material branch is defined in terms of the process branch")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002506> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002506> <http://purl.obolibrary.org/obo/ro/docs/causal-relations>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/RO_0002506> "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/RO_0002506> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002506> "causal relation between entities")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002506> <http://purl.obolibrary.org/obo/RO_0002410>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002506> <http://purl.obolibrary.org/obo/BFO_0000001>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002506> <http://purl.obolibrary.org/obo/BFO_0000001>)
 
 
 
@@ -145,15 +458,16 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://humanbe
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_003000> "Published")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_003000> "An intervention that has the aim of influencing human behaviour.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://humanbehaviourchange.org/ontology/BCIO_003000> "BCI")
-AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_003000> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_003000> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_003000> "behaviour change intervention")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_003000> <http://humanbehaviourchange.org/ontology/BCIO_037000>)
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_003000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://humanbehaviourchange.org/ontology/BCIO_028000>))
 
 # Class: <http://humanbehaviourchange.org/ontology/BCIO_006014> (social alienation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_006014> "Published")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_006014> "A <mental disposition> to perceive or experience oneself as isolated from and not meaningfully involved in social groups.")
-AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_006014> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_006014> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_006014> "social alienation")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_006014> <http://purl.obolibrary.org/obo/MF_0000033>)
 
@@ -171,18 +485,128 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://humanbe
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_006064> "Published")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_006064> "A <mental disposition> of a person to act to obtain or maintain a particular state due to this state’s importance to the person’s wellbeing.")
 AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_006064> "Psychological needs can be satisfied or thwarted.")
-AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_006064> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_006064> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_006064> "psychological need")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_006064> <http://purl.obolibrary.org/obo/MF_0000033>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_006085> (location)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_006085> "Published")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_006085> "A spatial <quality> that inheres in a bearer by virtue of its position relative to other entities.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_006085> "An intervention could be used to rearrange objects in an environment, changing the location of a person relative to these objects and thereby increasing the likelihood of a behaviour.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_006085> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_006085> "location")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_006085> <http://purl.obolibrary.org/obo/BFO_0000019>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_028000> (behaviour change intervention scenario plan)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_028000> "Published")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_028000> "A plan that is realized in a BCI scenario process.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://humanbehaviourchange.org/ontology/BCIO_028000> "BCI scenario plan")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_028000> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_028000> "behaviour change intervention scenario plan")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_028000> <http://purl.obolibrary.org/obo/OBI_0000260>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_034000> (population behaviour)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_034000> "Published")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_034000> "An aggregate of individual human behaviours of members of a population.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://humanbehaviourchange.org/ontology/BCIO_034000> "human behaviour")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_034000> "The class human behaviour [BCIO:042000] has been made obsolete. If you want to refer to the behaviour of an individual, refer to individual human behaviour . If you want to refer to the behaviour of a group, refer to population behaviour.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_034000> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_034000> "population behaviour")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_034000> <http://humanbehaviourchange.org/ontology/BCIO_036107>)
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_034000> <http://humanbehaviourchange.org/ontology/BCIO_042000>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_036000> (individual human behaviour)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://humanbehaviourchange.org/ontology/BCIO_036000> "Also referred to in definitions as human behaviour or just behaviour.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://humanbehaviourchange.org/ontology/BCIO_036000> "walks for 15 mins/day, never eats meat, attends school daily")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_036000> "Published")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_036000> "A <bodily process> of a human that involves co-ordinated contraction of striated muscles controlled by the brain.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_036000> "A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://humanbehaviourchange.org/ontology/BCIO_036000> "human behaviour")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_036000> " it is concerned with moving skeletal parts to which it is usually attached.' (https://www.collinsdictionary.com/dictionary/english/striped-muscle)")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_036000> "The class human behaviour [BCIO:042000] has been made obsolete. If you want to refer to the behaviour of an individual, refer to individual human behaviour . If you want to refer to the behaviour of a group, refer to population behaviour.
+
+Striated muscles referred to in the definition do not ordinarily involve cardiac muscles.
+
+Behaviours are usually in response to an internal or external stimuli.
+
+Every behaviour is associated with mental processes, but not every mental process is associated with behaviour. For instance, a verbal communication behaviour will involve mental processes to produce speech. However, mental processes associated with listening can occur without a person performing a behaviour.
+
+'behaviours' can involve a series of activities (e.g., more granular behaviours).
+
+'A 'striated muscle' can defined as 'a type of contractile tissue that is marked by transverse striations")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_036000> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_036000> "individual human behaviour")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036000> <http://humanbehaviourchange.org/ontology/BCIO_042000>)
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036000> <http://purl.obolibrary.org/obo/OGMS_0000060>)
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036000> ObjectSomeValuesFrom(<http://humanbehaviourchange.org/ontology/BCIOR_000010> <http://humanbehaviourchange.org/ontology/BCIO_050435>))
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036000> ObjectSomeValuesFrom(<http://humanbehaviourchange.org/ontology/BCIOR_000011> <http://humanbehaviourchange.org/ontology/BCIO_036001>))
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036000> ObjectSomeValuesFrom(<http://humanbehaviourchange.org/ontology/BCIOR_000014> <http://purl.obolibrary.org/obo/MF_0000016>))
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036000> ObjectSomeValuesFrom(<http://humanbehaviourchange.org/ontology/BCIOR_000015> <http://purl.obolibrary.org/obo/BFO_0000040>))
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036000> ObjectSomeValuesFrom(<http://humanbehaviourchange.org/ontology/BCIOR_000016> <http://purl.obolibrary.org/obo/MF_0000016>))
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036000> ObjectSomeValuesFrom(<http://humanbehaviourchange.org/ontology/BCIOR_000017> <http://purl.obolibrary.org/obo/MF_0000016>))
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000066> <http://humanbehaviourchange.org/ontology/BCIO_006085>))
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_036001> (human life function)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://humanbehaviourchange.org/ontology/BCIO_036001> "Learning function (e.g., knowledge development function and skill development function), knowledge or skill maintenance, protection of self, others and the environment, aesthetics function, bodily health function, spiritual function, social organisation function,, excretion function, nutrition function, reproductive function, respiration function,, rest function, travel function, thermoregulation function")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_036001> "Published")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_036001> "A function that inheres in a human being and is realised in processes that enable the human to survive and thrive.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_036001> "There are complex sets of processes involved in the realisation of human life functions, only some which would behaviours. An example for a human life function that is not a behaviour function: human thermoregulation via sweating function. However, some behaviours can fulfil 'human life functions'.
+
+The term 'survive' refers to continuing one's existence (e.g., staying alive), while 'thrive' includes a wide range of processes that improve an animal's life, including physical and mental wellbeing and experiencing positive social interactions, as well as being able to reproduce. Many processes can contribute to a human surviving and thriving.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_036001> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_036001> "human life function")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036001> <http://purl.obolibrary.org/obo/BFO_0000034>)
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/MF_0000016>))
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_036107> (process aggregate)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_036107> "Published")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_036107> "An occurrent consisting exactly of a plurality of processes that are process_aggregate_member_parts_of that occurrent for all times at which it exists.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://humanbehaviourchange.org/ontology/BCIO_036107> "Process aggregate extends BFO in the same way that object aggregate extends its coverage of material entities. It is required to be able to classify occurrents such as behaviour patterns that are repeated occurrences of classes of process that have properties such as average frequency of occurrence (not to be confused with frequency as a process profile) and temporal patterning of occurrences.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_036107> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_036107> "process aggregate")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_036107> <http://purl.obolibrary.org/obo/BFO_0000003>)
 
 # Class: <http://humanbehaviourchange.org/ontology/BCIO_037000> (intervention)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://humanbehaviourchange.org/ontology/BCIO_037000> "Examples of interventions are putting health warnings on cigarette packets, providing free stop smoking services and banning smoking in public places.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_037000> "Published")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_037000> "A planned process that has the aim of influencing an outcome.")
-AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_037000> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_037000> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_037000> "intervention")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_037000> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_042000> (human behaviour)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_042000> "Published")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_042000> "A process that is an individual human behaviour or a population behaviour.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_042000> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_042000> "human behaviour")
+EquivalentClasses(<http://humanbehaviourchange.org/ontology/BCIO_042000> ObjectUnionOf(<http://humanbehaviourchange.org/ontology/BCIO_034000> <http://humanbehaviourchange.org/ontology/BCIO_036000>))
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_042000> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_043000> (process attribute)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://humanbehaviourchange.org/ontology/BCIO_043000> "This is intended to provide a user-friendly way of representing the way in which processes are manifest. This is somewhat similar to, but not the same as, the class 'specifically dependent continuant' in Basic Formal Ontology which provides a way of representing features of material entities such as age and size. It is formally equivalent to process profile in Basic Formal Ontology.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_043000> "Published")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_043000> "A process profile that is an attribute of a process.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_043000> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_043000> "process attribute")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_043000> <http://purl.obolibrary.org/obo/BFO_0000144>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_050435> (behavioural attribute)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://humanbehaviourchange.org/ontology/BCIO_050435> "physical performance behaviour has_behavioural_attribute behavioural attribute")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://humanbehaviourchange.org/ontology/BCIO_050435> "Published")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://humanbehaviourchange.org/ontology/BCIO_050435> "A process attribute of an individual human behaviour.")
+AnnotationAssertion(rdfs:isDefinedBy <http://humanbehaviourchange.org/ontology/BCIO_050435> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_050435> "behavioural attribute")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_050435> <http://humanbehaviourchange.org/ontology/BCIO_043000>)
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)
 
@@ -265,6 +689,34 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000003
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000003> "occurrent"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/BFO_0000001>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000004> "ic")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000004> "IndependentContinuant")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a chair"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a heart"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a leg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a molecule"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "a spatial region"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "an atom"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "an orchestra."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "an organism"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "the bottom right portion of a human torso"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000004> "the interior of your mouth"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000004> "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/017-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000004> "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/BFO_0000004> "anatomical entity (BFO)")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/134-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000004> "For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/018-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000004> "For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/134-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000004> "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] ")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/018-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000004> "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] ")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/017-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000004> "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] ")
+AnnotationAssertion(<http://purl.unep.org/sdg/SDGIO_00010069> <http://purl.obolibrary.org/obo/BFO_0000004> "true"^^xsd:boolean)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/BFO_0000004> "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000015> "process")
@@ -329,6 +781,27 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000017> "rea
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000017> "realizable entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/BFO_0000020>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000019> (quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000019> "quality")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000019> "Quality")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000019> "the ambient temperature of this portion of air"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000019> "the color of a tomato"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000019> "the length of the circumference of your waist"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000019> "the mass of this piece of gold."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000019> "the shape of your nose"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000019> "the shape of your nostril"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/BFO_0000019> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000019> "A specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/055-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000019> "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/105-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000019> "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/055-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000019> "(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] ")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/105-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000019> "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] ")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000019> "quality")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000019> "quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>)
+
 # Class: <http://purl.obolibrary.org/obo/BFO_0000020> (specifically dependent continuant)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000020> "sdc")
@@ -374,6 +847,88 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/BFO_0000020> "h
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/BFO_0000020> "https://github.com/oborel/obo-relations/pull/284")
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000034> (function)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000034> "function")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000034> "Function")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000034> "the function of a hammer to drive in nails"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000034> "the function of a heart pacemaker to regulate the beating of a heart through electricity"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000034> "the function of amylase in saliva to break down starch into sugar"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/BFO_0000034> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000034> "A disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000034> "BFO 2 Reference: In the past, we have distinguished two varieties of function, artifactual function and biological function. These are not asserted subtypes of BFO:function however, since the same function – for example: to pump, to transport – can exist both in artifacts and in biological entities. The asserted subtypes of function that would be needed in order to yield a separate monoheirarchy are not artifactual function, biological function, etc., but rather transporting function, pumping function, etc."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/064-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000034> "A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/064-001>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000034> "(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] ")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000034> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000034> "function")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000034> "function"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000034> <http://purl.obolibrary.org/obo/BFO_0000016>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000040> "material")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000040> "MaterialEntity")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a flame"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a forest fire"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a human being"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a hurricane"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a photon"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a puff of smoke"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a sea wave"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "a tornado"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "an aggregate of human beings."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "an energy wave"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "an epidemic"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000040> "the undetached arm of a human being"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/BFO_0000040> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040> "An <independent continuant> that is spatially extended whose identity is independent of that of other entities and can be maintained through time.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000040> "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000040> "BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000040> "BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000040> "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/BFO_0000040> "Elucidation: An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/cl.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/ido.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/uberon.owl>)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/019-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000040> "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/020-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000040> "Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/021-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000601> <http://purl.obolibrary.org/obo/BFO_0000040> "every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/019-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000040> "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] ")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/021-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000040> "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] ")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/020-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000040> "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] ")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/BFO_0000040> "bfo")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/BFO_0000040> "BFO:0000040")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000144> (process profile)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000144> "process-profile")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000144> "ProcessProfile")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000144> "On a somewhat higher level of complexity are what we shall call rate process profiles, which are the targets of selective abstraction focused not on determinate quality magnitudes plotted over time, but rather on certain ratios between these magnitudes and elapsed times. A speed process profile, for example, is represented by a graph plotting against time the ratio of distance covered per unit of time. Since rates may change, and since such changes, too, may have rates of change, we have to deal here with a hierarchy of process profile universals at successive levels"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000144> "One important sub-family of rate process profiles is illustrated by the beat or frequency profiles of cyclical processes, illustrated by the 60 beats per minute beating process of John’s heart, or the 120 beats per minute drumming process involved in one of John’s performances in a rock band, and so on. Each such process includes what we shall call a beat process profile instance as part, a subtype of rate process profile in which the salient ratio is not distance covered but rather number of beat cycles per unit of time. Each beat process profile instance instantiates the determinable universal beat process profile. But it also instantiates multiple more specialized universals at lower levels of generality, selected from   rate process profilebeat process profileregular beat process profile3 bpm beat process profile4 bpm beat process profileirregular beat process profileincreasing beat process profileand so on.In the case of a regular beat process profile, a rate can be assigned in the simplest possible fashion by dividing the number of cycles by the length of the temporal region occupied by the beating process profile as a whole. Irregular process profiles of this sort, for example as identified in the clinic, or in the readings on an aircraft instrument panel, are often of diagnostic significance."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000144> "The simplest type of process profiles are what we shall call ‘quality process profiles’, which are the process profiles which serve as the foci of the sort of selective abstraction that is involved when measurements are made of changes in single qualities, as illustrated, for example, by process profiles of mass, temperature, aortic pressure, and so on."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/093-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000144> "b is a process_profile =Def. there is some process c such that b process_profile_of c (axiom label in BFO2 Reference: [093-002])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/094-005>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/BFO_0000144> "b process_profile_of c holds when b proper_occurrent_part_of c& there is some proper_occurrent_part d of c which has no parts in common with b & is mutually dependent on b& is such that b, c and d occupy the same temporal region (axiom label in BFO2 Reference: [094-005])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/094-005>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000144> "(forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] ")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/093-002>) Annotation(rdf:type owl:Axiom) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000144> "(iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] ")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000144> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000144> "process profile"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000144> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/MF_0000016> (human being)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/MF_0000016> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MF_0000016> "An extended organism that is a member of the species Homo sapiens.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/MF_0000016> "person")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000016> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000016> "human being")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000016> "person")
+SubClassOf(<http://purl.obolibrary.org/obo/MF_0000016> <http://purl.obolibrary.org/obo/OGMS_0000087>)
+
 # Class: <http://purl.obolibrary.org/obo/MF_0000032> (bodily disposition)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/MF_0000032> "\"Internal environment\" in the PRIME theory")
@@ -387,7 +942,7 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000032> "Ex
 
 Bodily disposition would include features, such as a person's strength (which can be used in a specific context), but not weight. A person would have a certain weight independent of most circumstances they are in.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000032> "Extended organism refers to an organism and its microbiome (e.g., the bacteria that live in one's digestive system).")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000032> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000032> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000032> "bodily disposition")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000032> "bodily disposition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MF_0000032> <http://purl.obolibrary.org/obo/BFO_0000016>)
@@ -402,7 +957,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MF_0000033> "A mental disposition is a bodily disposition that is realized in a mental process. ")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000033> "'Mental disposition' is a subclass of 'bodily disposition', as mental dispositions occur in the body.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MF_0000033> "Mental disposition' is a subclass of 'bodily disposition', as mental dispositions occur in the body.")
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000033> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/MF_0000033> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000033> "mental disposition")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000033> "mental disposition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MF_0000033> <http://purl.obolibrary.org/obo/MF_0000032>)
@@ -420,9 +975,49 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000011> "branch derived")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0000011> "6/11/9: Edited at workshop. Used to include: is initiated by an agent")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0000011> "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0000011> <http://humanbehaviourchange.org/ontology/bcio.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000260> (plan)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000260> "plan"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000260> "The plan of researcher X to perform an experiment according to a protocol.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000260> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000260> "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000260> "This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the 'plan specification', and 'planned process' class, as we want to avoid to get deep into discussions of 'intend' etc.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000260> "AR, BP, JM, MC, PRS"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000260> "branch derived"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OBI_0000260> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000260> "plan"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000260> <http://purl.obolibrary.org/obo/BFO_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000060> (bodily process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OGMS_0000060> "The phrase 'bodily component of an organism in the definition refers to a part of the body.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OGMS_0000060> "External")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000060> "A <process> in which at least one bodily component of an organism participates.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000060> "A process in which at least one bodily component of an organism participates.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000060> "A process in which at least one bodily component of an organsim participates.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000060> "Albert Goldfain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OGMS_0000060> "http://www.jbiomedsem.com/content/1/1/10")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OGMS_0000060> "creation date: 2009-06-23T11:53:49Z")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OGMS_0000060> "From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OGMS_0000060> "The phrase 'bodily component of an organism’ in the definition refers to ‘a part of the body’.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OGMS_0000060> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000060> "bodily process")
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000087> (extended organism)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000087> "An object aggregate consisting of an organism and all material entities located within the organism, overlapping the organism, or occupying sites formed in part by the organism."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000087> "Albert Goldfain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OGMS_0000087> "http://code.google.com/p/ogms/issues/detail?id=3")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OGMS_0000087> "creation date: 2010-01-25T04:51:11Z")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OGMS_0000087> "From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OGMS_0000087> <http://humanbehaviourchange.org/ontology/bcio.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000087> "extended organism")
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000087> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
 
 )
