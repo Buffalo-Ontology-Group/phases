@@ -9,7 +9,7 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 ifeq ($(strip $(MIR)),true)
 
 ## Behaviour Change Intervention Ontology (BCIO)
-BCIO_ONT = https://raw.githubusercontent.com/HumanBehaviourChangeProject/ontologies/refs/heads/master/bcio.owl
+BCIO_ONT = https://humanbehaviourchange.org/ontology/bcio.owl
 .PHONY: mirror-bcio
 .PRECIOUS: $(MIRRORDIR)/bcio.owl
 mirror-bcio: | $(TMPDIR)
