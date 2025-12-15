@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl>
-<http://purl.obolibrary.org/obo/phases/imports/2025-12-12/bcio_import.owl>
+<http://purl.obolibrary.org/obo/phases/imports/2025-12-15/bcio_import.owl>
 
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_003000>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_006014>))

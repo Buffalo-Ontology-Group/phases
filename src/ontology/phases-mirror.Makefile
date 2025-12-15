@@ -29,6 +29,14 @@ mirror-ro: | $(TMPDIR)
 	curl -L $(OBOBASE)/ro.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/ro-download.owl -o $(TMPDIR)/$@.owl
 
+## Mental Functioning Ontology (MF)
+.PHONY: mirror-mf
+.PRECIOUS: $(MIRRORDIR)/mf.owl
+mirror-mf: | $(TMPDIR)
+	curl -L $(OBOBASE)/mf.owl --create-dirs -o $(TMPDIR)/mf-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/mf-download.owl -o $(TMPDIR)/$@.owl
+
+
 ## Relation Ontology (RO)
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
 	if [ -f $(TMPDIR)/mirror-$*.owl ]; then if cmp -s $(TMPDIR)/mirror-$*.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\

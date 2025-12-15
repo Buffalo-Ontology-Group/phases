@@ -6,7 +6,7 @@
 # Import assets
 # ----------------------------------------
 
-IMPORTS =  omo bcio
+IMPORTS =  omo bcio mf
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -81,6 +81,21 @@ $(IMPORTDIR)/bcio_import.owl: $(MIRRORDIR)/bcio.owl $(IMPORTDIR)/bcio_terms.txt
 			--term http://humanbehaviourchange.org/ontology/BCIO_039000 \
 			--term http://humanbehaviourchange.org/ontology/BCIO_050806 \
 			--term http://humanbehaviourchange.org/ontology/BCIO_002000 \
+		annotate \
+			--annotate-defined-by true \
+		annotate \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/imports/$(VERSION)/$(notdir $@) \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+## Mental Functioning Ontology (MF)
+$(IMPORTDIR)/mf_import.owl: $(MIRRORDIR)/mf.owl $(IMPORTDIR)/mf_terms.txt
+	if [ $(IMP) = true ]; then $(ROBOT) \
+		extract \
+			--input $< \
+			--method BOT \
+			--term-file $(word 2, $^) \
 		annotate \
 			--annotate-defined-by true \
 		annotate \
