@@ -6,7 +6,7 @@
 # Import assets
 # ----------------------------------------
 
-IMPORTS =  omo bcio
+IMPORTS =  omo bcio mf
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -66,18 +66,43 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
         --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 ## Behaviour Change Intervention Ontology (BCIO)
-$(IMPORTDIR)/bcio_import.owl: $(MIRRORDIR)/bcio.owl
+.PRECIOUS: $(IMPORTDIR)/bcio_import.owl
+$(IMPORTDIR)/bcio_import.owl: $(MIRRORDIR)/bcio.owl $(IMPORTDIR)/bcio_terms.txt
 	if [ $(IMP) = true ]; then $(ROBOT) \
-        remove \
-            --input $< \
-            --select "owl:deprecated='true'^^xsd:boolean" \
-        annotate \
-            --annotate-defined-by true \
-        annotate \
-            --remove-annotations \
-            --ontology-iri $(URIBASE)/$(ONT)/$@ \
-            --version-iri $(URIBASE)/$(ONT)/$@ \
-        --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+		remove \
+			--input $< \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		extract \
+			--method bot \
+			--term-file $(word 2, $^) \
+		remove \
+			--term http://purl.obolibrary.org/obo/BFO_0000008 \
+			--term http://purl.obolibrary.org/obo/BFO_0000038 \
+			--term http://humanbehaviourchange.org/ontology/BCIO_039000 \
+			--term http://humanbehaviourchange.org/ontology/BCIO_050806 \
+			--term http://humanbehaviourchange.org/ontology/BCIO_002000 \
+		annotate \
+			--annotate-defined-by true \
+		annotate \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/imports/$(VERSION)/$(notdir $@) \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+## Mental Functioning Ontology (MF)
+$(IMPORTDIR)/mf_import.owl: $(MIRRORDIR)/mf.owl $(IMPORTDIR)/mf_terms.txt
+	if [ $(IMP) = true ]; then $(ROBOT) \
+		extract \
+			--input $< \
+			--method BOT \
+			--term-file $(word 2, $^) \
+		annotate \
+			--annotate-defined-by true \
+		annotate \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/imports/$(VERSION)/$(notdir $@) \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 ## Relation Ontology (RO)
 $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
@@ -96,3 +121,4 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
             --ontology-iri $(URIBASE)/$(ONT)/$@ \
 			--version-iri $(URIBASE)/$(ONT)/$@ \
         --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
