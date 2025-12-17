@@ -84,7 +84,6 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0000044>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0002006>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0002007>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PHASES_0002008>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/https://orcid.org/0009-0002-7282-0836>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/phases.owl/PHASES_0000053>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/phases.owl/PHASES_0000054>))
@@ -197,7 +196,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000009> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000010> (performative identity quality)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000010> <http://purl.obolibrary.org/obo/https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000010> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000010> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000010> <https://orcid.org/0000-0002-1118-1738>)
@@ -355,7 +353,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000032> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000036> (personal identity quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000036> "A mental quality that is defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000036> <http://purl.obolibrary.org/obo/https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000036> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000036> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000036> <https://orcid.org/0000-0002-1118-1738>)
@@ -370,7 +367,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000036> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000038> (narrative identity quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000038> "A personal identity quality consisting of the internalized, evolving, story of oneself that individuals construct to make sense and meaning out of life."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000038> <http://purl.obolibrary.org/obo/https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000038> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000038> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000038> <https://orcid.org/0000-0002-1118-1738>)
@@ -383,7 +379,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PHASES_0000038> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/PHASES_0000039> (ego identity quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PHASES_0000039> "A personal identity quality consisting of the recognition of oneself as a persisting entity, resulting from the integration of one's ego-ideal, life roles, and adjustments to reality."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000039> <http://purl.obolibrary.org/obo/https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000039> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000039> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PHASES_0000039> <https://orcid.org/0000-0002-1118-1738>)
@@ -632,10 +627,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/PHASES_0002005> <http://purl.obol
 # Individual: <http://purl.obolibrary.org/obo/PHASES_0002008> (self-transcendence theory)
 
 ClassAssertion(<http://purl.obolibrary.org/obo/PHASES_0002005> <http://purl.obolibrary.org/obo/PHASES_0002008>)
-
-# Individual: <http://purl.obolibrary.org/obo/https://orcid.org/0009-0002-7282-0836> (Finn Wilson)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/https://orcid.org/0009-0002-7282-0836> "Finn Wilson"@en)
 
 # Individual: <http://purl.obolibrary.org/obo/phases.owl/PHASES_0000052> (UCLA Loneliness Scale)
 
