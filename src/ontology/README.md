@@ -6,6 +6,8 @@ This directory contains the files for editing the PHASES ontology.
 
 To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phases.owl` file directly. The `phases.owl` file is produced during the release process.
 
+---
+
 ## Releasing PHASES
 
 ### Steps for Creating a Release
@@ -22,7 +24,7 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
    Execute the following from the src/ontology:
 
       ```bash
-      make prepare-release
+      make prepare_release
       ```
 
    This command:
@@ -43,7 +45,7 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
    Then commit the release:
 
    ```copy these files to the root
-   git commit -m "Prepare release for YYYY-MM-DD"
+   git commit -m "release for YYYY-MM-DD"
    ```
 
 4. Push the Release Branch
@@ -70,13 +72,74 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
    - Add **release notes**.
    - Mark it as the **latest release**.
    - Click **Publish Release**.
+  
+7. Release Ontology Subsets
+   
+   The PHASES ontology generates subsets automatically using the **PHASES subset extraction Makefile**, which builds ontology subsets based on class annotations:
 
+   - **Gerotranscendence (Gero)**: classes annotated with `in_subset "GERO"`.
+   - **Solitude (Solo)**: classes annotated with `in_subset "SOLO"`.
+   - Subset-specific annotations are included via `gero-annotations.owl` and `solo-annotations.owl`.
+   - Subsets are generated in multiple formats (`.owl`, `.tsv`, `.obo`, `.json`) by:  
+      1. Querying the main ontology for subset-specific terms (`subset-terms-gero.rq` / `subset-terms-solo.rq`).
+      2. Extracting the relevant terms using the BOT method.
+      3. Merging in subset-specific annotations.
+      4. Annotating the ontology IRI, version IRI, and `owl:versionInfo`.  
+   
+   After preparing and merging a PHASES release to `main`:
+
+     - Navigate to the ontology source directory:
+     ```bash
+     cd src/ontology
+     ```
+     
+   - Clean previously generated ontology products and subsets:
+     ```bash
+     make clean
+     ```
+     
+   - Generate all ontology products and subsets:
+     ```bash
+     make all
+     ```
+     
+   - Prepare the official **subset** release:
+     ```bash
+     make prepare-release
+     ```
+   
+   - Verify that ontology subsets (e.g., **Gerotranscendence (Gero)** and **Solitude (Solo)**) were generated in the **subset directory** `$(SUBSETDIR)` (default: `src/ontology/subsets`), including:
+     - `gero.owl`
+     - `solo.owl`
+     - `gero-annotations.owl`
+     - `solo-annotations.owl`
+     - `*.obo` 
+     - `*.json`
+     - `*.tsv`
+       
+   - Review each subset to confirm:
+     - Correct metadata (version IRI, release date, license).
+     
+   - Commit the updated subset artifacts together with the main ontology release files:
+     ```bash
+     git add .
+     git commit -m "Update ontology subsets for release YYYY-MM-DD"
+     ```
+     
+   - Push the release branch:
+     ```bash
+     git push origin release-YYYY-MM-DD
+     ```
+     
+   - Include a brief summary of subset updates in the GitHub release notes when drafting the release.
+
+---
 
 ### Notes on Release Artifacts
 
 The `make prepare-release` command generates several formats:
 
-- `.obo`, `.owl`, `.json`: Standard ontology formats.
+- `.obo`, `.owl`, `.json`, `.tsv`: Standard ontology formats.
 - `*-base` versions: Contain only locally defined classes (no imports).
 - These are the canonical files used by portals like OLS or OntoBee.
 
@@ -112,7 +175,7 @@ The PHASES ontology generates subsets for the domains of ***solitude*** and ***g
 - Contains ***terms, hierarchical relationships, and annotations*** relevant to the study of gerotranscendence.
 - Issues and term requests can be submitted at [issue](https://github.com/Buffalo-Ontology-Group/phases/issues).
 - ***License***: CC0 1.0
-- ***Version***: 2025-12-05 (current subset build date)
+- ***Version***: YYYY-MM-DD
 
 ***Solitude Ontology (Solo)***
 
@@ -121,7 +184,7 @@ The PHASES ontology generates subsets for the domains of ***solitude*** and ***g
 - Contains terms, hierarchical relationships, and annotations relevant to defining and classifying solitude.
 - Issues and term requests can be submitted at [issue](https://github.com/Buffalo-Ontology-Group/phases/issues).
 - ***License***: CC0 1.0
-- ***Version***: 2025-12-05 (current subset build date)
+- ***Version***: YYYY-MM-DD
 
 ### Ontology Imports
 
@@ -180,6 +243,8 @@ To add new external terms or update existing imports used by PHASES, follow this
 
    - Verify the generated `*_import.owl` files and downstream ontology products.
    - Once validated, proceed with the standard release workflow described in the **Updating Ontology Products and Subsets** section.
+
+---
 
 ### Configuring Protégé for PHASES Contributions
 
