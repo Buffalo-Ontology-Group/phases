@@ -8,9 +8,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/phases/phases-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-05-16/phases-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-12-23/phases-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9189-9661"/>
@@ -18,11 +20,12 @@
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-2999-0103"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-2294-3571"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0009-9778-4641"/>
         <terms:description>PHASES provides an ontology for integrating research in solitude and gerotranscendence. By integrating these areas of study, we aim to deepen our understanding of each and how they promote healthy aging.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title>Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology</terms:title>
-        <owl:versionInfo>2025-05-16</owl:versionInfo>
+        <owl:versionInfo>2025-12-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -47,6 +50,29 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002010 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PHASES_0002010">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-29T15:03:18Z</terms:created>
+        <rdfs:label xml:lang="en">GERO</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002012 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PHASES_0002012">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-29T15:21:53Z</terms:created>
+        <terms:description>Solitude Ontology</terms:description>
+        <rdfs:label xml:lang="en">SOLO</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -86,6 +112,36 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -109,9 +165,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
     
 
 
@@ -127,6 +207,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000075"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PHASES_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000000">
@@ -134,8 +220,12 @@
         <obo:IAO_0000115>A behavior change intervention that uses life histories—written, oral, or both—to improve psychological well-being. The therapy is often used with older people.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-03T21:39:49Z</terms:created>
-        <rdfs:label xml:lang="en">reminiscence therapy</rdfs:label>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-03T21:39:49+00:00</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">reminiscence therapy process</rdfs:label>
+        <skos:prefLabel>reminiscence therapy</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000000"/>
@@ -146,14 +236,466 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000031"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">cognitive appraisal representational pattern quality</rdfs:label>
+        <skos:definition>A cognitive representational pattern quality which consists of an evaluation of the relevance of some entity to another entity.</skos:definition>
+        <skos:prefLabel>appraisal quality</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000005"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">self-appraisal representational pattern quality</rdfs:label>
+        <skos:definition xml:lang="en">A cognitive appraisal representational pattern quality consisting of an evaluation of the appraiser themselves.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000006"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">self-efficacy representational pattern quality</rdfs:label>
+        <skos:definition xml:lang="en">A self-appraisal representational pattern quality consisting of an evaluation of the agent&apos;s capability to achieve objectives or satisfy desires.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">psychological construct information content entity</rdfs:label>
+        <skos:prefLabel xml:lang="en">psychological construct</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000008"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">psychoanalytic psychological identity construct information content entity</rdfs:label>
+        <skos:definition xml:lang="en">A psychological construct in which it is hypothesized that human consciousness consists of the id, ego, and superego.</skos:definition>
+        <skos:prefLabel>psychoanalytic psychological identity construct</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000036"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">performative identity quality</rdfs:label>
+        <skos:definition xml:lang="en">A personal identity quality formed as a result of the agent&apos;s performative behaviors as influencing and influenced by the formation of one&apos;s psychological identity.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">social withdrawal disposition</rdfs:label>
+        <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in the consistent avoidance of social interactions with both familiar and unfamiliar peers due to psychological traits such as social fear or anxiety.</skos:definition>
+        <skos:prefLabel>social withdrawal</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">self-transcendence disposition</rdfs:label>
+        <skos:definition xml:lang="en">A transcendence disposition that, if realized, is realized in shifting one’s focus beyond the self toward broader existential, moral, or spiritual concerns, including care for others, connection with nature, or alignment with perceived universal values.</skos:definition>
+        <skos:prefLabel>self-transcendence</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">elective solitude disposition</rdfs:label>
+        <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in intentionally withdrawing from social interaction in order to pursue self-reflection, restoration, or personal goals.</skos:definition>
+        <skos:prefLabel>elective solitude</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">imposed solitude characteristic</rdfs:label>
+        <skos:definition xml:lang="en">A characteristic of a person that is physically or socially alone due to external constraints or circumstances, and not by personal choice.</skos:definition>
+        <skos:prefLabel>imposed solitude</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">ambient sociability disposition</rdfs:label>
+        <skos:definition xml:lang="en">A mental disposition that is realized in retaining the sense of social presence without direct social engagement with others in a public or semi-public space.</skos:definition>
+        <skos:prefLabel>ambient sociability</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">healthy aging process</rdfs:label>
+        <skos:definition xml:lang="en">A biological process that is realized in maintaining functional ability, emotional well-being, and social engagement in later life, relative to cultural and personal expectations.</skos:definition>
+        <skos:prefLabel>healthy aging</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000008"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">successful aging construct information content entity</rdfs:label>
+        <skos:definition xml:lang="en">A psychological construct information content entity that describes achieving physical health, cognitive vitality, and continued involvement with life, as measured against individual and cultural standards of aging well.</skos:definition>
+        <skos:prefLabel>successful aging construct</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">aloneliness disposition</rdfs:label>
+        <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in experiencing discomfort or distress due to a perceived lack of desired time alone.</skos:definition>
+        <skos:prefLabel>aloneliness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">social detachment disposition</rdfs:label>
+        <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in reduced motivation to engage in or maintain social relationships, often without distress or social fear.</skos:definition>
+        <skos:prefLabel>social detachment</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">shyness behavior disposition</rdfs:label>
+        <skos:definition xml:lang="en">A mental disposition to social anxiety that, if realized, is realized in the inhibition of behavior during potential social interaction due to fear of negative evaluation.</skos:definition>
+        <skos:prefLabel>shyness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">solitude affinity disposition</rdfs:label>
+        <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in seeking out and enjoying time spent alone for reflection, creativity, or restoration.</skos:definition>
+        <skos:prefLabel>solitude affinity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A quality that concretizes some information content entity.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">representational pattern quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000032"/>
+        <obo:IAO_0000115>A mental representational pattern quality that has mind-to-world direction of fit.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">cognitive representational pattern quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A representational pattern quality that specifically depends on the cognitive system of its bearer.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">mental representational pattern quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000075"/>
+        <obo:IAO_0000115 xml:lang="en">A mental quality that is defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">personal identity quality</rdfs:label>
+        <skos:altLabel xml:lang="en">self-concept</skos:altLabel>
+        <skos:prefLabel>personal identity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000036"/>
+        <obo:IAO_0000115 xml:lang="en">A personal identity quality consisting of the internalized, evolving, story of oneself that individuals construct to make sense and meaning out of life.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">narrative identity quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000036"/>
+        <obo:IAO_0000115 xml:lang="en">A personal identity quality consisting of the recognition of oneself as a persisting entity, resulting from the integration of one&apos;s ego-ideal, life roles, and adjustments to reality.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">ego identity quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000008"/>
+        <obo:IAO_0000115 xml:lang="en">A psychological construct that is putatively about biologically-based dispositions to avoid others due to social fears and anxieties</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:comment xml:lang="en">How are behavioral inhibition and anxious-solitude related to and distinct from solitude? (anxious-solitude, and behavioral inhibition are all constructs reflecting biologically-based dispositions to avoid others due to social fears and anxieties)</rdfs:comment>
+        <rdfs:label xml:lang="en">anxious solitude construct information content entity</rdfs:label>
+        <skos:prefLabel>anxious solitude construct</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115>A directive information content entity that prescribes any of various established rules, methods, procedures, and practices which have been accepted as guides for social conduct over a relatively long period.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">social convention directive information entity</rdfs:label>
+        <skos:definition>Everyone conforms to R
+Everyone believes others conform to R
+This belief gives everyone a good reason to conform to R himself 
+Everyone believes others are doing the best they can to conform to R
+R is not the only possible regularity meeting (3) and (4)
+Each of the preceding factors are in principle common knowledge</skos:definition>
+        <skos:prefLabel>social convention</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000046"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A directive information content entity that prescribes any of various established rules, methods, procedures, and practices which have been accepted as guides for social conduct over a relatively long period.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/social-convention</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PHASES_0002000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000115>A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:49:47Z</terms:created>
-        <rdfs:label xml:lang="en">solitude</rdfs:label>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:49:47+00:00</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:comment xml:lang="en">Solitude is most often linked to low levels of loneliness and positive emotions when it is chosen solitude (due to enjoying solitude) and spent in active ways; people with a propensity to ruminate and those who choose solitude because they do not like being with others tend to suffer the most in solitude - Julie</rdfs:comment>
+        <rdfs:comment xml:lang="en">What are the different motivations that explain why some seek solitude? Here there are so many overlapping terms (ie., unsociability, preference for solitude, avoidance, social anhedonia, affinity for solitude, affinity for aloneness, aversion to aloneness, autonomous solitude, not self-motivated solitude), but I have a recent study suggesting that the constructs tend to load into three larger factors: shyness, affinity for solitude, and social detachment.</rdfs:comment>
+        <rdfs:label>solitude behavior disposition</rdfs:label>
+        <skos:prefLabel xml:lang="en">solitude</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002000"/>
@@ -170,8 +712,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000115>A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one&apos;s life narrative.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:54:30Z</terms:created>
-        <rdfs:label xml:lang="en">gerotranscendence</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">gerotranscendence disposition</rdfs:label>
+        <skos:prefLabel>gerotranscendence</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002001"/>
@@ -188,8 +735,13 @@
         <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006014"/>
         <obo:IAO_0000115>Social alienation that, if realized, is realized in being physically alone and desiring not to be.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:16:23Z</terms:created>
-        <rdfs:label xml:lang="en">social isolation</rdfs:label>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:16:23+00:00</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">social isolation behavior disposition</rdfs:label>
+        <skos:prefLabel>social isolation</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002002"/>
@@ -206,8 +758,11 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
         <obo:IAO_0000115>A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:58:33Z</terms:created>
-        <rdfs:label xml:lang="en">loneliness</rdfs:label>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:58:33+00:00</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">feeling of loneliness</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002003"/>
@@ -224,8 +779,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115>An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:31Z</terms:created>
-        <rdfs:label xml:lang="en">theory</rdfs:label>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:31+00:00</terms:created>
+        <rdfs:label xml:lang="en">theory information content entity</rdfs:label>
+        <skos:prefLabel xml:lang="en">theory</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002004"/>
@@ -242,7 +801,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002004"/>
         <obo:IAO_0000115>A theory that summarizes and explains mental and behavioral patterns within the context of society and culture.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:56Z</terms:created>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:56+00:00</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">psychological theory</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -258,17 +822,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
-        <obo:IAO_0000115>A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:21:13Z</terms:created>
-        <rdfs:label xml:lang="en">social convoy model</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002006"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.</owl:annotatedTarget>
-        <obo:IAO_0000119>Antonucci, T. C., Ajrouch, K. J., &amp; Birditt, K. S. (2014). The convoy model: Explaining social relations from a multidisciplinary perspective. The Gerontologist, 54(1), 82-92.</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -276,17 +830,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
-        <obo:IAO_0000115>A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:24:11Z</terms:created>
-        <rdfs:label xml:lang="en">ego integrity</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002007"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.</owl:annotatedTarget>
-        <obo:IAO_0000119>Erikson E.H. The Life Cycle Completed. Norton; New York, NY, USA: 1982.</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -294,11 +838,220 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000016 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000016">
+        <obo:IAO_0000115>Gerotranscendence Ontology (GERO)</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">Self-Transcendence Scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000017">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">Gerotranscendence Scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000018">
+        <obo:IAO_0000115>Gerotranscendence Ontology (GERO)</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">Adult Self-Transcendence Inventory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000020">
+        <obo:IAO_0000115>Gerotranscendence Ontology (GERO)</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">Quiet Ego Scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000034 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000034">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">Narrative Identity Indicators of Self-Transcendence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000035 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000035">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">Cloninger Temperament and Character Inventory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000037 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000037">
+        <obo:IAO_0000115>Gerotranscendence Ontology (GERO)</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">The Nondual Awareness Dimensional Assessment</rdfs:label>
+        <skos:altLabel xml:lang="en">NADA</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000040 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000040">
+        <obo:IAO_0000115>Gerotranscendence Ontology (GERO)</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">The Non-attachment to Self Scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000043 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000043">
+        <obo:IAO_0000115>Solitude Ontology (SOLO)</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">Loneliness Scale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000044 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0000044">
+        <obo:IAO_0000115>Solitude Ontology (SOLO)</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">Social Preference Scale-Revised</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002006 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0002006">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002007 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0002007">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002008 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PHASES_0002008">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PHASES_0002006">
+        <obo:IAO_0000115>A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:21:13+00:00</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">social convoy model</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.</owl:annotatedTarget>
+        <obo:IAO_0000119>Antonucci, T. C., Ajrouch, K. J., &amp; Birditt, K. S. (2014). The convoy model: Explaining social relations from a multidisciplinary perspective. The Gerontologist, 54(1), 82-92.</obo:IAO_0000119>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PHASES_0002007">
+        <obo:IAO_0000115>A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:24:11Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <rdfs:label xml:lang="en">ego integrity theory (Erikson)</rdfs:label>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.</owl:annotatedTarget>
+        <obo:IAO_0000119>Erikson E.H. The Life Cycle Completed. Norton; New York, NY, USA: 1982.</obo:IAO_0000119>
+    </owl:Axiom>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PHASES_0002008">
         <obo:IAO_0000115>A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:26:30Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <rdfs:label xml:lang="en">self-transcendence theory</rdfs:label>
-    </owl:Class>
+    </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002008"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
