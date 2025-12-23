@@ -25,6 +25,9 @@
         "val" : "https://orcid.org/0000-0003-2294-3571"
       }, {
         "pred" : "http://purl.org/dc/terms/contributor",
+        "val" : "https://orcid.org/0009-0002-7282-0836"
+      }, {
+        "pred" : "http://purl.org/dc/terms/contributor",
         "val" : "https://orcid.org/0009-0009-9778-4641"
       }, {
         "pred" : "http://purl.org/dc/terms/description",
@@ -37,9 +40,9 @@
         "val" : "Promoting Health Aging through Semantic Enrichment of Solitude Research (PHASES) Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-05-16"
+        "val" : "2025-12-23"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-05-16/phases-base.json"
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-12-23/phases-base.json"
     },
     "nodes" : [ {
       "id" : "http://humanbehaviourchange.org/ontology/BCIO_003000",
@@ -48,7 +51,19 @@
       "id" : "http://humanbehaviourchange.org/ontology/BCIO_006014",
       "type" : "CLASS"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000019",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000020",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000030",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000033",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/MFOEM_000006",
@@ -57,13 +72,17 @@
       "id" : "http://purl.obolibrary.org/obo/MF_0000033",
       "type" : "CLASS"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/MF_0000075",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0000000",
-      "lbl" : "reminiscence therapy",
+      "lbl" : "reminiscence therapy process",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "A behavior change intervention that uses life histories—written, oral, or both—to improve psychological well-being. The therapy is often used with older people."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
@@ -71,77 +90,838 @@
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-9625-1899"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-03-03T21:39:49Z"
+          "val" : "2025-03-03T21:39:49+00:00"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "reminiscence therapy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000005",
+      "lbl" : "cognitive appraisal representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A cognitive representational pattern quality which consists of an evaluation of the relevance of some entity to another entity."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "appraisal quality"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000006",
+      "lbl" : "self-appraisal representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A cognitive appraisal representational pattern quality consisting of an evaluation of the appraiser themselves."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000007",
+      "lbl" : "self-efficacy representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A self-appraisal representational pattern quality consisting of an evaluation of the agent's capability to achieve objectives or satisfy desires."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000008",
+      "lbl" : "psychological construct information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "psychological construct"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000009",
+      "lbl" : "psychoanalytic psychological identity construct information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A psychological construct in which it is hypothesized that human consciousness consists of the id, ego, and superego."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "psychoanalytic psychological identity construct"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000010",
+      "lbl" : "performative identity quality",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A personal identity quality formed as a result of the agent's performative behaviors as influencing and influenced by the formation of one's psychological identity."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000011",
+      "lbl" : "social withdrawal disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A mental disposition that, if realized, is realized in the consistent avoidance of social interactions with both familiar and unfamiliar peers due to psychological traits such as social fear or anxiety."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "social withdrawal"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000012",
+      "lbl" : "self-transcendence disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A transcendence disposition that, if realized, is realized in shifting one’s focus beyond the self toward broader existential, moral, or spiritual concerns, including care for others, connection with nature, or alignment with perceived universal values."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "self-transcendence"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000021",
+      "lbl" : "elective solitude disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A mental disposition that, if realized, is realized in intentionally withdrawing from social interaction in order to pursue self-reflection, restoration, or personal goals."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "elective solitude"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000022",
+      "lbl" : "imposed solitude characteristic",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A characteristic of a person that is physically or socially alone due to external constraints or circumstances, and not by personal choice."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "imposed solitude"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000023",
+      "lbl" : "ambient sociability disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A mental disposition that is realized in retaining the sense of social presence without direct social engagement with others in a public or semi-public space."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "ambient sociability"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000024",
+      "lbl" : "healthy aging process",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A biological process that is realized in maintaining functional ability, emotional well-being, and social engagement in later life, relative to cultural and personal expectations."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "healthy aging"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000025",
+      "lbl" : "successful aging construct information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A psychological construct information content entity that describes achieving physical health, cognitive vitality, and continued involvement with life, as measured against individual and cultural standards of aging well."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "successful aging construct"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000026",
+      "lbl" : "aloneliness disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A mental disposition that, if realized, is realized in experiencing discomfort or distress due to a perceived lack of desired time alone."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "aloneliness"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000027",
+      "lbl" : "social detachment disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A mental disposition that, if realized, is realized in reduced motivation to engage in or maintain social relationships, often without distress or social fear."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "social detachment"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000028",
+      "lbl" : "shyness behavior disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A mental disposition to social anxiety that, if realized, is realized in the inhibition of behavior during potential social interaction due to fear of negative evaluation."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "shyness"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000029",
+      "lbl" : "solitude affinity disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A mental disposition that, if realized, is realized in seeking out and enjoying time spent alone for reflection, creativity, or restoration."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "solitude affinity"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000030",
+      "lbl" : "representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A quality that concretizes some information content entity."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000031",
+      "lbl" : "cognitive representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental representational pattern quality that has mind-to-world direction of fit."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000032",
+      "lbl" : "mental representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A representational pattern quality that specifically depends on the cognitive system of its bearer."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000036",
+      "lbl" : "personal identity quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental quality that is defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "self-concept"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "personal identity"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000038",
+      "lbl" : "narrative identity quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A personal identity quality consisting of the internalized, evolving, story of oneself that individuals construct to make sense and meaning out of life."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000039",
+      "lbl" : "ego identity quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A personal identity quality consisting of the recognition of oneself as a persisting entity, resulting from the integration of one's ego-ideal, life roles, and adjustments to reality."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000042",
+      "lbl" : "anxious solitude construct information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A psychological construct that is putatively about biologically-based dispositions to avoid others due to social fears and anxieties"
+        },
+        "comments" : [ "How are behavioral inhibition and anxious-solitude related to and distinct from solitude? (anxious-solitude, and behavioral inhibition are all constructs reflecting biologically-based dispositions to avoid others due to social fears and anxieties)" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "anxious solitude construct"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000046",
+      "lbl" : "social convention directive information entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A directive information content entity that prescribes any of various established rules, methods, procedures, and practices which have been accepted as guides for social conduct over a relatively long period."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Everyone conforms to R\nEveryone believes others conform to R\nThis belief gives everyone a good reason to conform to R himself \nEveryone believes others are doing the best they can to conform to R\nR is not the only possible regularity meeting (3) and (4)\nEach of the preceding factors are in principle common knowledge"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "social convention"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0002000",
-      "lbl" : "solitude",
+      "lbl" : "solitude behavior disposition",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not."
         },
+        "comments" : [ "Solitude is most often linked to low levels of loneliness and positive emotions when it is chosen solitude (due to enjoying solitude) and spent in active ways; people with a propensity to ruminate and those who choose solitude because they do not like being with others tend to suffer the most in solitude - Julie", "What are the different motivations that explain why some seek solitude? Here there are so many overlapping terms (ie., unsociability, preference for solitude, avoidance, social anhedonia, affinity for solitude, affinity for aloneness, aversion to aloneness, autonomous solitude, not self-motivated solitude), but I have a recent study suggesting that the constructs tend to load into three larger factors: shyness, affinity for solitude, and social detachment." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-05T17:49:47Z"
+          "val" : "2025-02-05T17:49:47+00:00"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "solitude"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0002001",
-      "lbl" : "gerotranscendence",
+      "lbl" : "gerotranscendence disposition",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-05T17:54:30Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "gerotranscendence"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0002002",
-      "lbl" : "social isolation",
+      "lbl" : "social isolation behavior disposition",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "Social alienation that, if realized, is realized in being physically alone and desiring not to be."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-26T21:16:23Z"
+          "val" : "2025-02-26T21:16:23+00:00"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "social isolation"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0002003",
-      "lbl" : "loneliness",
+      "lbl" : "feeling of loneliness",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-05T17:58:33Z"
+          "val" : "2025-02-05T17:58:33+00:00"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0002004",
-      "lbl" : "theory",
+      "lbl" : "theory information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -151,8 +931,20 @@
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-26T21:20:31Z"
+          "val" : "2025-02-26T21:20:31+00:00"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "theory"
         } ]
       }
     }, {
@@ -163,12 +955,22 @@
         "definition" : {
           "val" : "A theory that summarizes and explains mental and behavioral patterns within the context of society and culture."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-26T21:20:56Z"
+          "val" : "2025-02-26T21:20:56+00:00"
         } ]
       }
     }, {
@@ -179,25 +981,45 @@
         "definition" : {
           "val" : "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-26T21:21:13Z"
+          "val" : "2025-02-26T21:21:13+00:00"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0002007",
-      "lbl" : "ego integrity",
+      "lbl" : "ego integrity theory (Erikson)",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:24:11Z"
@@ -211,12 +1033,189 @@
         "definition" : {
           "val" : "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:26:30Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000016",
+      "lbl" : "Self-Transcendence Scale",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000017",
+      "lbl" : "Gerotranscendence Scale",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000018",
+      "lbl" : "Adult Self-Transcendence Inventory",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000020",
+      "lbl" : "Quiet Ego Scale",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000034",
+      "lbl" : "Narrative Identity Indicators of Self-Transcendence",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000035",
+      "lbl" : "Cloninger Temperament and Character Inventory",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000037",
+      "lbl" : "The Nondual Awareness Dimensional Assessment",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "NADA"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000040",
+      "lbl" : "The Non-attachment to Self Scale",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Gerotranscendence Ontology (GERO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000043",
+      "lbl" : "Loneliness Scale",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Solitude Ontology (SOLO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000044",
+      "lbl" : "Social Preference Scale-Revised",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Solitude Ontology (SOLO)"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
         } ]
       }
     }, {
@@ -227,6 +1226,37 @@
       "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002010",
+      "lbl" : "GERO",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-08-29T15:03:18Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002012",
+      "lbl" : "SOLO",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-08-29T15:21:53Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Solitude Ontology"
+        } ]
+      }
     }, {
       "id" : "http://purl.org/dc/elements/1.1/type",
       "type" : "PROPERTY",
@@ -251,11 +1281,131 @@
       "id" : "http://purl.org/dc/terms/title",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
       "sub" : "http://purl.obolibrary.org/obo/PHASES_0000000",
       "pred" : "is_a",
       "obj" : "http://humanbehaviourchange.org/ontology/BCIO_003000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000036"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/phases.owl/PHASES_0000050"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000021",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000022",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000023",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000024",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0008150"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000025",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000026",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000027",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000028",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000029",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000036",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000075"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000038",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000036"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000039",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000036"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000042",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000046",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000033"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PHASES_0002000",
       "pred" : "is_a",
@@ -291,6 +1441,18 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PHASES_0002008",
       "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002006",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002007",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002008",
+      "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/PHASES_0002005"
     } ]
   } ]

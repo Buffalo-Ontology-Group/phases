@@ -1,16 +1,21 @@
 format-version: 1.2
-data-version: phases/releases/2025-05-16/phases-base.owl
+data-version: phases/releases/2025-12-23/phases-base.owl
+subsetdef: PHASES:0002010 ""
+subsetdef: PHASES:0002012 ""
 idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: phases/phases-base
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2025-05-16" xsd:string
+property_value: owl:versionInfo "2025-12-23" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
 property_value: terms:contributor https://orcid.org/0000-0001-9189-9661
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0000-0002-2999-0103
 property_value: terms:contributor https://orcid.org/0000-0003-2294-3571
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:contributor https://orcid.org/0009-0009-9778-4641
 property_value: terms:description "PHASES provides an ontology for integrating research in solitude and gerotranscendence. By integrating these areas of study, we aim to deepen our understanding of each and how they promote healthy aging." xsd:string
 property_value: terms:license https://creativecommons.org/publicdomain/zero/1.0/
@@ -18,82 +23,462 @@ property_value: terms:title "Promoting Health Aging through Semantic Enrichment 
 
 [Term]
 id: PHASES:0000000
-name: reminiscence therapy
+name: reminiscence therapy process
 def: "A behavior change intervention that uses life histories—written, oral, or both—to improve psychological well-being. The therapy is often used with older people." [] {IAO:0000119="https://dictionary.apa.org/reminiscence-therapy"}
+subset: PHASES:0002010
 is_a: BCIO:003000
+property_value: skos:prefLabel "reminiscence therapy" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:created "2025-03-03T21:39:49Z" xsd:dateTime
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-03-03T21:39:49+00:00" xsd:dateTime
+
+[Term]
+id: PHASES:0000005
+name: cognitive appraisal representational pattern quality
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000031 ! cognitive representational pattern quality
+property_value: skos:definition "A cognitive representational pattern quality which consists of an evaluation of the relevance of some entity to another entity." xsd:string
+property_value: skos:prefLabel "appraisal quality" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000006
+name: self-appraisal representational pattern quality
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000005 ! cognitive appraisal representational pattern quality
+property_value: skos:definition "A cognitive appraisal representational pattern quality consisting of an evaluation of the appraiser themselves." xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000007
+name: self-efficacy representational pattern quality
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000006 ! self-appraisal representational pattern quality
+property_value: skos:definition "A self-appraisal representational pattern quality consisting of an evaluation of the agent's capability to achieve objectives or satisfy desires." xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000008
+name: psychological construct information content entity
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: IAO:0000030
+property_value: skos:prefLabel "psychological construct" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000009
+name: psychoanalytic psychological identity construct information content entity
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000008 ! psychological construct information content entity
+property_value: skos:definition "A psychological construct in which it is hypothesized that human consciousness consists of the id, ego, and superego." xsd:string
+property_value: skos:prefLabel "psychoanalytic psychological identity construct" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000010
+name: performative identity quality
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000036 ! personal identity quality
+property_value: skos:definition "A personal identity quality formed as a result of the agent's performative behaviors as influencing and influenced by the formation of one's psychological identity." xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000011
+name: social withdrawal disposition
+subset: PHASES:0002012
+is_a: MF:0000033
+property_value: skos:definition "A mental disposition that, if realized, is realized in the consistent avoidance of social interactions with both familiar and unfamiliar peers due to psychological traits such as social fear or anxiety." xsd:string
+property_value: skos:prefLabel "social withdrawal" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000012
+name: self-transcendence disposition
+subset: PHASES:0002010
+is_a: PHASES:0000050
+property_value: skos:definition "A transcendence disposition that, if realized, is realized in shifting one’s focus beyond the self toward broader existential, moral, or spiritual concerns, including care for others, connection with nature, or alignment with perceived universal values." xsd:string
+property_value: skos:prefLabel "self-transcendence" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000021
+name: elective solitude disposition
+subset: PHASES:0002012
+is_a: MF:0000033
+property_value: skos:definition "A mental disposition that, if realized, is realized in intentionally withdrawing from social interaction in order to pursue self-reflection, restoration, or personal goals." xsd:string
+property_value: skos:prefLabel "elective solitude" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000022
+name: imposed solitude characteristic
+subset: PHASES:0002012
+is_a: BFO:0000020
+property_value: skos:definition "A characteristic of a person that is physically or socially alone due to external constraints or circumstances, and not by personal choice." xsd:string
+property_value: skos:prefLabel "imposed solitude" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000023
+name: ambient sociability disposition
+subset: PHASES:0002012
+is_a: MF:0000033
+property_value: skos:definition "A mental disposition that is realized in retaining the sense of social presence without direct social engagement with others in a public or semi-public space." xsd:string
+property_value: skos:prefLabel "ambient sociability" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000024
+name: healthy aging process
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: GO:0008150
+property_value: skos:definition "A biological process that is realized in maintaining functional ability, emotional well-being, and social engagement in later life, relative to cultural and personal expectations." xsd:string
+property_value: skos:prefLabel "healthy aging" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000025
+name: successful aging construct information content entity
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000008 ! psychological construct information content entity
+property_value: skos:definition "A psychological construct information content entity that describes achieving physical health, cognitive vitality, and continued involvement with life, as measured against individual and cultural standards of aging well." xsd:string
+property_value: skos:prefLabel "successful aging construct" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000026
+name: aloneliness disposition
+subset: PHASES:0002012
+is_a: MF:0000033
+property_value: skos:definition "A mental disposition that, if realized, is realized in experiencing discomfort or distress due to a perceived lack of desired time alone." xsd:string
+property_value: skos:prefLabel "aloneliness" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000027
+name: social detachment disposition
+subset: PHASES:0002012
+is_a: MF:0000033
+property_value: skos:definition "A mental disposition that, if realized, is realized in reduced motivation to engage in or maintain social relationships, often without distress or social fear." xsd:string
+property_value: skos:prefLabel "social detachment" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000028
+name: shyness behavior disposition
+subset: PHASES:0002012
+is_a: MF:0000033
+property_value: skos:definition "A mental disposition to social anxiety that, if realized, is realized in the inhibition of behavior during potential social interaction due to fear of negative evaluation." xsd:string
+property_value: skos:prefLabel "shyness" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000029
+name: solitude affinity disposition
+subset: PHASES:0002012
+is_a: MF:0000033
+property_value: skos:definition "A mental disposition that, if realized, is realized in seeking out and enjoying time spent alone for reflection, creativity, or restoration." xsd:string
+property_value: skos:prefLabel "solitude affinity" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000030
+name: representational pattern quality
+def: "A quality that concretizes some information content entity." []
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: BFO:0000019
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000031
+name: cognitive representational pattern quality
+def: "A mental representational pattern quality that has mind-to-world direction of fit." []
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000032 ! mental representational pattern quality
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000032
+name: mental representational pattern quality
+def: "A representational pattern quality that specifically depends on the cognitive system of its bearer." []
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000030 ! representational pattern quality
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000036
+name: personal identity quality
+def: "A mental quality that is defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles." []
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: MF:0000075
+property_value: skos:altLabel "self-concept" xsd:string
+property_value: skos:prefLabel "personal identity" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000038
+name: narrative identity quality
+def: "A personal identity quality consisting of the internalized, evolving, story of oneself that individuals construct to make sense and meaning out of life." []
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000036 ! personal identity quality
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000039
+name: ego identity quality
+def: "A personal identity quality consisting of the recognition of oneself as a persisting entity, resulting from the integration of one's ego-ideal, life roles, and adjustments to reality." []
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0000036 ! personal identity quality
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000042
+name: anxious solitude construct information content entity
+def: "A psychological construct that is putatively about biologically-based dispositions to avoid others due to social fears and anxieties" []
+comment: How are behavioral inhibition and anxious-solitude related to and distinct from solitude? (anxious-solitude, and behavioral inhibition are all constructs reflecting biologically-based dispositions to avoid others due to social fears and anxieties)
+subset: PHASES:0002012
+is_a: PHASES:0000008 ! psychological construct information content entity
+property_value: skos:prefLabel "anxious solitude construct" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+
+[Term]
+id: PHASES:0000046
+name: social convention directive information entity
+def: "A directive information content entity that prescribes any of various established rules, methods, procedures, and practices which have been accepted as guides for social conduct over a relatively long period." [] {IAO:0000119="https://dictionary.apa.org/social-convention"}
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: IAO:0000033
+property_value: skos:definition "Everyone conforms to R\nEveryone believes others conform to R\nThis belief gives everyone a good reason to conform to R himself \nEveryone believes others are doing the best they can to conform to R\nR is not the only possible regularity meeting (3) and (4)\nEach of the preceding factors are in principle common knowledge" xsd:string
+property_value: skos:prefLabel "social convention" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
 
 [Term]
 id: PHASES:0002000
-name: solitude
+name: solitude behavior disposition
 def: "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not." [] {IAO:0000119="Oliveira, J., Guerra, S., Sousa, L., & Ribeiro, O. (2024). Solitude in old age: a scoping review of conceptualisations, associated factors and impacts. Aging & Mental Health, 29(2), 220–227. https://doi.org/10.1080/13607863.2024.2379408"}
+comment: Solitude is most often linked to low levels of loneliness and positive emotions when it is chosen solitude (due to enjoying solitude) and spent in active ways; people with a propensity to ruminate and those who choose solitude because they do not like being with others tend to suffer the most in solitude - Julie
+comment: What are the different motivations that explain why some seek solitude? Here there are so many overlapping terms (ie., unsociability, preference for solitude, avoidance, social anhedonia, affinity for solitude, affinity for aloneness, aversion to aloneness, autonomous solitude, not self-motivated solitude), but I have a recent study suggesting that the constructs tend to load into three larger factors: shyness, affinity for solitude, and social detachment.
+subset: PHASES:0002012
 is_a: MF:0000033
+property_value: skos:prefLabel "solitude" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
-property_value: terms:created "2025-02-05T17:49:47Z" xsd:dateTime
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-02-05T17:49:47+00:00" xsd:dateTime
 
 [Term]
 id: PHASES:0002001
-name: gerotranscendence
+name: gerotranscendence disposition
 def: "A mental disposition borne by older adults such that, if realized, is realized in shifting in goals, values, and perspectives towards connections to past and future generations and in seeking coherence in one's life narrative." [] {IAO:0000119="https://pmc.ncbi.nlm.nih.gov/articles/PMC10466938/"}
+subset: PHASES:0002010
 is_a: MF:0000033
+property_value: skos:prefLabel "gerotranscendence" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-02-05T17:54:30Z" xsd:dateTime
 
 [Term]
 id: PHASES:0002002
-name: social isolation
+name: social isolation behavior disposition
 def: "Social alienation that, if realized, is realized in being physically alone and desiring not to be." [] {IAO:0000119="https://www.nia.nih.gov/health/loneliness-and-social-isolation/loneliness-and-social-isolation-tips-staying-connected"}
+subset: PHASES:0002012
 is_a: BCIO:006014
+property_value: skos:prefLabel "social isolation" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
-property_value: terms:created "2025-02-26T21:16:23Z" xsd:dateTime
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-02-26T21:16:23+00:00" xsd:dateTime
 
 [Term]
 id: PHASES:0002003
-name: loneliness
+name: feeling of loneliness
 def: "A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships." [] {IAO:0000119="Asher, S. R., Hymel, S., & Renshaw, P. D. (1984). Loneliness in children. Child development, 1456-1464."}
+subset: PHASES:0002012
 is_a: MFOEM:000006
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
-property_value: terms:created "2025-02-05T17:58:33Z" xsd:dateTime
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-02-05T17:58:33+00:00" xsd:dateTime
 
 [Term]
 id: PHASES:0002004
-name: theory
+name: theory information content entity
 def: "An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena." [] {IAO:0000119="https://dictionary.apa.org/theory"}
 is_a: IAO:0000030
+property_value: skos:prefLabel "theory" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
-property_value: terms:created "2025-02-26T21:20:31Z" xsd:dateTime
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-02-26T21:20:31+00:00" xsd:dateTime
 
 [Term]
 id: PHASES:0002005
 name: psychological theory
 def: "A theory that summarizes and explains mental and behavioral patterns within the context of society and culture." [] {IAO:0000119="https://www.sciencedirect.com/topics/psychology/psychological-theory"}
-is_a: PHASES:0002004 ! theory
+subset: PHASES:0002010
+subset: PHASES:0002012
+is_a: PHASES:0002004 ! theory information content entity
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
-property_value: terms:created "2025-02-26T21:20:56Z" xsd:dateTime
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-02-26T21:20:56+00:00" xsd:dateTime
 
 [Term]
 id: PHASES:0002006
 name: social convoy model
 def: "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age." [] {IAO:0000119="Antonucci, T. C., Ajrouch, K. J., & Birditt, K. S. (2014). The convoy model: Explaining social relations from a multidisciplinary perspective. The Gerontologist, 54(1), 82-92."}
+subset: PHASES:0002010
+subset: PHASES:0002012
 is_a: PHASES:0002005 ! psychological theory
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
-property_value: terms:created "2025-02-26T21:21:13Z" xsd:dateTime
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2025-02-26T21:21:13+00:00" xsd:dateTime
 
 [Term]
 id: PHASES:0002007
-name: ego integrity
+name: ego integrity theory (Erikson)
 def: "A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults." [] {IAO:0000119="Erikson E.H. The Life Cycle Completed. Norton; New York, NY, USA: 1982."}
+subset: PHASES:0002010
 is_a: PHASES:0002005 ! psychological theory
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-02-26T21:24:11Z" xsd:dateTime
 
 [Term]
 id: PHASES:0002008
 name: self-transcendence theory
 def: "A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors." [] {IAO:0000119="Reed, P.G. (1991). Toward a nursing theory of self-transcendence: Deductive reformulation using developmental theories. Advances in Nursing Science, 13 (4), 64-77."}
+subset: PHASES:0002010
 is_a: PHASES:0002005 ! psychological theory
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-02-26T21:26:30Z" xsd:dateTime
 
