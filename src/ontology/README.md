@@ -73,7 +73,7 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
    - Mark it as the **latest release**.
    - Click **Publish Release**.
   
-7. Release Ontology Subsets
+7. Generating Ontology Subsets (Gero and Solo)
    
    The PHASES ontology generates subsets automatically using the **PHASES subset extraction Makefile**, which builds ontology subsets based on class annotations:
 
@@ -105,7 +105,7 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
      
    - Prepare the official **subset** release:
      ```bash
-     make prepare-release
+     make prepare_release
      ```
    
    - Verify that ontology subsets (e.g., **Gerotranscendence (Gero)** and **Solitude (Solo)**) were generated in the **subset directory** `$(SUBSETDIR)` (default: `src/ontology/subsets`), including:
@@ -116,6 +116,12 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
      - `*.obo` 
      - `*.json`
      - `*.tsv`
+
+   - Copy the updated subsets to the root/subsets directory:
+     ```bash
+     cp src/ontology/subsets/gero.* subsets/            
+     cp src/ontology/subsets/solo.* subsets/
+     ```
        
    - Review each subset to confirm:
      - Correct metadata (version IRI, release date, license).
@@ -123,7 +129,7 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
    - Commit the updated subset artifacts together with the main ontology release files:
      ```bash
      git add .
-     git commit -m "Update ontology subsets for release YYYY-MM-DD"
+     git commit -m "Update ontology subsets (Gero and Solo) for release YYYY-MM-DD"
      ```
      
    - Push the release branch:

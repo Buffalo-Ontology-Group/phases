@@ -40,11 +40,27 @@
         "val" : "Solitude Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-12-05"
+        "val" : "2025-12-24"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-12-05/solo.owl"
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-12-24/solo.owl"
     },
     "nodes" : [ {
+      "id" : "http://humanbehaviourchange.org/ontology/BCIO_006014",
+      "lbl" : "social alienation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A <mental disposition> to perceive or experience oneself as isolated from and not meaningfully involved in social groups."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "Published"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
       "lbl" : "entity",
       "type" : "CLASS",
@@ -421,6 +437,58 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000019",
+      "lbl" : "quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
+          "val" : "quality"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
+          "val" : "Quality"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the ambient temperature of this portion of air"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the color of a tomato"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the length of the circumference of your waist"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the mass of this piece of gold."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the shape of your nose"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the shape of your nostril"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "External"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000601",
+          "val" : "If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000602",
+          "val" : "(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] "
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000020",
       "lbl" : "specifically dependent continuant",
       "type" : "CLASS",
@@ -538,12 +606,16 @@
         "definition" : {
           "val" : "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"
         },
+        "comments" : [ "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000179",
           "val" : "gdc"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/BFO_0000180",
           "val" : "GenericallyDependentContinuant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "generically dependent continuant"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity."
@@ -559,6 +631,72 @@
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "lbl" : "biological_process",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.",
+          "xrefs" : [ "GOC:pdt" ]
+        },
+        "comments" : [ "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/go#goslim_candida", "http://purl.obolibrary.org/obo/go#goslim_chembl", "http://purl.obolibrary.org/obo/go#goslim_metagenomics", "http://purl.obolibrary.org/obo/go#goslim_pir", "http://purl.obolibrary.org/obo/go#goslim_plant", "http://purl.obolibrary.org/obo/go#goslim_pombe", "http://purl.obolibrary.org/obo/go#goslim_yeast" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "biological process"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "physiological process"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "single organism process"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "single-organism process"
+        } ],
+        "xrefs" : [ {
+          "val" : "Wikipedia:Biological_process"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/geneontology/go-ontology/issues/24968"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "jl"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2012-09-19T15:05:24Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0000004"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0007582"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0044699"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "biological_process"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000027",
+      "lbl" : "data item",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "data item"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
         } ]
       }
     }, {
@@ -579,6 +717,9 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "External"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "2014-03-10: The use of \"thing\" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ)."
         }, {
@@ -591,8 +732,253 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "OBI_0000142"
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ogms.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000033",
+      "lbl" : "directive information entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity whose concretizations indicate to their bearer how to realize them in a process."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "directive information entity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "External"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "8/6/2009 Alan Ruttenberg: Changed label from \"information entity about a realizable\" after discussions at ICBO"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Bjoern Peters"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000078",
+      "lbl" : "curation status specification",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "curation status specification"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Bill Bug"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "OBI_0000266"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000102",
+      "lbl" : "data about an ontology part",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "data about an ontology part is a data item about a part of an ontology, for example a term"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "data about an ontology part"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Person:Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Person:Alan Ruttenberg"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000225",
+      "lbl" : "obsolescence reason specification",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "obsolescence reason specification"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Melanie Courtot"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000409",
+      "lbl" : "denotator type",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A denotator type indicates how a term should be interpreted from an ontological perspective."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "denotator type"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Barry Smith, Werner Ceusters"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Barry Smith, Werner Ceusters"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MFOEM_000006",
+      "lbl" : "subjective emotional feeling",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The subjective emotional feeling is that (fiat) part of the emotion process by which the organism experiences its own emotion."
+        },
+        "comments" : [ "'Subjective affective feeling can have greater or weaker physiological or mental components. The bodily process that are experienced will usually involve some mental process.\n\nBodily sensation and the experiences of emotions (e.g., feeling calm) would both qualify as examples of 'subjective affective feeling'.\n\nAs a subclass of 'affective process', subjective affective feelings have valence. Valence refers to the 'the subjective value of an event, object, person, or other entity in the life space of the individual' (https://dictionary.apa.org/valence). Valence ranges from negative to positive.", "As a subclass of 'affective process', subjective affective feelings have valence. Valence refers to the 'the subjective value of an event, object, person, or other entity in the life space of the individual' (https://dictionary.apa.org/valence). Valence ranges from negative to positive.", "Bodily sensations and the experiences of emotions (e.g., feeling calm) would both qualify as examples of 'subjective affective feeling'.", "Excluded the following subjective feelings which appear on the GRID questionnaire since they seem debatable to what extent they are really *feelings* and to what extent they are actually *evaluations* or other things:\n\n-- felt submissive/dominant\n-- felt powerless/powerful\n\n\n\n", "Subjective affective feeling can have greater or weaker physiological or mental components. The bodily processes that are experienced will usually involve some mental process." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : " \"Regulatory fit\" in the Regulatory Fit Theory"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "\"Wants\" in the PRIME theory"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "External"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "pain"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/MFOEM_000010",
+          "val" : "affective consciousness"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "http://purl.obolibrary.org/obo/MFOEM_000202"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MFOEM_000195",
+      "lbl" : "affective process",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An affective process is any process that has positive or negative valence. "
+        },
+        "comments" : [ "Valence refers to the 'the subjective value of an event, object, person, or other entity in the life space of the individual' (https://dictionary.apa.org/valence). Valence ranges from negative to positive." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : " \"Affect\" in the Health Promotion Model"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : " \"Mood / arousal\" in the Social Action Theory (Ewart)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "\"Feelings\" in the Risk as Feelings"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "External"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MF_0000020",
+      "lbl" : "mental process",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Valence is a process profile of an emotion, mood, or affective bodily feeling (such as pleasure and pain). Valence can be positive or negative, with different strengths in both directions. For example, pleasure is positively valenced while pain is negatively valenced.  "
+        },
+        "comments" : [ "A 'mental process' is a subclass of 'bodily process', as mental processes occur within the body, specifically involving the brain.", "A bodily process which brings into being, sustains or modifies a cognitive representation or a behavior inducing state.", "Examples include thinking, feeling pain, remembering and emotion as occurrent experiences.", "Mental processes can vary in the degree to which they involve consciousness.\n\nA 'mental process' is a subclass of 'bodily process', as mental processes occur within the body, specifically involving the brain.", "Mental processes can varying in the degree to which they involve consciousness." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "External"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.' "
         } ]
       }
     }, {
@@ -605,6 +991,9 @@
         },
         "comments" : [ "Bodily disposition includes features that can be used in a specific context, such as a person's strength, but not a person's weight. A person has a specific weight independent of the circumstances they are in.", "Extended organism refers to an organism and its microbiome (e.g., the bacteria that live in one's digestive system)\n\nBodily disposition would include features, such as a person's strength (which can be used in a specific context), but not weight. A person would have a certain weight independent of most circumstances they are in.", "Extended organism refers to an organism and its microbiome (e.g., the bacteria that live in one's digestive system)." ],
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "\"Internal environment\" in the PRIME theory"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "External"
         }, {
@@ -625,11 +1014,43 @@
         },
         "comments" : [ "'Mental disposition' is a subclass of 'bodily disposition', as mental dispositions occur in the body.", "Mental disposition' is a subclass of 'bodily disposition', as mental dispositions occur in the body." ],
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : " \"Psychological\" in the Health Promotion Model"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "\"Psychological factors\" in the I-Change Model"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "External"
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://humanbehaviourchange.org/ontology/bcio.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MF_0000074",
+      "lbl" : "bodily quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A bodily quality is a quality that inheres in some extended organism."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MF_0000075",
+      "lbl" : "mental quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental quality is a bodily quality that inheres in those structures of the extended organism that are essential for mental functioning."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
         } ]
       }
     }, {
@@ -662,20 +1083,194 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000005",
+      "lbl" : "cognitive appraisal representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A cognitive representational pattern quality which consists of an evaluation of the relevance of some entity to another entity."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "appraisal quality"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000006",
+      "lbl" : "self-appraisal representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A cognitive appraisal representational pattern quality consisting of an evaluation of the appraiser themselves."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000007",
+      "lbl" : "self-efficacy representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A self-appraisal representational pattern quality consisting of an evaluation of the agent's capability to achieve objectives or satisfy desires."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000008",
+      "lbl" : "psychological construct information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "psychological construct"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000009",
+      "lbl" : "psychoanalytic psychological identity construct information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A psychological construct in which it is hypothesized that human consciousness consists of the id, ego, and superego."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "psychoanalytic psychological identity construct"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000010",
+      "lbl" : "performative identity quality",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A personal identity quality formed as a result of the agent's performative behaviors as influencing and influenced by the formation of one's psychological identity."
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0000011",
-      "lbl" : "social withdrawal",
+      "lbl" : "social withdrawal disposition",
       "type" : "CLASS",
       "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A mental disposition that, if realized, is realized in the consistent avoidance of social interactions with both familiar and unfamiliar peers due to psychological traits such as social fear or anxiety."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "social withdrawal"
         } ]
       }
     }, {
@@ -686,30 +1281,54 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A mental disposition that, if realized, is realized in intentionally withdrawing from social interaction in order to pursue self-reflection, restoration, or personal goals."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "elective solitude"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0000022",
-      "lbl" : "imposed solitude",
+      "lbl" : "imposed solitude characteristic",
       "type" : "CLASS",
       "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A characteristic of a person that is physically or socially alone due to external constraints or circumstances, and not by personal choice."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "imposed solitude"
         } ]
       }
     }, {
@@ -720,30 +1339,112 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
-          "val" : "A mental disposition that is realized in retaining the sense of social presence without direct social engagement with others in a in a public or semi-public space."
+          "val" : "A mental disposition that is realized in retaining the sense of social presence without direct social engagement with others in a public or semi-public space."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "ambient sociability"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000024",
+      "lbl" : "healthy aging process",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A biological process that is realized in maintaining functional ability, emotional well-being, and social engagement in later life, relative to cultural and personal expectations."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "healthy aging"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000025",
+      "lbl" : "successful aging construct information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "A psychological construct information content entity that describes achieving physical health, cognitive vitality, and continued involvement with life, as measured against individual and cultural standards of aging well."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "successful aging construct"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0000026",
-      "lbl" : "aloneliness",
+      "lbl" : "aloneliness disposition",
       "type" : "CLASS",
       "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A mental disposition that, if realized, is realized in experiencing discomfort or distress due to a perceived lack of desired time alone."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "aloneliness"
         } ]
       }
     }, {
@@ -754,13 +1455,25 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A mental disposition that, if realized, is realized in reduced motivation to engage in or maintain social relationships, often without distress or social fear."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "social detachment"
         } ]
       }
     }, {
@@ -771,7 +1484,16 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
@@ -785,19 +1507,337 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/PHASES_0000029",
-      "lbl" : "solitude affinity",
+      "lbl" : "solitude affinity disposition",
       "type" : "CLASS",
       "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A mental disposition that, if realized, is realized in seeking out and enjoying time spent alone for reflection, creativity, or restoration."
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "solitude affinity"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000030",
+      "lbl" : "representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A quality that concretizes some information content entity."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000031",
+      "lbl" : "cognitive representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental representational pattern quality that has mind-to-world direction of fit."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000032",
+      "lbl" : "mental representational pattern quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A representational pattern quality that specifically depends on the cognitive system of its bearer."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000036",
+      "lbl" : "personal identity quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental quality that is defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#altLabel",
+          "val" : "self-concept"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "personal identity"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000038",
+      "lbl" : "narrative identity quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A personal identity quality consisting of the internalized, evolving, story of oneself that individuals construct to make sense and meaning out of life."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000039",
+      "lbl" : "ego identity quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A personal identity quality consisting of the recognition of oneself as a persisting entity, resulting from the integration of one's ego-ideal, life roles, and adjustments to reality."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000042",
+      "lbl" : "anxious solitude construct information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A psychological construct that is putatively about biologically-based dispositions to avoid others due to social fears and anxieties"
+        },
+        "comments" : [ "How are behavioral inhibition and anxious-solitude related to and distinct from solitude? (anxious-solitude, and behavioral inhibition are all constructs reflecting biologically-based dispositions to avoid others due to social fears and anxieties)" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "anxious solitude construct"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0000046",
+      "lbl" : "social convention directive information entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A directive information content entity that prescribes any of various established rules, methods, procedures, and practices which have been accepted as guides for social conduct over a relatively long period."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#definition",
+          "val" : "Everyone conforms to R\nEveryone believes others conform to R\nThis belief gives everyone a good reason to conform to R himself \nEveryone believes others are doing the best they can to conform to R\nR is not the only possible regularity meeting (3) and (4)\nEach of the preceding factors are in principle common knowledge"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "social convention"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002000",
+      "lbl" : "solitude behavior disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not."
+        },
+        "comments" : [ "Solitude is most often linked to low levels of loneliness and positive emotions when it is chosen solitude (due to enjoying solitude) and spent in active ways; people with a propensity to ruminate and those who choose solitude because they do not like being with others tend to suffer the most in solitude - Julie", "What are the different motivations that explain why some seek solitude? Here there are so many overlapping terms (ie., unsociability, preference for solitude, avoidance, social anhedonia, affinity for solitude, affinity for aloneness, aversion to aloneness, autonomous solitude, not self-motivated solitude), but I have a recent study suggesting that the constructs tend to load into three larger factors: shyness, affinity for solitude, and social detachment." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-05T17:49:47+00:00"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "solitude"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002002",
+      "lbl" : "social isolation behavior disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Social alienation that, if realized, is realized in being physically alone and desiring not to be."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-26T21:16:23+00:00"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "social isolation"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PHASES_0002003",
+      "lbl" : "feeling of loneliness",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-02-05T17:58:33+00:00"
         } ]
       }
     }, {
@@ -812,11 +1852,20 @@
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:20:31+00:00"
         }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-26T21:20:31Z"
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "theory"
         } ]
       }
     }, {
@@ -832,11 +1881,17 @@
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-26T21:20:56+00:00"
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-26T21:20:56Z"
+          "val" : "2025-02-26T21:20:56+00:00"
         } ]
       }
     }, {
@@ -847,21 +1902,27 @@
         "definition" : {
           "val" : "A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age."
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002010", "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
-          "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-26T21:21:13+00:00"
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
-          "val" : "2025-02-26T21:21:13Z"
+          "val" : "2025-02-26T21:21:13+00:00"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051",
-      "lbl" : "social isolation state",
+      "lbl" : "social isolation process",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -869,14 +1930,523 @@
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/PHASES_0002012" ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "social isolation"
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
         }, {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0002-1118-1738"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "social isolation state"
+        } ]
+      }
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#Subset",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000002",
+      "lbl" : "example to be eventually removed",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "example to be eventually removed"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000103",
+      "lbl" : "failed exploratory term",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "failed exploratory term"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Terms created as placeholders with the expectation of being permanent should instead be deprecated using the \"placeholder removed\" (obo:IAO_0000226) justification."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Person:Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Person:Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000120",
+      "lbl" : "metadata complete",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "metadata complete"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000121",
+      "lbl" : "organizational term",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "term created to ease viewing/sort terms for development purpose, and will not be included in a release"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "organizational term"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000122",
+      "lbl" : "ready for release",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "ready for release"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000123",
+      "lbl" : "metadata incomplete",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "metadata incomplete"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000124",
+      "lbl" : "uncurated",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "uncurated"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000125",
+      "lbl" : "pending final vetting",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "pending final vetting"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000224",
+      "lbl" : "obsolete_core",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Core is an instance of a grouping of terms from an ontology or ontologies. It is used by the ontology to identify main classes."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Melanie Courtot"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000226"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        } ],
+        "deprecated" : true
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000226",
+      "lbl" : "placeholder removed",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The term was created to temporarily stand in for a semantic purpose, but is no longer needed, typically due to another permanent term being defined."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "placeholder removed"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This reason is appropriate for a temporary term even if no permanent term is defined; for example if the need for the term no longer exists. If a permanent (replacement) term is defined, the deprecated term should reference the replacement with IAO:0100001. If no replacement is defined, it may be appropriate to reference alternative terms with oboInOwl:consider."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000227",
+      "lbl" : "terms merged",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The term has been combined with one or more other terms to create a more encompassing (merged) term."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "terms merged"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "An editor note should explain what were the merged terms and the reason for the merge."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "The deprecated term should reference the merged term with obo:IAO_0100001. The replacement term should reference the original terms as sources using obo:RO_0001000 (derives_from). An editor note should explain what were the merged terms and the reason for the merge."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000228",
+      "lbl" : "term imported",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The term has been replaced by a term imported from another ontology."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "term imported"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This is to be used when the original term has been replaced by a term imported from an other ontology. The deprecated term should reference the imported term with obo:IAO_0100001."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000229",
+      "lbl" : "term split",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The term has been split into two or more new terms."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "term split"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split. The deprecated term should reference the replacement terms with obo:IAO_0100001."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000410",
+      "lbl" : "universal",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "universal"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000420",
+      "lbl" : "defined class",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "defined class"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000421",
+      "lbl" : "named class expression",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "named class expression"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000423",
+      "lbl" : "to be replaced with external ontology term",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "Terms with this status should eventually replaced with a term from another ontology."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "to be replaced with external ontology term"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "group:OBI"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000428",
+      "lbl" : "requires discussion",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "requires discussion"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "group:OBI"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMO_0001000",
+      "lbl" : "out of scope",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This obsolesence reason should be used conservatively. Typical valid examples in disease ontologies are: unnecessary class grouping; mistaked creation of a disease associated to a phenotype."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "http://orcid.org/0000-0001-5208-3432"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/information-artifact-ontology/ontology-metadata/issues/77"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000234",
+          "val" : "https://orcid.org/0000-0001-5208-3432"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0001-6875-5360"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-7356-1779"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/MF.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/omo.owl"
         } ]
       }
     }, {
@@ -926,6 +2496,15 @@
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
         }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
+        }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:24:11Z"
         } ]
@@ -942,6 +2521,15 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0001-6906-5548"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-9625-1899"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-1118-1738"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0009-0002-7282-0836"
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:26:30Z"
@@ -1067,7 +2655,19 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000231",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000232",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000233",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000234",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -1088,6 +2688,14 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0010000",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MFOEM_000010",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/contributor",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -1115,7 +2723,31 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -1128,6 +2760,10 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#altLabel",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -1148,6 +2784,10 @@
       "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
+      "sub" : "http://humanbehaviourchange.org/ontology/BCIO_006014",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/BFO_0000002",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000001"
@@ -1168,6 +2808,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000019",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/BFO_0000020",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000002"
@@ -1176,9 +2820,49 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000002"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/GO_0008150",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000027",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000030",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000078",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000102"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000102",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000027"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000225",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000102"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000409",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000102"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MFOEM_000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MFOEM_000195"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MFOEM_000195",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000020"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MF_0000020",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OGMS_0000060"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/MF_0000032",
       "pred" : "is_a",
@@ -1188,9 +2872,41 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/MF_0000032"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/MF_0000074",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MF_0000075",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000074"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OGMS_0000060",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000036"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PHASES_0000011",
       "pred" : "is_a",
@@ -1202,11 +2918,19 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PHASES_0000022",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OGMS_0000060"
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PHASES_0000023",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000024",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0008150"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000025",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000008"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PHASES_0000026",
       "pred" : "is_a",
@@ -1224,6 +2948,50 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000036",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000075"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000038",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000036"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000039",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000036"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000042",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PHASES_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0000046",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002000",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002002",
+      "pred" : "is_a",
+      "obj" : "http://humanbehaviourchange.org/ontology/BCIO_006014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PHASES_0002003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MFOEM_000006"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/PHASES_0002004",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
@@ -1239,6 +3007,86 @@
       "sub" : "http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
+    }, {
+      "sub" : "http://www.geneontology.org/formats/oboInOwl#Subset",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000102"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000002",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000103",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000225"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000120",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000121",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000122",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000123",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000124",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000125",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000224",
+      "pred" : "type",
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#Subset"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000226",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000225"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000227",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000225"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000228",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000225"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000229",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000225"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000410",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000409"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000420",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000409"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000421",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000409"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000423",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000428",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMO_0001000",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000225"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PHASES_0002006",
       "pred" : "type",

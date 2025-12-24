@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/phases/solo.owl#"
      xml:base="http://purl.obolibrary.org/obo/phases/solo.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -14,7 +15,7 @@
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/phases/solo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-12-05/solo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-12-24/solo.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-7055-9158"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9189-9661"/>
@@ -27,7 +28,7 @@
         <terms:description>The Solitude Ontology contains terms for defining and classifying concepts related to solitude, including its dimensions, experiences, and outcomes. Its concepts and relationships support the development of tools and resources that enhance understanding of solitude. The Solitude Ontology is developed as a subset of (http://purl.obolibrary.org/obo/phases.owl). Issues and term requests can be submitted at (https://github.com/Buffalo-Ontology-Group/phases/issues).</terms:description>
         <terms:license>https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
         <terms:title>Solitude Ontology</terms:title>
-        <owl:versionInfo>2025-12-05</owl:versionInfo>
+        <owl:versionInfo>2025-12-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -103,9 +104,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000234 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234"/>
     
 
 
@@ -136,6 +155,18 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000010 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/MFOEM_000010"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
@@ -175,9 +206,45 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     
 
 
@@ -196,6 +263,12 @@
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
     
 
 
@@ -231,6 +304,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://humanbehaviourchange.org/ontology/BCIO_006014 -->
+
+    <owl:Class rdf:about="http://humanbehaviourchange.org/ontology/BCIO_006014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000114>Published</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;mental disposition&gt; to perceive or experience oneself as isolated from and not meaningfully involved in social groups.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl"/>
+        <rdfs:label>social alienation</rdfs:label>
+    </owl:Class>
     
 
 
@@ -574,10 +659,60 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:BFO_0000179>quality</obo:BFO_0000179>
+        <obo:BFO_0000180>Quality</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">the ambient temperature of this portion of air</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the color of a tomato</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the length of the circumference of your waist</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the mass of this piece of gold.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nose</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nostril</obo:IAO_0000112>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized.</obo:IAO_0000115>
+        <obo:IAO_0000600 xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label>quality</rdfs:label>
+        <rdfs:label xml:lang="en">quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <obo:BFO_0000179>sdc</obo:BFO_0000179>
         <obo:BFO_0000180>SpecificallyDependentContinuant</obo:BFO_0000180>
         <obo:IAO_0000111 xml:lang="en">specifically dependent continuant</obo:IAO_0000111>
@@ -660,11 +795,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:BFO_0000179>gdc</obo:BFO_0000179>
         <obo:BFO_0000180>GenericallyDependentContinuant</obo:BFO_0000180>
+        <obo:IAO_0000111 xml:lang="en">generically dependent continuant</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the pdf file on your laptop, the pdf file that is a copy thereof on my laptop</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
         <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </obo:IAO_0000602>
+        <rdfs:comment xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
     </owl:Class>
@@ -683,6 +821,55 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-09-19T15:05:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0000004</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044699</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>single-organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0008150</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+        <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl"/>
+        <rdfs:label>biological_process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
@@ -690,6 +877,8 @@
         <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
@@ -697,8 +886,227 @@
 Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>information content entity</rdfs:label>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">directive information entity</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: Changed label from &quot;information entity about a realizable&quot; after discussions at ICBO</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl"/>
+        <rdfs:label>directive information entity</rdfs:label>
+        <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000078">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000002"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000120"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000121"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000122"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000123"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000124"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000125"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000423"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000428"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+        <obo:IAO_0000111 xml:lang="en">curation status specification</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000266</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:label xml:lang="en">curation status specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000111 xml:lang="en">data about an ontology part</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Data about an ontology part is a data item about a part of an ontology, for example a term</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">data about an ontology part is a data item about a part of an ontology, for example a term</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:label xml:lang="en">data about an ontology part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000225">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000103"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000226"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000103"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000226"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMO_0001000"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+        <obo:IAO_0000111 xml:lang="en">obsolescence reason specification</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The creation of this class has been inspired in part by Werner Ceusters&apos; paper, Applying evolutionary terminology auditing to the Gene Ontology.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:label xml:lang="en">obsolescence reason specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000409">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000410"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000420"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000421"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+        <obo:IAO_0000111 xml:lang="en">denotator type</obo:IAO_0000111>
+        <obo:IAO_0000112>The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are &quot;natural kinds&quot; and the latter arbitrary collections of entities.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are &quot;natural kinds&quot; and the latter arbitrary collections of entities.</obo:IAO_0000112>
+        <obo:IAO_0000115>A denotator type indicates how a term should be interpreted from an ontological perspective.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A denotator type indicates how a term should be interpreted from an ontological perspective.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119>Barry Smith, Werner Ceusters</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">Barry Smith, Werner Ceusters</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:label>denotator type</rdfs:label>
+        <rdfs:label xml:lang="en">denotator type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
+        <obo:IAO_0000112> &quot;Regulatory fit&quot; in the Regulatory Fit Theory</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Wants&quot; in the PRIME theory</obo:IAO_0000112>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>An &lt;affective process&gt; that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective process that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
+        <obo:IAO_0000115>The subjective emotional feeling is that (fiat) part of the emotion process by which the organism experiences its own emotion.</obo:IAO_0000115>
+        <obo:IAO_0000118>pain</obo:IAO_0000118>
+        <obo:MFOEM_000010>affective consciousness</obo:MFOEM_000010>
+        <oboInOwl:hasAlternativeId>http://purl.obolibrary.org/obo/MFOEM_000202</oboInOwl:hasAlternativeId>
+        <rdfs:comment>&apos;Subjective affective feeling can have greater or weaker physiological or mental components. The bodily process that are experienced will usually involve some mental process.
+
+Bodily sensation and the experiences of emotions (e.g., feeling calm) would both qualify as examples of &apos;subjective affective feeling&apos;.
+
+As a subclass of &apos;affective process&apos;, subjective affective feelings have valence. Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; (https://dictionary.apa.org/valence). Valence ranges from negative to positive.</rdfs:comment>
+        <rdfs:comment>As a subclass of &apos;affective process&apos;, subjective affective feelings have valence. Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; (https://dictionary.apa.org/valence). Valence ranges from negative to positive.</rdfs:comment>
+        <rdfs:comment>Bodily sensations and the experiences of emotions (e.g., feeling calm) would both qualify as examples of &apos;subjective affective feeling&apos;.</rdfs:comment>
+        <rdfs:comment>Excluded the following subjective feelings which appear on the GRID questionnaire since they seem debatable to what extent they are really *feelings* and to what extent they are actually *evaluations* or other things:
+
+-- felt submissive/dominant
+-- felt powerless/powerful
+
+
+
+</rdfs:comment>
+        <rdfs:comment>Subjective affective feeling can have greater or weaker physiological or mental components. The bodily processes that are experienced will usually involve some mental process.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl"/>
+        <rdfs:label>subjective affective feeling</rdfs:label>
+        <rdfs:label>subjective emotional feeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000195 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000112> &quot;Affect&quot; in the Health Promotion Model</obo:IAO_0000112>
+        <obo:IAO_0000112> &quot;Mood / arousal&quot; in the Social Action Theory (Ewart)</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Feelings&quot; in the Risk as Feelings</obo:IAO_0000112>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;mental process&gt; that has positive or negative valence.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that has positive or negative valence.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective process is any process that has positive or negative valence. </obo:IAO_0000115>
+        <rdfs:comment>Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; (https://dictionary.apa.org/valence). Valence ranges from negative to positive.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl"/>
+        <rdfs:label>affective process</rdfs:label>
+        <rdfs:label xml:lang="en">affective process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <obo:IAO_0000114>External</obo:IAO_0000114>
+        <obo:IAO_0000115>A &lt;bodily process&gt; that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A bodily process that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>Valence is a process profile of an emotion, mood, or affective bodily feeling (such as pleasure and pain). Valence can be positive or negative, with different strengths in both directions. For example, pleasure is positively valenced while pain is negatively valenced.  </obo:IAO_0000115>
+        <rdfs:comment>A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as mental processes occur within the body, specifically involving the brain.</rdfs:comment>
+        <rdfs:comment>A bodily process which brings into being, sustains or modifies a cognitive representation or a behavior inducing state.</rdfs:comment>
+        <rdfs:comment>Examples include thinking, feeling pain, remembering and emotion as occurrent experiences.</rdfs:comment>
+        <rdfs:comment>Mental processes can vary in the degree to which they involve consciousness.
+
+A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as mental processes occur within the body, specifically involving the brain.</rdfs:comment>
+        <rdfs:comment>Mental processes can varying in the degree to which they involve consciousness.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl"/>
+        <rdfs:label>mental process</rdfs:label>
+        <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
     </owl:Class>
     
 
@@ -707,6 +1115,7 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000112>&quot;Internal environment&quot; in the PRIME theory</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;disposition&gt; that inheres in some extended organism.</obo:IAO_0000115>
         <obo:IAO_0000115>A bodily disposition is a disposition that inheres in some extended organism. Examples are: my disposition to catch a cold when exposed to a virus, my ability to speak the English language.</obo:IAO_0000115>
@@ -728,6 +1137,8 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
+        <obo:IAO_0000112> &quot;Psychological&quot; in the Health Promotion Model</obo:IAO_0000112>
+        <obo:IAO_0000112>&quot;Psychological factors&quot; in the I-Change Model</obo:IAO_0000112>
         <obo:IAO_0000114>External</obo:IAO_0000114>
         <obo:IAO_0000115>A &lt;bodily disposition&gt; that is realized in a mental process.</obo:IAO_0000115>
         <obo:IAO_0000115>A bodily disposition that is realized in a mental process.</obo:IAO_0000115>
@@ -737,6 +1148,28 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
         <rdfs:isDefinedBy rdf:resource="http://humanbehaviourchange.org/ontology/bcio.owl"/>
         <rdfs:label>mental disposition</rdfs:label>
         <rdfs:label xml:lang="en">mental disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A bodily quality is a quality that inheres in some extended organism.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:label xml:lang="en">bodily quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000074"/>
+        <obo:IAO_0000115>A mental quality is a bodily quality that inheres in those structures of the extended organism that are essential for mental functioning.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:label xml:lang="en">mental quality</rdfs:label>
     </owl:Class>
     
 
@@ -761,15 +1194,123 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000031"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">cognitive appraisal representational pattern quality</rdfs:label>
+        <skos:definition>A cognitive representational pattern quality which consists of an evaluation of the relevance of some entity to another entity.</skos:definition>
+        <skos:prefLabel>appraisal quality</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000005"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">self-appraisal representational pattern quality</rdfs:label>
+        <skos:definition xml:lang="en">A cognitive appraisal representational pattern quality consisting of an evaluation of the appraiser themselves.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000006"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">self-efficacy representational pattern quality</rdfs:label>
+        <skos:definition xml:lang="en">A self-appraisal representational pattern quality consisting of an evaluation of the agent&apos;s capability to achieve objectives or satisfy desires.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">psychological construct information content entity</rdfs:label>
+        <skos:prefLabel xml:lang="en">psychological construct</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000008"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">psychoanalytic psychological identity construct information content entity</rdfs:label>
+        <skos:definition xml:lang="en">A psychological construct in which it is hypothesized that human consciousness consists of the id, ego, and superego.</skos:definition>
+        <skos:prefLabel>psychoanalytic psychological identity construct</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000036"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">performative identity quality</rdfs:label>
+        <skos:definition xml:lang="en">A personal identity quality formed as a result of the agent&apos;s performative behaviors as influencing and influenced by the formation of one&apos;s psychological identity.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PHASES_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
-        <rdfs:label xml:lang="en">social withdrawal</rdfs:label>
+        <rdfs:label xml:lang="en">social withdrawal disposition</rdfs:label>
         <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in the consistent avoidance of social interactions with both familiar and unfamiliar peers due to psychological traits such as social fear or anxiety.</skos:definition>
+        <skos:prefLabel>social withdrawal</skos:prefLabel>
     </owl:Class>
     
 
@@ -778,11 +1319,15 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">elective solitude disposition</rdfs:label>
         <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in intentionally withdrawing from social interaction in order to pursue self-reflection, restoration, or personal goals.</skos:definition>
+        <skos:prefLabel>elective solitude</skos:prefLabel>
     </owl:Class>
     
 
@@ -790,12 +1335,16 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     <!-- http://purl.obolibrary.org/obo/PHASES_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
-        <rdfs:label xml:lang="en">imposed solitude</rdfs:label>
+        <rdfs:label xml:lang="en">imposed solitude characteristic</rdfs:label>
         <skos:definition xml:lang="en">A characteristic of a person that is physically or socially alone due to external constraints or circumstances, and not by personal choice.</skos:definition>
+        <skos:prefLabel>imposed solitude</skos:prefLabel>
     </owl:Class>
     
 
@@ -804,11 +1353,51 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">ambient sociability disposition</rdfs:label>
-        <skos:definition xml:lang="en">A mental disposition that is realized in retaining the sense of social presence without direct social engagement with others in a in a public or semi-public space.</skos:definition>
+        <skos:definition xml:lang="en">A mental disposition that is realized in retaining the sense of social presence without direct social engagement with others in a public or semi-public space.</skos:definition>
+        <skos:prefLabel>ambient sociability</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">healthy aging process</rdfs:label>
+        <skos:definition xml:lang="en">A biological process that is realized in maintaining functional ability, emotional well-being, and social engagement in later life, relative to cultural and personal expectations.</skos:definition>
+        <skos:prefLabel>healthy aging</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000008"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">successful aging construct information content entity</rdfs:label>
+        <skos:definition xml:lang="en">A psychological construct information content entity that describes achieving physical health, cognitive vitality, and continued involvement with life, as measured against individual and cultural standards of aging well.</skos:definition>
+        <skos:prefLabel>successful aging construct</skos:prefLabel>
     </owl:Class>
     
 
@@ -817,11 +1406,15 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
-        <rdfs:label xml:lang="en">aloneliness</rdfs:label>
+        <rdfs:label xml:lang="en">aloneliness disposition</rdfs:label>
         <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in experiencing discomfort or distress due to a perceived lack of desired time alone.</skos:definition>
+        <skos:prefLabel>aloneliness</skos:prefLabel>
     </owl:Class>
     
 
@@ -830,11 +1423,15 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">social detachment disposition</rdfs:label>
         <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in reduced motivation to engage in or maintain social relationships, often without distress or social fear.</skos:definition>
+        <skos:prefLabel>social detachment</skos:prefLabel>
     </owl:Class>
     
 
@@ -843,7 +1440,10 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">shyness behavior disposition</rdfs:label>
@@ -857,12 +1457,237 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
-        <rdfs:label xml:lang="en">solitude affinity</rdfs:label>
+        <rdfs:label xml:lang="en">solitude affinity disposition</rdfs:label>
         <skos:definition xml:lang="en">A mental disposition that, if realized, is realized in seeking out and enjoying time spent alone for reflection, creativity, or restoration.</skos:definition>
+        <skos:prefLabel>solitude affinity</skos:prefLabel>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A quality that concretizes some information content entity.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">representational pattern quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000032"/>
+        <obo:IAO_0000115>A mental representational pattern quality that has mind-to-world direction of fit.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">cognitive representational pattern quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A representational pattern quality that specifically depends on the cognitive system of its bearer.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">mental representational pattern quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000075"/>
+        <obo:IAO_0000115 xml:lang="en">A mental quality that is defined by (a) a set of physical, psychological, and interpersonal characteristics that is not wholly shared with any other person and (b) a range of affiliations (e.g., ethnicity) and social roles.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">personal identity quality</rdfs:label>
+        <skos:altLabel xml:lang="en">self-concept</skos:altLabel>
+        <skos:prefLabel>personal identity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000036"/>
+        <obo:IAO_0000115 xml:lang="en">A personal identity quality consisting of the internalized, evolving, story of oneself that individuals construct to make sense and meaning out of life.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">narrative identity quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000036"/>
+        <obo:IAO_0000115 xml:lang="en">A personal identity quality consisting of the recognition of oneself as a persisting entity, resulting from the integration of one&apos;s ego-ideal, life roles, and adjustments to reality.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">ego identity quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000008"/>
+        <obo:IAO_0000115 xml:lang="en">A psychological construct that is putatively about biologically-based dispositions to avoid others due to social fears and anxieties</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:comment xml:lang="en">How are behavioral inhibition and anxious-solitude related to and distinct from solitude? (anxious-solitude, and behavioral inhibition are all constructs reflecting biologically-based dispositions to avoid others due to social fears and anxieties)</rdfs:comment>
+        <rdfs:label xml:lang="en">anxious solitude construct information content entity</rdfs:label>
+        <skos:prefLabel>anxious solitude construct</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115>A directive information content entity that prescribes any of various established rules, methods, procedures, and practices which have been accepted as guides for social conduct over a relatively long period.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">social convention directive information entity</rdfs:label>
+        <skos:definition>Everyone conforms to R
+Everyone believes others conform to R
+This belief gives everyone a good reason to conform to R himself 
+Everyone believes others are doing the best they can to conform to R
+R is not the only possible regularity meeting (3) and (4)
+Each of the preceding factors are in principle common knowledge</skos:definition>
+        <skos:prefLabel>social convention</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000046"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A directive information content entity that prescribes any of various established rules, methods, procedures, and practices which have been accepted as guides for social conduct over a relatively long period.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/social-convention</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000115>A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:49:47+00:00</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:comment xml:lang="en">Solitude is most often linked to low levels of loneliness and positive emotions when it is chosen solitude (due to enjoying solitude) and spent in active ways; people with a propensity to ruminate and those who choose solitude because they do not like being with others tend to suffer the most in solitude - Julie</rdfs:comment>
+        <rdfs:comment xml:lang="en">What are the different motivations that explain why some seek solitude? Here there are so many overlapping terms (ie., unsociability, preference for solitude, avoidance, social anhedonia, affinity for solitude, affinity for aloneness, aversion to aloneness, autonomous solitude, not self-motivated solitude), but I have a recent study suggesting that the constructs tend to load into three larger factors: shyness, affinity for solitude, and social detachment.</rdfs:comment>
+        <rdfs:label>solitude behavior disposition</rdfs:label>
+        <skos:prefLabel xml:lang="en">solitude</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A mental disposition that, if realized, is realized in being physical alone or in lacking social interactions, whether desired or not.</owl:annotatedTarget>
+        <obo:IAO_0000119>Oliveira, J., Guerra, S., Sousa, L., &amp; Ribeiro, O. (2024). Solitude in old age: a scoping review of conceptualisations, associated factors and impacts. Aging &amp; Mental Health, 29(2), 220–227. https://doi.org/10.1080/13607863.2024.2379408</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002002">
+        <rdfs:subClassOf rdf:resource="http://humanbehaviourchange.org/ontology/BCIO_006014"/>
+        <obo:IAO_0000115>Social alienation that, if realized, is realized in being physically alone and desiring not to be.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:16:23+00:00</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">social isolation behavior disposition</rdfs:label>
+        <skos:prefLabel>social isolation</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Social alienation that, if realized, is realized in being physically alone and desiring not to be.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.nia.nih.gov/health/loneliness-and-social-isolation/loneliness-and-social-isolation-tips-staying-connected</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PHASES_0002003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PHASES_0002003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115>A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T17:58:33+00:00</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
+        <rdfs:label xml:lang="en">feeling of loneliness</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A subjective affective feeling of dissatisfaction with a lack of social interactions and relationships.</owl:annotatedTarget>
+        <obo:IAO_0000119>Asher, S. R., Hymel, S., &amp; Renshaw, P. D. (1984). Loneliness in children. Child development, 1456-1464.</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -872,10 +1697,12 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115>An information content entity that is a principle or body of interrelated principles that purports to explain or predict a number of interrelated phenomena.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:31+00:00</terms:created>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:31Z</terms:created>
-        <rdfs:label xml:lang="en">theory</rdfs:label>
         <rdfs:label xml:lang="en">theory information content entity</rdfs:label>
+        <skos:prefLabel xml:lang="en">theory</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002004"/>
@@ -892,8 +1719,10 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002004"/>
         <obo:IAO_0000115>A theory that summarizes and explains mental and behavioral patterns within the context of society and culture.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:56+00:00</terms:created>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:20:56Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">psychological theory</rdfs:label>
@@ -920,11 +1749,30 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/phases.owl/PHASES_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A process in which an individual objectively lacks social connection such that there is little or no opportunity for social interaction.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">social isolation</obo:IAO_0000118>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
-        <rdfs:label xml:lang="en">social isolation state</rdfs:label>
+        <rdfs:label xml:lang="en">social isolation process</rdfs:label>
+        <skos:prefLabel>social isolation state</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#Subset -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Subset">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000224"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
     </owl:Class>
     
 
@@ -937,6 +1785,306 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <obo:IAO_0000111 xml:lang="en">example to be eventually removed</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
+        <obo:IAO_0000111 xml:lang="en">failed exploratory term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The term was initially used in an attempt to structure part of the ontology, but in retrospect failed to do a good job.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Terms created as placeholders with the expectation of being permanent should instead be deprecated using the &quot;placeholder removed&quot; (obo:IAO_0000226) justification.</obo:IAO_0000116>
+        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-6875-5360"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <obo:IAO_0000111 xml:lang="en">metadata complete</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <obo:IAO_0000111 xml:lang="en">organizational term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The term was created to ease viewing/sorting terms for development purposes, but will not be included in a release.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">organizational term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <obo:IAO_0000111 xml:lang="en">ready for release</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <obo:IAO_0000111 xml:lang="en">metadata incomplete</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <obo:IAO_0000111 xml:lang="en">uncurated</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">uncurated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <obo:IAO_0000111 xml:lang="en">pending final vetting</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000224 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000224">
+        <rdf:type rdf:resource="http://www.geneontology.org/formats/oboInOwl#Subset"/>
+        <obo:IAO_0000115 xml:lang="en">Core is an instance of a grouping of terms from an ontology or ontologies. It is used by the ontology to identify main classes.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:label xml:lang="en">core</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete_core</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
+        <obo:IAO_0000111 xml:lang="en">placeholder removed</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The term was created to temporarily stand in for a semantic purpose, but is no longer needed, typically due to another permanent term being defined.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This reason is appropriate for a temporary term even if no permanent term is defined; for example if the need for the term no longer exists. If a permanent (replacement) term is defined, the deprecated term should reference the replacement with IAO:0100001. If no replacement is defined, it may be appropriate to reference alternative terms with oboInOwl:consider.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-6875-5360"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000227 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000227">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
+        <obo:IAO_0000111 xml:lang="en">terms merged</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The term has been combined with one or more other terms to create a more encompassing (merged) term.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">An editor note should explain what were the merged terms and the reason for the merge.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">The deprecated term should reference the merged term with obo:IAO_0100001. The replacement term should reference the original terms as sources using obo:RO_0001000 (derives_from). An editor note should explain what were the merged terms and the reason for the merge.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-6875-5360"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">terms merged</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000228 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
+        <obo:IAO_0000111 xml:lang="en">term imported</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The term has been replaced by a term imported from another ontology.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. The deprecated term should reference the imported term with obo:IAO_0100001.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-6875-5360"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">term imported</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000229 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000229">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
+        <obo:IAO_0000111 xml:lang="en">term split</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The term has been split into two or more new terms.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split. The deprecated term should reference the replacement terms with obo:IAO_0100001.</obo:IAO_0000116>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-6875-5360"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">term split</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000410 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000410">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000409"/>
+        <obo:IAO_0000111 xml:lang="en">universal</obo:IAO_0000111>
+        <obo:IAO_0000116>Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119>A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label>universal</rdfs:label>
+        <rdfs:label xml:lang="en">universal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000420 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000420">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000409"/>
+        <obo:IAO_0000111 xml:lang="en">defined class</obo:IAO_0000111>
+        <obo:IAO_0000115>A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label>defined class</rdfs:label>
+        <rdfs:label xml:lang="en">defined class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000421 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000421">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000409"/>
+        <obo:IAO_0000111 xml:lang="en">named class expression</obo:IAO_0000111>
+        <obo:IAO_0000115>A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
+        <obo:IAO_0000116>named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label>named class expression</rdfs:label>
+        <rdfs:label xml:lang="en">named class expression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <obo:IAO_0000111 xml:lang="en">to be replaced with external ontology term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <obo:IAO_0000111 xml:lang="en">requires discussion</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0001000 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMO_0001000">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
+        <obo:IAO_0000115 xml:lang="en">The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This obsolesence reason should be used conservatively. Typical valid examples in disease ontologies are: unnecessary class grouping; mistaked creation of a disease associated to a phenotype.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/77</obo:IAO_0000233>
+        <obo:IAO_0000234>https://orcid.org/0000-0001-5208-3432</obo:IAO_0000234>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-6875-5360"/>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <rdfs:label>out of scope</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -978,6 +2126,9 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
         <obo:IAO_0000115>A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:24:11Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <rdfs:label xml:lang="en">ego integrity theory (Erikson)</rdfs:label>
@@ -997,6 +2148,9 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002005"/>
         <obo:IAO_0000115>A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:26:30Z</terms:created>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <rdfs:label xml:lang="en">self-transcendence theory</rdfs:label>
@@ -1120,8 +2274,11 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PHASES_0002006">
         <obo:IAO_0000115>A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:21:13+00:00</terms:created>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:21:13Z</terms:created>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">social convoy model</rdfs:label>
     </rdf:Description>
@@ -1131,6 +2288,39 @@ Bodily disposition would include features, such as a person&apos;s strength (whi
         <owl:annotatedTarget>A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.</owl:annotatedTarget>
         <obo:IAO_0000119>Antonucci, T. C., Ajrouch, K. J., &amp; Birditt, K. S. (2014). The convoy model: Explaining social relations from a multidisciplinary perspective. The Gerontologist, 54(1), 82-92.</obo:IAO_0000119>
     </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000120"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000121"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000122"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000123"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000124"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000125"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000423"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000226"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 
