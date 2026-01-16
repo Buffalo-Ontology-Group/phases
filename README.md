@@ -15,6 +15,9 @@ Our project aims to bridge the gap between these literatures and thus spur novel
 - [Jie Zheng](https://scholar.google.com/citations?user=LY69DAsAAAAJ)
 - [Sam Smith](https://observablehq.com/@smithgit)
 - [Damayanthi Jesudas](https://orcid.org/0000-0001-6906-5548)
+- [Jeremy Ravenel](https://www.linkedin.com/in/jeremyravenel/?originalSubdomain=fr)
+- [Regina Hurley](https://www.buffalo.edu/cas/philosophy/faculty/faculty_directory/hurley.html)
+- [Jon McLellan](https://kadsci.com/about/)
 
 
 
