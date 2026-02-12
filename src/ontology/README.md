@@ -100,7 +100,7 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
      
    - Generate all ontology products and subsets:
      ```bash
-     make all
+     make all_subsets
      ```
      
    - Prepare the official **subset** release:
