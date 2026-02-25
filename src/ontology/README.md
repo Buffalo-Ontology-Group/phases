@@ -35,45 +35,8 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
       - `phases.json`
       - `phases-base.owl`, etc.
       - Updates the version IRIs and metadata.
-
-3. Review and Commit the Generated Files
-
-   Run a Hermit reasoner (if possible) locally to check-in on phases.owl
-
-   Inspect the release files. Changes may be minimal (typically just version updates if no content was added).
-
-   Then commit the release:
-
-   ```copy these files to the root
-   git commit -m "release for YYYY-MM-DD"
-   ```
-
-4. Push the Release Branch
-
-   ```bash
-   git push origin release-YYYY-MM-DD
-   ```
-
-5. Create a Pull Request
-
-   - Go to GitHub and open a pull request from the release branch into `main`.
-   - Use a title like:  `Release: YYYY-MM-DD`.
-   - Wait for automated checks (if configured).
-   - Merge the PR once checks pass.
-
-6. Draft the GitHub Release
-
-   After merging to `main`:
-
-   - Go to the **Releases** tab in the GitHub UI.
-   - Click **Draft a new release**
-   - Set the **tag** name: ```text vYYYY-MM-DD```
-   - Set the **release title**: ```text Release: YYYY-MM-DD```
-   - Add **release notes**.
-   - Mark it as the **latest release**.
-   - Click **Publish Release**.
-  
-7. Generating Ontology Subsets (Gero and Solo)
+   
+   3. Generating Ontology Subsets (Gero and Solo)
    
    The PHASES ontology generates subsets automatically using the **PHASES subset extraction Makefile**, which builds ontology subsets based on class annotations:
 
@@ -125,19 +88,46 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
        
    - Review each subset to confirm:
      - Correct metadata (version IRI, release date, license).
+     - Include a brief summary of subset updates in the GitHub release notes when drafting the release.
      
-   - Commit the updated subset artifacts together with the main ontology release files:
-     ```bash
-     git add .
-     git commit -m "Update ontology subsets (Gero and Solo) for release YYYY-MM-DD"
-     ```
-     
-   - Push the release branch:
-     ```bash
-     git push origin release-YYYY-MM-DD
-     ```
-     
-   - Include a brief summary of subset updates in the GitHub release notes when drafting the release.
+
+3. Review and Commit the Generated Files
+
+   Run a Hermit reasoner (if possible) locally to check-in on phases.owl
+
+   Inspect the release files. Changes may be minimal (typically just version updates if no content was added).
+
+   Then commit the release:
+
+   ```copy these files to the root
+   git commit -m "release for YYYY-MM-DD"
+   ```
+
+4. Push the Release Branch
+
+   ```bash
+   git push origin release-YYYY-MM-DD
+   ```
+
+5. Create a Pull Request
+
+   - Go to GitHub and open a pull request from the release branch into `main`.
+   - Use a title like:  `Release: YYYY-MM-DD`.
+   - Wait for automated checks (if configured).
+   - Merge the PR once checks pass.
+
+6. Draft the GitHub Release
+
+   After merging to `main`:
+
+   - Go to the **Releases** tab in the GitHub UI.
+   - Click **Draft a new release**
+   - Set the **tag** name: ```text vYYYY-MM-DD```
+   - Set the **release title**: ```text Release: YYYY-MM-DD```
+   - Add **release notes**.
+   - Mark it as the **latest release**.
+   - Click **Publish Release**.
+  
 
 ---
 
