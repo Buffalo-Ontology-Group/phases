@@ -40,9 +40,9 @@
         "val" : "Solitude Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-12-24"
+        "val" : "2026-02-25"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-12-24/solo.owl"
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2026-02-25/solo.owl"
     },
     "nodes" : [ {
       "id" : "http://humanbehaviourchange.org/ontology/BCIO_006014",
@@ -1382,6 +1382,9 @@
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Healthy aging is the process of preserving and enhancing one’s independence, physical and mental well-being, and overall quality of life. It involves the mental, emotional, and cognitive wellness."
+        }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A biological process that is realized in maintaining functional ability, emotional well-being, and social engagement in later life, relative to cultural and personal expectations."
         }, {
@@ -1440,6 +1443,9 @@
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Aloneliness is conceptualized as the negative feelings that arise from the perception that one is not spending enough time alone."
+        }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A mental disposition that, if realized, is realized in experiencing discomfort or distress due to a perceived lack of desired time alone."
         }, {
@@ -1468,6 +1474,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "When a person socialy withdrawls, he or she retreats from interpersonal relationships, usually accompanied by an attitude of indifference, detachment, and aloofness. Social withdrawal is often associated with disorders such as schizophrenia, autism spectrum disorder, and depression."
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A mental disposition that, if realized, is realized in reduced motivation to engage in or maintain social relationships, often without distress or social fear."
@@ -1558,6 +1567,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A quality that represents something information content entity, made up of different parts arranged in a certain way to form a whole, and is a characteristic of something, whether it’s physical or abstract."
         } ]
       }
     }, {
@@ -1584,6 +1596,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A mental representation that represents an information content entity, made up of different parts arranged in a specific way to form a whole, and is a characteristic of something, physical or abstract, invovling skills involved in tasks related to perception, learning, memory, understanding, awareness, reasoning, judgment, intuition, and language."
         } ]
       }
     }, {
@@ -1610,6 +1625,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A hypothetical entity representing a perception, thought, memory, or something similar during mental processes, made up of separate parts arranged in a way that forms a whole, and being a characteristic of something, whether physical or abstract."
         } ]
       }
     }, {
@@ -1694,6 +1712,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Ego identity may also be understood as an adaptive accomplishment or achievement of the individual vis-a-vis his social environment. Specifically, it is the adaptation of the individual's special skills, capacities, and strengths to the prevailing role structure of the society in which he lives."
         } ]
       }
     }, {
@@ -1750,6 +1771,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A process during which someone behaves according to established rules, methods, procedures, and practices that have been accepted as guides for social conduct over a relatively long period."
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "Everyone conforms to R\nEveryone believes others conform to R\nThis belief gives everyone a good reason to conform to R himself \nEveryone believes others are doing the best they can to conform to R\nR is not the only possible regularity meeting (3) and (4)\nEach of the preceding factors are in principle common knowledge"
@@ -1813,6 +1837,9 @@
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:16:23+00:00"
         }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Social isolation ranges from the voluntary withdrawal from social interaction, where an individual chooses to disengage for personal or situational reasons to involuntary isolation, where separation from others is imposed externally or occurs against th eindividual's will."
+        }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "social isolation"
         } ]
@@ -1838,6 +1865,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-05T17:58:33+00:00"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Feeling of loneliness is a subjective and often distressing emotional state that arises from a perceived discrepancy between an individual’s desired and actual social relationships. It encompasses feelings of emptiness, abandonment, or disconnection, can develop over time, and is influenced by personal, social, and situational factors including identity, expectations, life events, and socio-economic conditions."
         } ]
       }
     }, {
@@ -1918,6 +1948,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:21:13+00:00"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "The convoy model of social relations describes how social relationships contribute to an individual’s health and well-being from a life course and lifespan perspective."
         } ]
       }
     }, {
@@ -2507,6 +2540,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:24:11Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "It states that personality develops across the lifespan through eight sequential psychosocial crises, where the successful resolution of each crisis fosters virtues (e.g., hope, fidelity, or, in later life, wisdom) and lays the foundation of success during the next crisis."
         } ]
       }
     }, {
@@ -2712,6 +2748,10 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/source",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {

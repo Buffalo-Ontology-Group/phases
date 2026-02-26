@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: phases/releases/2025-12-23/phases-base.owl
+data-version: phases/releases/2026-02-25/phases-base.owl
 subsetdef: PHASES:0002010 ""
 subsetdef: PHASES:0002012 ""
 idspace: dc http://purl.org/dc/elements/1.1/ 
@@ -8,7 +8,7 @@ idspace: skos http://www.w3.org/2004/02/skos/core#
 idspace: terms http://purl.org/dc/terms/ 
 ontology: phases/phases-base
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2025-12-23" xsd:string
+property_value: owl:versionInfo "2026-02-25" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
 property_value: terms:contributor https://orcid.org/0000-0001-9189-9661
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -33,6 +33,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-03-03T21:39:49+00:00" xsd:dateTime
+property_value: terms:description "Reminiscence therapy is a psychosocial intervention for older adults, based on the concept that people review and reflect on significant personal past experiences to promote pleasure, better quality of life, and adaptability." xsd:string {terms:source="Westerhof GJ, Bohlmeijer E, Webster JD. Reminiscence and mental health: a review of recent progress in theory, research and interventions. Ageing Soc. (2010) 30:697–721. 10.1017/S0144686X09990328\n\nSyed Elias SM, Neville C, Scott T. The effectiveness of group reminiscence therapy for loneliness, anxiety and depression in older adults in long-term care: a systematic review. Geriatr Nurs. (2015) 36:372–80. 10.1016/j.gerinurse.05004"}
 
 [Term]
 id: PHASES:0000005
@@ -139,6 +140,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+property_value: terms:description "Self-transcendence is a concept relevant to understanding how human beings attain or maintain well-being." xsd:string {terms:source="https://www.ncbi.nlm.nih.gov/books/NBK585654/"}
 
 [Term]
 id: PHASES:0000021
@@ -192,6 +194,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+property_value: terms:description "Healthy aging is the process of preserving and enhancing one’s independence, physical and mental well-being, and overall quality of life. It involves the mental, emotional, and cognitive wellness." xsd:string {terms:source="Basu, Tanisha & Sehar, Ujala & Malhotra, Keya & Culberson, John & Khan, Hafiz & Morton, Hallie & Orlov, Erika & Brownell, Malcolm & Reddy, P. Hemachandra. (2023). Healthy Brain Aging and Delayed Dementia in Texas Rural Elderly. Ageing Research Reviews. 91. 102047. 10.1016/j.arr.2023.102047"}
 
 [Term]
 id: PHASES:0000025
@@ -219,6 +222,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+property_value: terms:description "Aloneliness is conceptualized as the negative feelings that arise from the perception that one is not spending enough time alone." xsd:string
 
 [Term]
 id: PHASES:0000027
@@ -232,6 +236,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+property_value: terms:description "When a person socialy withdrawls, he or she retreats from interpersonal relationships, usually accompanied by an attitude of indifference, detachment, and aloofness. Social withdrawal is often associated with disorders such as schizophrenia, autism spectrum disorder, and depression." xsd:string
 
 [Term]
 id: PHASES:0000028
@@ -271,6 +276,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+property_value: terms:description "A quality that represents something information content entity, made up of different parts arranged in a certain way to form a whole, and is a characteristic of something, whether it’s physical or abstract." xsd:string
 
 [Term]
 id: PHASES:0000031
@@ -284,6 +290,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+property_value: terms:description "A mental representation that represents an information content entity, made up of different parts arranged in a specific way to form a whole, and is a characteristic of something, physical or abstract, invovling skills involved in tasks related to perception, learning, memory, understanding, awareness, reasoning, judgment, intuition, and language." xsd:string
 
 [Term]
 id: PHASES:0000032
@@ -297,6 +304,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+property_value: terms:description "A hypothetical entity representing a perception, thought, memory, or something similar during mental processes, made up of separate parts arranged in a way that forms a whole, and being a characteristic of something, whether physical or abstract." xsd:string
 
 [Term]
 id: PHASES:0000036
@@ -338,6 +346,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+property_value: terms:description "Ego identity may also be understood as an adaptive accomplishment or achievement of the individual vis-a-vis his social environment. Specifically, it is the adaptation of the individual's special skills, capacities, and strengths to the prevailing role structure of the society in which he lives." xsd:string {terms:source="Bourne E. The state of research on ego identity: A review and appraisal : Part I. J Youth Adolesc. 1978 Sep;7(3):223-51. doi: 10.1007/BF01537976. PMID: 24408808"}
 
 [Term]
 id: PHASES:0000042
@@ -367,6 +376,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-06-14T22:20:08Z" xsd:string
+property_value: terms:description "A process during which someone behaves according to established rules, methods, procedures, and practices that have been accepted as guides for social conduct over a relatively long period." xsd:string
 
 [Term]
 id: PHASES:0002000
@@ -408,6 +418,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-02-26T21:16:23+00:00" xsd:dateTime
+property_value: terms:description "Social isolation ranges from the voluntary withdrawal from social interaction, where an individual chooses to disengage for personal or situational reasons to involuntary isolation, where separation from others is imposed externally or occurs against th eindividual's will." xsd:string {terms:source="Biordi, D. L., & Nicholson, N. R. (2013). Social isolation. Chronic illness: Impact and intervention, 97-132."}
 
 [Term]
 id: PHASES:0002003
@@ -419,6 +430,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-02-05T17:58:33+00:00" xsd:dateTime
+property_value: terms:description "Feeling of loneliness is a subjective and often distressing emotional state that arises from a perceived discrepancy between an individual’s desired and actual social relationships. It encompasses feelings of emptiness, abandonment, or disconnection, can develop over time, and is influenced by personal, social, and situational factors including identity, expectations, life events, and socio-economic conditions." xsd:string {terms:source="Yanguas J, Pinazo-Henandis S, Tarazona-Santabalbina FJ. The complexity of loneliness. Acta Biomed. 2018 Jun 7;89(2):302-314. doi:10.23750/abm.v89i2.7404. PMID: 29957768; PMCID: PMC6179015."}
 
 [Term]
 id: PHASES:0002004
@@ -457,6 +469,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-02-26T21:21:13+00:00" xsd:dateTime
+property_value: terms:description "The convoy model of social relations describes how social relationships contribute to an individual’s health and well-being from a life course and lifespan perspective." xsd:string {terms:source="Laura M. Koehly, Jasmine A. Manalel, Interconnected social convoys: Understanding health and well-being through linked personal networks"}
 
 [Term]
 id: PHASES:0002007
@@ -469,6 +482,7 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0002-1118-1738
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2025-02-26T21:24:11Z" xsd:dateTime
+property_value: terms:description "It states that personality develops across the lifespan through eight sequential psychosocial crises, where the successful resolution of each crisis fosters virtues (e.g., hope, fidelity, or, in later life, wisdom) and lays the foundation of success during the next crisis." xsd:string {terms:source="Van der Kaap-Deeder J, Vermote B, Waterschoot J, Soenens B, Morbée S, Vansteenkiste M. The role of ego integrity and despair in older adults' well-being during the COVID-19 crisis: the mediating role of need-based experiences."}
 
 [Term]
 id: PHASES:0002008
