@@ -40,9 +40,9 @@
         "val" : "Gerotranscendence Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-12-24"
+        "val" : "2026-02-25"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/phases/releases/2025-12-24/gero.owl"
+      "version" : "http://purl.obolibrary.org/obo/phases/releases/2026-02-25/gero.owl"
     },
     "nodes" : [ {
       "id" : "http://humanbehaviourchange.org/ontology/BCIO_003000",
@@ -1159,6 +1159,9 @@
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-03-03T21:39:49+00:00"
         }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Reminiscence therapy is a psychosocial intervention for older adults, based on the concept that people review and reflect on significant personal past experiences to promote pleasure, better quality of life, and adaptability."
+        }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
           "val" : "reminiscence therapy"
         } ]
@@ -1347,6 +1350,9 @@
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
         }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Self-transcendence is a concept relevant to understanding how human beings attain or maintain well-being."
+        }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A transcendence disposition that, if realized, is realized in shifting one’s focus beyond the self toward broader existential, moral, or spiritual concerns, including care for others, connection with nature, or alignment with perceived universal values."
         }, {
@@ -1375,6 +1381,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Healthy aging is the process of preserving and enhancing one’s independence, physical and mental well-being, and overall quality of life. It involves the mental, emotional, and cognitive wellness."
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "A biological process that is realized in maintaining functional ability, emotional well-being, and social engagement in later life, relative to cultural and personal expectations."
@@ -1436,6 +1445,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A quality that represents something information content entity, made up of different parts arranged in a certain way to form a whole, and is a characteristic of something, whether it’s physical or abstract."
         } ]
       }
     }, {
@@ -1462,6 +1474,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A mental representation that represents an information content entity, made up of different parts arranged in a specific way to form a whole, and is a characteristic of something, physical or abstract, invovling skills involved in tasks related to perception, learning, memory, understanding, awareness, reasoning, judgment, intuition, and language."
         } ]
       }
     }, {
@@ -1488,6 +1503,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A hypothetical entity representing a perception, thought, memory, or something similar during mental processes, made up of separate parts arranged in a way that forms a whole, and being a characteristic of something, whether physical or abstract."
         } ]
       }
     }, {
@@ -1572,6 +1590,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "Ego identity may also be understood as an adaptive accomplishment or achievement of the individual vis-a-vis his social environment. Specifically, it is the adaptation of the individual's special skills, capacities, and strengths to the prevailing role structure of the society in which he lives."
         } ]
       }
     }, {
@@ -1598,6 +1619,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-06-14T22:20:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "A process during which someone behaves according to established rules, methods, procedures, and practices that have been accepted as guides for social conduct over a relatively long period."
         }, {
           "pred" : "http://www.w3.org/2004/02/skos/core#definition",
           "val" : "Everyone conforms to R\nEveryone believes others conform to R\nThis belief gives everyone a good reason to conform to R himself \nEveryone believes others are doing the best they can to conform to R\nR is not the only possible regularity meeting (3) and (4)\nEach of the preceding factors are in principle common knowledge"
@@ -1713,6 +1737,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:21:13+00:00"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "The convoy model of social relations describes how social relationships contribute to an individual’s health and well-being from a life course and lifespan perspective."
         } ]
       }
     }, {
@@ -1739,6 +1766,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2025-02-26T21:24:11Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/description",
+          "val" : "It states that personality develops across the lifespan through eight sequential psychosocial crises, where the successful resolution of each crisis fosters virtues (e.g., hope, fidelity, or, in later life, wisdom) and lays the foundation of success during the next crisis."
         } ]
       }
     }, {
@@ -2620,6 +2650,10 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/source",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {

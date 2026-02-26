@@ -15,7 +15,7 @@
      xmlns:Property="https://www.wikidata.org/wiki/Property:"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/phases/gero.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2025-12-24/gero.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/phases/releases/2026-02-25/gero.owl"/>
         <terms:contributor rdf:resource="http://www.semanticweb.org/dbeera/ontologies/2025/10/untitled-ontology-76/0000-0001-7055-9158"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9189-9661"/>
@@ -30,7 +30,7 @@
 The Gerotranscendence Ontology is developed as a subset of (http://purl.obolibrary.org/obo/phases.owl). Issues and term requests can be submitted at (https://github.com/Buffalo-Ontology-Group/phases/issues)</terms:description>
         <terms:license>https://creativecommons.org/publicdomain/zero/1.0/</terms:license>
         <terms:title>Gerotranscendence Ontology</terms:title>
-        <owl:versionInfo>2025-12-24</owl:versionInfo>
+        <owl:versionInfo>2026-02-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -187,6 +187,12 @@ The Gerotranscendence Ontology is developed as a subset of (http://purl.obolibra
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
@@ -1226,6 +1232,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-03T21:39:49+00:00</terms:created>
+        <terms:description>Reminiscence therapy is a psychosocial intervention for older adults, based on the concept that people review and reflect on significant personal past experiences to promote pleasure, better quality of life, and adaptability.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <rdfs:label xml:lang="en">reminiscence therapy process</rdfs:label>
         <skos:prefLabel>reminiscence therapy</skos:prefLabel>
@@ -1235,6 +1242,14 @@ objectives is a planned process.</obo:IAO_0000116>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A behavior change intervention that uses life histories—written, oral, or both—to improve psychological well-being. The therapy is often used with older people.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/reminiscence-therapy</obo:IAO_0000119>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000000"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Reminiscence therapy is a psychosocial intervention for older adults, based on the concept that people review and reflect on significant personal past experiences to promote pleasure, better quality of life, and adaptability.</owl:annotatedTarget>
+        <terms:source>Westerhof GJ, Bohlmeijer E, Webster JD. Reminiscence and mental health: a review of recent progress in theory, research and interventions. Ageing Soc. (2010) 30:697–721. 10.1017/S0144686X09990328
+
+Syed Elias SM, Neville C, Scott T. The effectiveness of group reminiscence therapy for loneliness, anxiety and depression in older adults in long-term care: a systematic review. Geriatr Nurs. (2015) 36:372–80. 10.1016/j.gerinurse.05004</terms:source>
     </owl:Axiom>
     
 
@@ -1352,11 +1367,18 @@ objectives is a planned process.</obo:IAO_0000116>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <terms:description>Self-transcendence is a concept relevant to understanding how human beings attain or maintain well-being.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <rdfs:label xml:lang="en">self-transcendence disposition</rdfs:label>
         <skos:definition xml:lang="en">A transcendence disposition that, if realized, is realized in shifting one’s focus beyond the self toward broader existential, moral, or spiritual concerns, including care for others, connection with nature, or alignment with perceived universal values.</skos:definition>
         <skos:prefLabel>self-transcendence</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000012"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Self-transcendence is a concept relevant to understanding how human beings attain or maintain well-being.</owl:annotatedTarget>
+        <terms:source>https://www.ncbi.nlm.nih.gov/books/NBK585654/</terms:source>
+    </owl:Axiom>
     
 
 
@@ -1369,12 +1391,19 @@ objectives is a planned process.</obo:IAO_0000116>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <terms:description>Healthy aging is the process of preserving and enhancing one’s independence, physical and mental well-being, and overall quality of life. It involves the mental, emotional, and cognitive wellness.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">healthy aging process</rdfs:label>
         <skos:definition xml:lang="en">A biological process that is realized in maintaining functional ability, emotional well-being, and social engagement in later life, relative to cultural and personal expectations.</skos:definition>
         <skos:prefLabel>healthy aging</skos:prefLabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000024"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Healthy aging is the process of preserving and enhancing one’s independence, physical and mental well-being, and overall quality of life. It involves the mental, emotional, and cognitive wellness.</owl:annotatedTarget>
+        <terms:source>Basu, Tanisha &amp; Sehar, Ujala &amp; Malhotra, Keya &amp; Culberson, John &amp; Khan, Hafiz &amp; Morton, Hallie &amp; Orlov, Erika &amp; Brownell, Malcolm &amp; Reddy, P. Hemachandra. (2023). Healthy Brain Aging and Delayed Dementia in Texas Rural Elderly. Ageing Research Reviews. 91. 102047. 10.1016/j.arr.2023.102047</terms:source>
+    </owl:Axiom>
     
 
 
@@ -1406,6 +1435,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <terms:description>A quality that represents something information content entity, made up of different parts arranged in a certain way to form a whole, and is a characteristic of something, whether it’s physical or abstract.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">representational pattern quality</rdfs:label>
@@ -1423,6 +1453,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <terms:description>A mental representation that represents an information content entity, made up of different parts arranged in a specific way to form a whole, and is a characteristic of something, physical or abstract, invovling skills involved in tasks related to perception, learning, memory, understanding, awareness, reasoning, judgment, intuition, and language.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">cognitive representational pattern quality</rdfs:label>
@@ -1440,6 +1471,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <terms:description>A hypothetical entity representing a perception, thought, memory, or something similar during mental processes, made up of separate parts arranged in a way that forms a whole, and being a characteristic of something, whether physical or abstract.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">mental representational pattern quality</rdfs:label>
@@ -1493,10 +1525,17 @@ objectives is a planned process.</obo:IAO_0000116>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <terms:description>Ego identity may also be understood as an adaptive accomplishment or achievement of the individual vis-a-vis his social environment. Specifically, it is the adaptation of the individual&apos;s special skills, capacities, and strengths to the prevailing role structure of the society in which he lives.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">ego identity quality</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0000039"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>Ego identity may also be understood as an adaptive accomplishment or achievement of the individual vis-a-vis his social environment. Specifically, it is the adaptation of the individual&apos;s special skills, capacities, and strengths to the prevailing role structure of the society in which he lives.</owl:annotatedTarget>
+        <terms:source>Bourne E. The state of research on ego identity: A review and appraisal : Part I. J Youth Adolesc. 1978 Sep;7(3):223-51. doi: 10.1007/BF01537976. PMID: 24408808</terms:source>
+    </owl:Axiom>
     
 
 
@@ -1510,6 +1549,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created>2025-06-14T22:20:08Z</terms:created>
+        <terms:description>A process during which someone behaves according to established rules, methods, procedures, and practices that have been accepted as guides for social conduct over a relatively long period.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">social convention directive information entity</rdfs:label>
@@ -2197,6 +2237,7 @@ Each of the preceding factors are in principle common knowledge</skos:definition
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:21:13+00:00</terms:created>
+        <terms:description>The convoy model of social relations describes how social relationships contribute to an individual’s health and well-being from a life course and lifespan perspective.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002012"/>
         <rdfs:label xml:lang="en">social convoy model</rdfs:label>
@@ -2207,6 +2248,12 @@ Each of the preceding factors are in principle common knowledge</skos:definition
         <owl:annotatedTarget>A psychological theory positing that social connections differ in levels of closeness and stability, where peripheral relationships are most vulnerable to change and termination, especially with increased age.</owl:annotatedTarget>
         <obo:IAO_0000119>Antonucci, T. C., Ajrouch, K. J., &amp; Birditt, K. S. (2014). The convoy model: Explaining social relations from a multidisciplinary perspective. The Gerontologist, 54(1), 82-92.</obo:IAO_0000119>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>The convoy model of social relations describes how social relationships contribute to an individual’s health and well-being from a life course and lifespan perspective.</owl:annotatedTarget>
+        <terms:source>Laura M. Koehly, Jasmine A. Manalel, Interconnected social convoys: Understanding health and well-being through linked personal networks</terms:source>
+    </owl:Axiom>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PHASES_0002007">
         <obo:IAO_0000115>A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
@@ -2214,6 +2261,7 @@ Each of the preceding factors are in principle common knowledge</skos:definition
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1118-1738"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-26T21:24:11Z</terms:created>
+        <terms:description>It states that personality develops across the lifespan through eight sequential psychosocial crises, where the successful resolution of each crisis fosters virtues (e.g., hope, fidelity, or, in later life, wisdom) and lays the foundation of success during the next crisis.</terms:description>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002010"/>
         <rdfs:label xml:lang="en">ego integrity theory (Erikson)</rdfs:label>
     </rdf:Description>
@@ -2222,6 +2270,12 @@ Each of the preceding factors are in principle common knowledge</skos:definition
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A psychological theory that posits the acceptance of life as it has been lived, including acceptance of death, as the major driving psychological goal of older adults.</owl:annotatedTarget>
         <obo:IAO_0000119>Erikson E.H. The Life Cycle Completed. Norton; New York, NY, USA: 1982.</obo:IAO_0000119>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PHASES_0002007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/description"/>
+        <owl:annotatedTarget>It states that personality develops across the lifespan through eight sequential psychosocial crises, where the successful resolution of each crisis fosters virtues (e.g., hope, fidelity, or, in later life, wisdom) and lays the foundation of success during the next crisis.</owl:annotatedTarget>
+        <terms:source>Van der Kaap-Deeder J, Vermote B, Waterschoot J, Soenens B, Morbée S, Vansteenkiste M. The role of ego integrity and despair in older adults&apos; well-being during the COVID-19 crisis: the mediating role of need-based experiences.</terms:source>
     </owl:Axiom>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PHASES_0002008">
         <obo:IAO_0000115>A psychological theory that posits self-transcendence as a mediating role between vulnerability and well-being, influenced by personal and contextual factors.</obo:IAO_0000115>
