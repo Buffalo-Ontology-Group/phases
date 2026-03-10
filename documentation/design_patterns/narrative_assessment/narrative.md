@@ -9,15 +9,13 @@ direction TB
 CCO_Agent[Human Being<br/>obo:MF_0000016]
 History[History<br/>obo:BFO_0000182]
 BFO_Process[Process<br/>obo:BFO_0000015]
-BFO_Disposition[Disposition<br/>obo:BFO_0000016]
 BFO_ICE[Information Content Entity<br/>obo:IAO_0000030]
 Psych_construct[Psychological Construct ICE<br/>obo:PHASES_0000008]
 Self[Self-appraisal representational pattern quality<br/>obo:PHASES_0000006]
 GDC[Generically Dependent Continuant<br/>obo:BFO_0000031]
 HealthRole[health care provider role obo:OMRSE_00000012]
 HealthRole2[health care role obo:OMRSE_00000010]
-end
-
+end 
 
 %% =========================
 %% INDIVIDUALS (ABOX)
@@ -53,7 +51,7 @@ end
 
 
 %% =========================
-%% RDF:TYPES (NO CODES)
+%% RDF:TYPES
 %% =========================
 
 Narrative_Agent_1 -->|rdf:type| CCO_Agent
@@ -74,14 +72,14 @@ Role2 -->|rdf:type| HealthRole2
 %% =========================
 
 Narrative_Agent_1 -->|hasHistory<br/>obo:BFO_0000185| Agent_Life_1
-Narrative_Agent_1 -->|participatesIn<br/>obo:BFO_0000056| Narrative_Construction
 Narrative_Agent_1 -->|hasrole<br/>obo:RO_0000087| Role2
 
 Narrative_Construction -->|hasOutput<br/>obo:RO_0002234| ICE_instance
 ICE_instance -->|isAbout<br/>obo:IAO_0000136| Agent_Life_1
 ICE_instance -->|hasContinuantPart<br/>obo:BFO_0000178| Structure
 
-Psychologist -->|participatesIn<br/>obo:BFO_0000056| Analysis
+Narrative_Construction -->|realizes<br/>obo:BFO_0000055| Role1
+Analysis -->|realizes<br/>obo:BFO_0000055| Role1
 Psychologist -->|hasrole<br/>obo:RO_0000087| Role1
 Analysis -->|hasOutput<br/>obo:RO_0002234| Narrative_Theme
 Narrative_Theme -->|isAbout<br/>obo:IAO_0000136| ICE_instance
@@ -91,11 +89,44 @@ Self1 -->|specificallyDependsOn<br/>obo:BFO_0000195| Narrative_Agent_1
 
 
 %% =========================
+%% LEGEND
+%% =========================
+
+subgraph Legend
+direction TB
+
+L_ind{Individual}
+L_ind2{Individual 2}
+
+L_bfo[BFO Class]
+
+L_other[Other Ontology Class]
+
+L_ind -->|rdf:type| L_bfo
+L_ind2 -->|rdf:type| L_other
+L_ind -->|relation| L_ind2
+
+end
+
+
+%% =========================
 %% STYLING
 %% =========================
 
-classDef yellow fill:#ffe680
-classDef purple fill:#dbc9ef
+classDef individual fill:#dbc9ef
+classDef bfo fill:#cfe8ff
+classDef ontology fill:#ffe680
 
-class HealthRole2,HealthRole,GDC,Psych_construct,CCO_Agent,BFO_Process,BFO_Disposition,BFO_ICE,Self,History yellow
-class Structure,Role2,Role1,Narrative_Agent_1,Agent_Life_1,Part_of_Life_1,Disposition_1,Self1,Narrative_Construction,ICE_instance,Narrative_Theme,Psychologist,Analysis purple
+%% BFO classes
+class History,BFO_Process,BFO_ICE,GDC bfo
+
+%% Other ontology classes
+class CCO_Agent,Psych_construct,Self,HealthRole,HealthRole2 ontology
+
+%% Individuals
+class Structure,Role2,Role1,Narrative_Agent_1,Agent_Life_1,Self1,Narrative_Construction,ICE_instance,Narrative_Theme,Psychologist,Analysis individual
+
+%% Legend styling
+class L_ind,L_ind2 individual
+class L_bfo bfo
+class L_other ontology
