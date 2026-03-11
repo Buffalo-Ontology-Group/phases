@@ -3,10 +3,22 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+ex:Analysis a obo:BFO_0000015,
+        owl:NamedIndividual ;
+    rdfs:label "Analysis procedure" ;
+    obo:BFO_0000055 ex:Role1 ;
+    obo:RO_0002234 ex:Narrative_Theme .
+
+ex:Narrative_Construction a obo:BFO_0000015,
+        owl:NamedIndividual ;
+    rdfs:label "Narrative construction" ;
+    obo:BFO_0000055 ex:Role1 ;
+    obo:RO_0002234 ex:ICE_instance .
+
 ex:Psychologist a obo:MF_0000016,
         owl:NamedIndividual ;
     rdfs:label "Psychologist" ;
-    obo:BFO_0000056 ex:Analysis .
+    obo:RO_0000087 ex:Role1 .
 
 ex:Self1 a obo:PHASES_0000006,
         owl:NamedIndividual ;
@@ -14,42 +26,33 @@ ex:Self1 a obo:PHASES_0000006,
     obo:BFO_0000195 ex:Narrative_Agent_1 ;
     obo:RO_0000059 ex:ICE_instance .
 
-obo:BFO_0000016 a owl:Class ;
-    rdfs:label "Disposition<br/>" .
-
-ex:Analysis a obo:BFO_0000015,
-        owl:NamedIndividual ;
-    rdfs:label "Analysis procedure" ;
-    obo:RO_0002234 ex:Narrative_Theme .
-
 ex:Narrative_Agent_1 a obo:MF_0000016,
         owl:NamedIndividual ;
     rdfs:label "Subject 1" ;
-    obo:BFO_0000056 ex:Narrative_Construction ;
-    obo:BFO_0000185 ex:Agent_Life_1 .
-
-ex:Narrative_Construction a obo:BFO_0000015,
-        owl:NamedIndividual ;
-    rdfs:label "Narrative construction" ;
-    obo:RO_0002234 ex:ICE_instance .
+    obo:BFO_0000185 ex:Agent_Life_1 ;
+    obo:RO_0000087 ex:Role2 .
 
 ex:Narrative_Theme a obo:PHASES_0000008,
         owl:NamedIndividual ;
     rdfs:label "Narrative Theme Assessment" ;
     obo:IAO_0000136 ex:ICE_instance .
 
-ex:Structure a obo:BFO_0000031,
+ex:Role2 a obo:OBI_0000097,
+        owl:NamedIndividual ;
+    rdfs:label "Health care role" .
+
+ex:Structure a obo:IAO_0000030,
         owl:NamedIndividual ;
     rdfs:label "Narrative Structure" .
-
-obo:BFO_0000031 a owl:Class ;
-    rdfs:label "Generically Dependent Continuant<br/>" .
 
 obo:BFO_0000182 a owl:Class ;
     rdfs:label "History<br/>" .
 
-obo:IAO_0000030 a owl:Class ;
-    rdfs:label "Information Content Entity<br/>" .
+obo:OBI_0000097 a owl:Class ;
+    rdfs:label "participant under investigation role<br/>" .
+
+obo:OMRSE_00000012 a owl:Class ;
+    rdfs:label "health care provider role<br/>" .
 
 obo:PHASES_0000006 a owl:Class ;
     rdfs:label "Self-appraisal representational pattern quality<br/>" .
@@ -64,6 +67,9 @@ ex:Agent_Life_1 a obo:BFO_0000182,
 obo:BFO_0000015 a owl:Class ;
     rdfs:label "Process<br/>" .
 
+obo:IAO_0000030 a owl:Class ;
+    rdfs:label "Information Content Entity<br/>" .
+
 obo:MF_0000016 a owl:Class ;
     rdfs:label "Human Being<br/>" .
 
@@ -72,4 +78,8 @@ ex:ICE_instance a obo:IAO_0000030,
     rdfs:label "Narrative" ;
     obo:BFO_0000178 ex:Structure ;
     obo:IAO_0000136 ex:Agent_Life_1 .
+
+ex:Role1 a obo:OMRSE_00000012,
+        owl:NamedIndividual ;
+    rdfs:label "Healthcare provider role" .
 

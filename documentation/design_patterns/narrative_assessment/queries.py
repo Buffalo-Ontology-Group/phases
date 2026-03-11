@@ -9,7 +9,7 @@ from rdflib import Graph
 g = Graph()
 
 # Change this to your actual TTL/NT file
-INPUT_FILE = "documentation/design_patterns/narrative_assessment/narrative.ttl"
+INPUT_FILE = "narrative/narrative.ttl"
 g.parse(INPUT_FILE, format="turtle")
 
 print(f"Loaded {len(g)} triples\n")
@@ -39,11 +39,13 @@ QUERIES = {
     "CQ1_agent_creating_narrative": PREFIXES + """
     SELECT DISTINCT ?agent ?agentLabel
     WHERE {
+
     ?agent a obo:MF_0000016 ;
-            obo:BFO_0000056 ?construction .
+        obo:RO_0000087 ?role .
 
     ?construction a obo:BFO_0000015 ;
-                    obo:RO_0002234 ?narrative .
+                obo:BFO_0000055 ?role ;
+                obo:RO_0002234 ?narrative .
 
     ?narrative a obo:IAO_0000030 .
 
@@ -77,6 +79,8 @@ QUERIES = {
             obo:BFO_0000185 ?history .
 
     ?history a obo:BFO_0000182 .
+
+    ?structure a obo:IAO_0000030 .
 
     ?narrative a obo:IAO_0000030 ;
                 obo:IAO_0000136 ?history ;

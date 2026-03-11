@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
 
 %% =========================
@@ -128,3 +129,4 @@ class Structure,Role2,Role1,Narrative_Agent_1,Agent_Life_1,Self1,Narrative_Const
 class L_ind,L_ind2 individual
 class L_bfo bfo
 class L_other ontology
+```
