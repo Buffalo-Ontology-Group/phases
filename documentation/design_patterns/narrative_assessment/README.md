@@ -8,11 +8,11 @@ This pattern was authored by Rachel Mavrovich, Noor M. Al-Kahouli, Giacomo De Co
 A simple DP showing how an agent creates a narrative of their life following a certain theme.
 
 ## Intent
-The intent of this pattern is to represent how an agent creates 
+The intent of this pattern is to represent how a human being creates a narrative and a health care provider assesses the themes and structure of the narrative.  
 
 ## Competency Questions
 - What agent is creating a narrative?
-- What theme(s) are identifiable in the dispositions of the narrative agent?
+- What theme(s) are identifiable in the narrative?
 - What is the structure of the narrative of the agent?
 
 

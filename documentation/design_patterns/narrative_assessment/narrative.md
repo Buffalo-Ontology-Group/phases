@@ -12,9 +12,8 @@ BFO_Process[Process<br/>obo:BFO_0000015]
 BFO_ICE[Information Content Entity<br/>obo:IAO_0000030]
 Psych_construct[Psychological Construct ICE<br/>obo:PHASES_0000008]
 Self[Self-appraisal representational pattern quality<br/>obo:PHASES_0000006]
-GDC[Generically Dependent Continuant<br/>obo:BFO_0000031]
-HealthRole[health care provider role obo:OMRSE_00000012]
-HealthRole2[health care role obo:OMRSE_00000010]
+HealthRole[health care provider role<br/>obo:OMRSE_00000012]
+HealthRole2[participant under investigation role<br/>obo:OBI_0000097]
 end 
 
 %% =========================
@@ -62,10 +61,9 @@ Analysis -->|rdf:type| BFO_Process
 ICE_instance -->|rdf:type| BFO_ICE
 Narrative_Theme -->|rdf:type| Psych_construct
 Self1 -->|rdf:type| Self
-Structure -->|rdf:type| GDC
+Structure -->|rdf:type| BFO_ICE
 Role1 -->|rdf:type| HealthRole
 Role2 -->|rdf:type| HealthRole2
-
 
 %% =========================
 %% ONTOLOGICAL RELATIONS
