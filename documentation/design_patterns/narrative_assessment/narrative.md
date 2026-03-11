@@ -28,23 +28,23 @@ subgraph Agent_Structure
 direction TB
 Narrative_Agent_1{Subject 1}
 Agent_Life_1{Agent Life 1}
-Self1{Self-appraisal quality}
-Role2{Health care role}
+Self1{Self-appraisal Quality}
+Role2{Health Care Role}
 end
 
 subgraph Narrative_Process
 direction TB
-Narrative_Construction{Narrative construction}
-ICE_instance{Narrative}
-Structure{Narrative Structure}
+Narrative_Construction{Narrative construction Process}
+ICE_instance{Narrative ICE}
+Structure{Narrative Structure ICE}
 end
 
 subgraph Clinical_Process
 direction TB
 Psychologist{Psychologist}
-Analysis{Analysis procedure}
+Analysis{Analysis Procedure Process}
 Narrative_Theme{Narrative Theme Assessment}
-Role1{Healthcare provider role}
+Role1{Healthcare Provider Role}
 end
 
 end
