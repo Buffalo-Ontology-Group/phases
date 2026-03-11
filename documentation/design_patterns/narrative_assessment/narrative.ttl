@@ -5,13 +5,13 @@
 
 ex:Analysis a obo:BFO_0000015,
         owl:NamedIndividual ;
-    rdfs:label "Analysis procedure" ;
+    rdfs:label "Analysis Procedure Process" ;
     obo:BFO_0000055 ex:Role1 ;
     obo:RO_0002234 ex:Narrative_Theme .
 
 ex:Narrative_Construction a obo:BFO_0000015,
         owl:NamedIndividual ;
-    rdfs:label "Narrative construction" ;
+    rdfs:label "Narrative construction Process" ;
     obo:BFO_0000055 ex:Role1 ;
     obo:RO_0002234 ex:ICE_instance .
 
@@ -22,7 +22,7 @@ ex:Psychologist a obo:MF_0000016,
 
 ex:Self1 a obo:PHASES_0000006,
         owl:NamedIndividual ;
-    rdfs:label "Self-appraisal quality" ;
+    rdfs:label "Self-appraisal Quality" ;
     obo:BFO_0000195 ex:Narrative_Agent_1 ;
     obo:RO_0000059 ex:ICE_instance .
 
@@ -39,11 +39,11 @@ ex:Narrative_Theme a obo:PHASES_0000008,
 
 ex:Role2 a obo:OBI_0000097,
         owl:NamedIndividual ;
-    rdfs:label "Health care role" .
+    rdfs:label "Health Care Role" .
 
 ex:Structure a obo:IAO_0000030,
         owl:NamedIndividual ;
-    rdfs:label "Narrative Structure" .
+    rdfs:label "Narrative Structure ICE" .
 
 obo:BFO_0000182 a owl:Class ;
     rdfs:label "History<br/>" .
@@ -75,11 +75,11 @@ obo:MF_0000016 a owl:Class ;
 
 ex:ICE_instance a obo:IAO_0000030,
         owl:NamedIndividual ;
-    rdfs:label "Narrative" ;
+    rdfs:label "Narrative ICE" ;
     obo:BFO_0000178 ex:Structure ;
     obo:IAO_0000136 ex:Agent_Life_1 .
 
 ex:Role1 a obo:OMRSE_00000012,
         owl:NamedIndividual ;
-    rdfs:label "Healthcare provider role" .
+    rdfs:label "Healthcare Provider Role" .
 
