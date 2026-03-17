@@ -100,7 +100,7 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
    Then commit the release:
 
    ```copy these files to the root
-   git commit -m "release for YYYY-MM-DD"
+   git commit -am "release for YYYY-MM-DD"
    ```
 
 4. Push the Release Branch
