@@ -32,7 +32,7 @@ ex:Narrative_Agent_1 a obo:MF_0000016,
     obo:BFO_0000185 ex:Agent_Life_1 ;
     obo:RO_0000087 ex:Role2 .
 
-ex:Narrative_Theme a obo:PHASES_0000008,
+ex:Narrative_Theme a obo:OBI_0001909,
         owl:NamedIndividual ;
     rdfs:label "Narrative Theme Assessment" ;
     obo:IAO_0000136 ex:ICE_instance .
@@ -51,14 +51,14 @@ obo:BFO_0000182 a owl:Class ;
 obo:OBI_0000097 a owl:Class ;
     rdfs:label "participant under investigation role<br/>" .
 
+obo:OBI_0001909 a owl:Class ;
+    rdfs:label "Conclusion based on data ICE<br/>" .
+
 obo:OMRSE_00000012 a owl:Class ;
     rdfs:label "health care provider role<br/>" .
 
 obo:PHASES_0000006 a owl:Class ;
     rdfs:label "Self-appraisal representational pattern quality<br/>" .
-
-obo:PHASES_0000008 a owl:Class ;
-    rdfs:label "Psychological Construct ICE<br/>" .
 
 ex:Agent_Life_1 a obo:BFO_0000182,
         owl:NamedIndividual ;
