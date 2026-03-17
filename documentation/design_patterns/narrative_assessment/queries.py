@@ -20,7 +20,6 @@ print(f"Loaded {len(g)} triples\n")
 
 PREFIXES = """
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX d3f: <https://d3fend.mitre.org/ontologies/d3fend.owl#>
 """
 
 # -----------------------------
@@ -62,7 +61,7 @@ QUERIES = {
 
     ?theme obo:IAO_0000136 ?narrative .
 
-    ?theme a obo:PHASES_0000008 .
+    ?theme a obo:OBI_0001909 .
 
     ?narrative obo:IAO_0000136 ?life .
 
