@@ -82,8 +82,7 @@ QUERIES = {
     ?structure a obo:IAO_0000030 .
 
     ?narrative a obo:IAO_0000030 ;
-                obo:IAO_0000136 ?history ;
-                obo:BFO_0000178 ?structure .
+                obo:IAO_0000136 ?history .
 
     OPTIONAL { ?structure rdfs:label ?structureLabel }
     }
