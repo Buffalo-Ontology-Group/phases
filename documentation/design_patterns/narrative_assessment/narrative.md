@@ -24,13 +24,13 @@ direction TB
 Narrative_Agent_1["Subject 1\nHuman Being (mf:0000016)"]
 Agent_Life_1["Agent Life 1\nHistory (bfo:0000182)"]
 Self1["Self-appraisal Quality\nSelf-appraisal representational pattern quality (phases:0000006)"]
-Role2["participant under investigation role (obi:0000097)"]
+Role2["Participant Under Investigation Role (obi:0000097)"]
 end
 
 subgraph ___
 direction TB
 Narrative_Construction["Narrative construction Process\nProcess (bfo:0000015)"]
-ICE_instance["Narrative ICE\nInformation Content Entity (iao:0000030)"]
+ICE_instance["Narrative\nInformation Content Entity (iao:0000030)"]
 end
 
 subgraph ____
@@ -39,7 +39,7 @@ Psychologist["Psychologist\nHuman Being (mf:0000016)"]
 Analysis["Analysis Procedure Process\nProcess (bfo:0000015)"]
 Narrative_Theme["Narrative Theme Assessment\nConclusion based on data ICE (obi:0001909)"]
 Narrative_Structure_Assessment["Narrative Structure Assessment\nConclusion based on data ICE (obi:0001909)"]
-Role1["Healthcare Provider Role\nhealth care provider role (omrse:00000012)"]
+Role1["Healthcare Provider Role (omrse:00000012)"]
 end
 
 end
