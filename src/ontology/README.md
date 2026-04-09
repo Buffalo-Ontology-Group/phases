@@ -35,8 +35,14 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
       - `phases.json`
       - `phases-base.owl`, etc.
       - Updates the version IRIs and metadata.
+
+   Alternatively, you may run 'make prepare_release_fast'. This command runs the entire release pipeline without refreshing imports, recreating components or recompiling patterns. 
+
+       ```bash
+      make prepare_release_fast
+      ```
    
-   3. Generating Ontology Subsets (Gero and Solo)
+3. Generating Ontology Subsets (Gero and Solo)
    
    The PHASES ontology generates subsets automatically using the **PHASES subset extraction Makefile**, which builds ontology subsets based on class annotations:
 
@@ -49,16 +55,10 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
       3. Merging in subset-specific annotations.
       4. Annotating the ontology IRI, version IRI, and `owl:versionInfo`.  
    
-   After preparing and merging a PHASES release to `main`:
 
      - Navigate to the ontology source directory:
      ```bash
      cd src/ontology
-     ```
-     
-   - Clean previously generated ontology products and subsets:
-     ```bash
-     make clean
      ```
      
    - Generate all ontology products and subsets:
@@ -74,8 +74,6 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
    - Verify that ontology subsets (e.g., **Gerotranscendence (Gero)** and **Solitude (Solo)**) were generated in the **subset directory** `$(SUBSETDIR)` (default: `src/ontology/subsets`), including:
      - `gero.owl`
      - `solo.owl`
-     - `gero-annotations.owl`
-     - `solo-annotations.owl`
      - `*.obo` 
      - `*.json`
      - `*.tsv`
@@ -91,7 +89,7 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
      - Include a brief summary of subset updates in the GitHub release notes when drafting the release.
      
 
-3. Review and Commit the Generated Files
+4. Review and Commit the Generated Files
 
    Run a Hermit reasoner (if possible) locally to check-in on phases.owl
 
@@ -103,20 +101,20 @@ To make changes to the PHASES, edit `phases-edit.owl`. **DO NOT** edit the `phas
    git commit -am "release for YYYY-MM-DD"
    ```
 
-4. Push the Release Branch
+5. Push the Release Branch
 
    ```bash
    git push origin release-YYYY-MM-DD
    ```
 
-5. Create a Pull Request
+6. Create a Pull Request
 
    - Go to GitHub and open a pull request from the release branch into `main`.
    - Use a title like:  `Release: YYYY-MM-DD`.
    - Wait for automated checks (if configured).
    - Merge the PR once checks pass.
 
-6. Draft the GitHub Release
+7. Draft the GitHub Release
 
    After merging to `main`:
 
