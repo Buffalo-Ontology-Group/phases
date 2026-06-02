@@ -1,0 +1,2 @@
+http://purl.obolibrary.org/obo/GO_0007610               #	behavior
+http://purl.obolibrary.org/obo/GO_0050890               #	cognition

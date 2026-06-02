@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/phases/imports/2026-06-02/emro_import.owl" uri="imports/emro_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/phases/imports/2025-12-15/mf_import.owl" uri="imports/mf_import.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/phases/components/phases_contributors.owl" uri="components/phases_contributors.owl"/>
@@ -7,5 +8,6 @@
         <uri name="http://purl.obolibrary.org/obo/phases/imports/bcio_import.owl" uri="imports/bcio_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/phases/imports/ro_import.owl" uri="imports/ro_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/phases/imports/mf_import.owl" uri="imports/mf_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/phases/imports/emro_import.owl" uri="imports/emro_import.owl"/>
     </group>
 </catalog>
