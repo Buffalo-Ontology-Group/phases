@@ -37,14 +37,11 @@ mirror-mf: | $(TMPDIR)
 	$(ROBOT) convert -i $(TMPDIR)/mf-download.owl -o $(TMPDIR)/$@.owl
 
 ## Emotion Response Ontology (EMRO)
-EMRO_ONT = http://purl.bioontology.org/ontology/emro.owl
-
 .PHONY: mirror-emro
 .PRECIOUS: $(MIRRORDIR)/emro.owl
 mirror-emro: | $(TMPDIR)
-	curl -L $(EMRO_ONT) --create-dirs -o $(TMPDIR)/emro-download.owl --retry 4 --max-time 200 && \
+	curl -L $(OBOBASE)/emro.owl --create-dirs -o $(TMPDIR)/emro-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/emro-download.owl -o $(TMPDIR)/$@.owl
-
 
 ## Relation Ontology (RO)
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
