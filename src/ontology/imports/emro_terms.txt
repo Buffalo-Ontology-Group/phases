@@ -7,7 +7,7 @@ http://purl.obolibrary.org/obo/EMRO_0004003		#	shyness trait characteristic
 http://purl.obolibrary.org/obo/EMRO_0004010		#	societal culture characteristic
 http://purl.obolibrary.org/obo/EMRO_0004009		#	depression process
 http://purl.obolibrary.org/obo/EMRO_0004011		#	creativity
-http://purl.obolibrary.org/obo/EMRO_0004016		#	social withdrawal process
+
 	
 
 

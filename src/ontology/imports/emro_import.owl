@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/phases/imports/emro_import.owl>
-<http://purl.obolibrary.org/obo/phases/imports/2026-07-07/emro_import.owl>
+<http://purl.obolibrary.org/obo/phases/imports/2026-07-08/emro_import.owl>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000502>))
@@ -19,7 +19,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004015>))
-Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
@@ -417,20 +416,6 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_000401
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004015> "behavioral inhibition trait characteristic"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004015> "behavioral inhibition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004015> <http://purl.obolibrary.org/obo/EMRO_0004000>)
-
-# Class: <http://purl.obolibrary.org/obo/EMRO_0004016> (social withdrawal process)
-
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Rubin, K. H., Coplan, R. J., & Bowker, J. C. (2009). Social withdrawal in childhood. Annual Review of Psychology, 60(1), 141–171.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004016> "An emotion process involving the removal of oneself from familiar and unfamiliar peers."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal process (EMRO)"@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-6906-5548>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0009-0002-7282-0836>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004016> "2026-06-08T20:47:51Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal"@en)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary.org/obo/emro.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal process"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0003008> (system process)
 
