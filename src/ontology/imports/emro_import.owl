@@ -7,18 +7,22 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/phases/imports/emro_import.owl>
-<http://purl.obolibrary.org/obo/phases/imports/2026-07-08/emro_import.owl>
+<http://purl.obolibrary.org/obo/phases/imports/2026-07-27/emro_import.owl>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
@@ -44,6 +48,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
@@ -222,6 +227,10 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/created> <http://
 
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/emro.owl>)
 
+# Annotation Property: <http://purl.org/dc/terms/source> (<http://purl.org/dc/terms/source>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/emro.owl>)
+
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#created_by> (<http://www.geneontology.org/formats/oboInOwl#created_by>)
 
 AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
@@ -329,6 +338,20 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004000> "pe
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004000> "personality trait"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004000> <http://purl.obolibrary.org/obo/PATO_0001236>)
 
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004002> (aloneliness process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004002> "An emotion process during which negative feelings arise from the perception that one is not spending enough time alone."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004002> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004002> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004002> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004002> "2026-06-08T16:21:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004002> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004002> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004003> (shyness trait characteristic)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/shyness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004003> "A personality trait characteristic that is associated with  anxiety and inhibition in social situations."@en)
@@ -402,6 +425,21 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004011> "cr
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004011> "creativity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004011> <http://purl.obolibrary.org/obo/GO_0050890>)
 
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004013> (social isolation process)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/social-isolation") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004013> "An emotion process involving voluntary or involuntary absence of contact with others."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004013> "2026-06-08T18:06:37Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004013> "Social isolation often produces abnormal behavioral and physiological changes in both humans and nonhuman animals."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004013> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004013> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004015> (behavioral inhibition trait characteristic)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/behavioral-inhibition") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004015> "A personality trait characteristic involving restraint in engaging with the world combined with a tendency to scrutinize the environment for potential threats and to avoid or withdraw from unfamiliar situations or people."@en)
@@ -416,6 +454,34 @@ AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_000401
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004015> "behavioral inhibition trait characteristic"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004015> "behavioral inhibition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004015> <http://purl.obolibrary.org/obo/EMRO_0004000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004016> (social withdrawal process)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Rubin, K. H., Coplan, R. J., & Bowker, J. C. (2009). Social withdrawal in childhood. Annual Review of Psychology, 60(1), 141–171.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004016> "An emotion process involving the removal of oneself from familiar and unfamiliar peers."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004016> "2026-06-08T20:47:51Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004017> (loneliness process)
+
+AnnotationAssertion(Annotation(<http://purl.org/dc/terms/source> "https://dictionary.apa.org/loneliness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004017> "An emotion process involving affective and cognitive discomfort or uneasiness that arises from being or perceiving oneself to be alone or otherwise solitary."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004017> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004017> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004017> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004017> "2026-06-08T21:04:33Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004017> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004017> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0003008> (system process)
 
