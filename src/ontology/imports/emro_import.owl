@@ -1,0 +1,625 @@
+Prefix(:=<http://purl.obolibrary.org/obo/phases/imports/emro_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/phases/imports/emro_import.owl>
+<http://purl.obolibrary.org/obo/phases/imports/2026-07-27/emro_import.owl>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000502>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050877>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000233>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000589>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000602>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
+Declaration(AnnotationProperty(rdfs:comment))
+Declaration(AnnotationProperty(rdfs:isDefinedBy))
+Declaration(AnnotationProperty(rdfs:label))
+Declaration(AnnotationProperty(rdfs:seeAlso))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000179> (<http://purl.obolibrary.org/obo/BFO_0000179>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/emro.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/BFO_0000180> (<http://purl.obolibrary.org/obo/BFO_0000180>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/emro.owl>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000111> (editor preferred term)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000111> "editor preferred term"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000111> "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000111> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000111> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000111> "editor preferred term"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (example of usage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000112> "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000112> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000112> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000114> (has curation status)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000114> "has curation status"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000114> "PERSON:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000114> "PERSON:Bill Bug"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000114> "PERSON:Melanie Courtot"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000114> "has curation status"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000115> "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000115> "2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000115> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000115> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/emro/imports/go_behavior_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (editor note)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000116> "editor note"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000116> "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000116> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000116> "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000116> "editor note"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (term editor)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000117> "term editor"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000117> "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000117> "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000117> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "term editor"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (definition source)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000119> "definition source"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000119> "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000119> "PERSON:Daniel Schober"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000119> "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "definition source"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (term tracker item)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000233> "term tracker item"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000233> "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000233> "An IRI or similar locator for a request or discussion of an ontology term."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000233> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000233> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000233> "The 'tracker item' can associate a tracker with a specific ontology term."@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000233> "term tracker item"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000589> (OBO foundry unique label)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000589> "OBO foundry unique label"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000589> "An alternative name for a class or property which is unique across the OBO Foundry."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000589> "The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = 'sequence ' + [label], etc. , MA could specify 'mouse + [label]' etc. Upon importing terms, ontology developers can choose to use the 'OBO foundry unique label' for an imported term or not. The same applies to tools ."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000589> "PERSON:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000589> "PERSON:Bjoern Peters"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000589> "PERSON:Chris Mungall"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000589> "PERSON:Melanie Courtot"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000589> "GROUP:OBO Foundry <http://obofoundry.org/>"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000589> "OBO foundry unique label"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000600> (elucidation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000600> "elucidation"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000600> "person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000600> "Person:Barry Smith"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/IAO_0000600> "Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000600> "elucidation"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000602> (has associated axiom(fol))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000602> "has associated axiom(fol)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000602> "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000602> "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/IAO_0000602> "An axiom expressed in first order logic using CLIF syntax"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000602> "has associated axiom(fol)"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (<http://purl.obolibrary.org/obo/IAO_0010000>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/emro.owl>)
+
+# Annotation Property: <http://purl.org/dc/terms/contributor> (<http://purl.org/dc/terms/contributor>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+
+# Annotation Property: <http://purl.org/dc/terms/created> (<http://purl.org/dc/terms/created>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+
+# Annotation Property: <http://purl.org/dc/terms/description> (<http://purl.org/dc/terms/description>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/emro.owl>)
+
+# Annotation Property: <http://purl.org/dc/terms/source> (<http://purl.org/dc/terms/source>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/emro.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#created_by> (<http://www.geneontology.org/formats/oboInOwl#created_by>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#creation_date> (<http://www.geneontology.org/formats/oboInOwl#creation_date>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> (<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/emro.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (<http://www.geneontology.org/formats/oboInOwl#hasDbXref>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/emro.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has exact synonym)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://orcid.org/0000-0001-5208-3432>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/20")
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/emro/imports/go_behavior_import.owl>)
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has exact synonym"@en)
+AnnotationAssertion(rdfs:seeAlso <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/20")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> (<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/emro/imports/go_behavior_import.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (has related synonym)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://orcid.org/0000-0001-5208-3432>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/21")
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "has related synonym"@en)
+AnnotationAssertion(rdfs:seeAlso <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/21")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#id> (<http://www.geneontology.org/formats/oboInOwl#id>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/emro/imports/go_behavior_import.owl>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#inSubset> (<http://www.geneontology.org/formats/oboInOwl#inSubset>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/emro.owl>)
+
+# Annotation Property: <http://www.w3.org/2004/02/skos/core#prefLabel> (<http://www.w3.org/2004/02/skos/core#prefLabel>)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/emro.owl>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000179> <http://purl.obolibrary.org/obo/BFO_0000015> "process")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/BFO_0000180> <http://purl.obolibrary.org/obo/BFO_0000015> "Process")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000015> "a process of cell-division, \\ a beating of the heart"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000015> "a process of meiosis"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000015> "a process of sleeping"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000015> "the course of a disease"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000015> "the flight of a bird"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000015> "the life of an organism"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000015> "your process of aging."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/083-003>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000015> "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/083-003>) <http://purl.obolibrary.org/obo/IAO_0000602> <http://purl.obolibrary.org/obo/BFO_0000015> "(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] ")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/bfo.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> owl:Thing)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000502> (characteristic)
+
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/COB_0000502> <http://purl.obolibrary.org/obo/cob.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000502> "characteristic"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000502> owl:Thing)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0000000> (emotion process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000000> "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000000> "emotion process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000000> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000000> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000000> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0000000> "2025-11-24T20:50:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0000000> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0000000> "emotion process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000000> <http://purl.obolibrary.org/obo/GO_0007610>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004000> (personality trait characteristic)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/personality-trait") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004000> "A process quality that characterizes a behavioral response to stimulus that is relatively stable, consistent, and enduring."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004000> "personality triat characteristic (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004000> "2026-06-05T19:34:58Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004000> "Personality triats are inferred from a pattern of behaviors, attitudes, feelings, and habits in the individual."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004000> "personality trait")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004000> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004000> "personality trait characteristic"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004000> "personality trait"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004000> <http://purl.obolibrary.org/obo/PATO_0001236>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004002> (aloneliness process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004002> "An emotion process during which negative feelings arise from the perception that one is not spending enough time alone."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004002> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004002> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004002> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004002> "2026-06-08T16:21:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004002> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004002> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004003> (shyness trait characteristic)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/shyness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004003> "A personality trait characteristic that is associated with  anxiety and inhibition in social situations."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/EMRO_0004003> "https://dictionary.apa.org/shyness"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004003> "shyness triat characteristic (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004003> "2026-06-08T16:26:11Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004003> "It typically involves three components: (a) global feelings of emotional arousal and specific physiological experiences (e.g., pounding heart, sweating, blushing); (b) acute public self-consciousness, self-deprecation, and worries about being evaluated negatively by others; and (c) observable behavior such as quietness, gaze aversion, and social withdrawal."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004003> "shyness"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004003> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004003> "shyness trait characteristic"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004003> "shyness"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004003> <http://purl.obolibrary.org/obo/EMRO_0004000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004007> (introversion trait characteristic)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/introversion") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004007> "A personality trait characteristic involving an orientation toward the internal private world of one’s self and one’s inner thoughts and feelings, rather than toward the outer world of people and things."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004007> "introversion triat characteristic (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004007> "2026-06-08T16:35:23Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004007> "introversion"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004007> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004007> "introversion trait characteristic"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004007> "introversion"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004007> <http://purl.obolibrary.org/obo/EMRO_0004000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004009> (depression process)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/depression") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004009> "An emotion process involving a negative affective state, ranging from unhappiness and discontent to an extreme feeling of sadness, pessimism, and despondency, that interferes with daily life."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004009> "depression process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004009> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004009> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004009> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004009> "2026-06-08T16:40:11Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004009> "depression"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004009> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004009> "depression process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004009> "depression"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004009> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004010> (societal culture characteristic)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/culture") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004010> "A process quality characterizing the attitudes, values, and behaviors of a population or shared by a particular group within a society, such as a profession, social class, or age group."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004010> "societal culture characteristic (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004010> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004010> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004010> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004010> "2026-06-08T17:03:30Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004010> "The values, beliefs, language, rituals, traditions, and other behaviors that are passed from one generation to another within any social group. Broad definitions include any socially definable group with its own set of values, behaviors, and beliefs. Accordingly, cultural groups could include groups based on shared identities such as ethnicity."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004010> "social culture"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004010> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004010> "societal culture characteristic"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004010> "culture"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004010> <http://purl.obolibrary.org/obo/PATO_0001236>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004011> (creativity)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/creativity") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004011> "A cognitive process during which an individual produces or develops original work, theories, techniques, or thoughts."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004011> "creativity (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004011> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004011> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004011> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004011> "2026-06-08T17:06:26Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004011> "creativity")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004011> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004011> "creativity"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004011> "creativity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004011> <http://purl.obolibrary.org/obo/GO_0050890>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004013> (social isolation process)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/social-isolation") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004013> "An emotion process involving voluntary or involuntary absence of contact with others."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004013> "2026-06-08T18:06:37Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004013> "Social isolation often produces abnormal behavioral and physiological changes in both humans and nonhuman animals."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004013> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004013> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004015> (behavioral inhibition trait characteristic)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/behavioral-inhibition") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004015> "A personality trait characteristic involving restraint in engaging with the world combined with a tendency to scrutinize the environment for potential threats and to avoid or withdraw from unfamiliar situations or people."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004015> "behavioral inhibition trait characteristic (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004015> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004015> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004015> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004015> "2026-06-08T20:20:37Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004015> "behavioral inhibition"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004015> "behavioural inhibition"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004015> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004015> "behavioral inhibition trait characteristic"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004015> "behavioral inhibition"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004015> <http://purl.obolibrary.org/obo/EMRO_0004000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004016> (social withdrawal process)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Rubin, K. H., Coplan, R. J., & Bowker, J. C. (2009). Social withdrawal in childhood. Annual Review of Psychology, 60(1), 141–171.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004016> "An emotion process involving the removal of oneself from familiar and unfamiliar peers."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004016> "2026-06-08T20:47:51Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004017> (loneliness process)
+
+AnnotationAssertion(Annotation(<http://purl.org/dc/terms/source> "https://dictionary.apa.org/loneliness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004017> "An emotion process involving affective and cognitive discomfort or uneasiness that arises from being or perceiving oneself to be alone or otherwise solitary."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness process (EMRO)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004017> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004017> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004017> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004017> "2026-06-08T21:04:33Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness"@en)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/EMRO_0004017> <http://purl.obolibrary.org/obo/emro.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness process"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004017> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0003008> (system process)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mtg_cardio") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0003008> "A multicellular organismal process carried out by any of the organs or tissues in an organ system. An organ system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a biological objective.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0003008> "organ system process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0003008> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0003008> "GO:0003008")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003008> "system process")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0003008> <http://purl.obolibrary.org/obo/GO_0032501>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ems") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:jl") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0395448956") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20160973") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0007610> "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_0007610> "jl")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_0007610> "2012-09-20T14:06:08Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0007610> "GO:0023032")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0007610> "GO:0044708")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0007610> "GO:0044709")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0007610> "Wikipedia:Behavior")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0007610> "behaviour")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0007610> "behavioural response to stimulus")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0007610> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0007610> "single-organism behavior")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0007610> "GO:0007610")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/go#goslim_agr>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0007610> "1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
+2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007610> "behavior")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/GO_0032501>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0008150> (biological_process)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pdt") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0008150> "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0008150> "https://github.com/geneontology/go-ontology/issues/24968"^^xsd:anyURI)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_0008150> "jl")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_0008150> "2012-09-19T15:05:24Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0000004")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0007582")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0044699")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0008150> "Wikipedia:Biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "biological process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "physiological process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "single organism process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "single-organism process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0008150")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_candida>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_chembl>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_metagenomics>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_pir>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_plant>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_pombe>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go#goslim_yeast>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008150> "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0032501> (multicellular organismal process)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:dph") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:isa_complete") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:tb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0032501> "Any biological process, occurring at the level of a multicellular organism, pertinent to its function.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0032501> "https://github.com/geneontology/go-ontology/issues/27189"^^xsd:anyURI)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_0032501> "jl")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_0032501> "2012-09-19T16:07:47Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0032501> "GO:0044707")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0032501> "GO:0050874")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0032501> "organismal physiological process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0032501> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0032501> "single-multicellular organism process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0032501> "GO:0032501")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/go#goslim_pir>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0032501> "Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0032501> "multicellular organismal process")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0032501> <http://purl.obolibrary.org/obo/GO_0008150>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0050877> (nervous system process)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:ai") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:mtg_cardio") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050877> "An organ system process carried out by any of the organs or tissues of the neurological system.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/GO_0050877> "https://github.com/geneontology/go-ontology/issues/13824"^^xsd:anyURI)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050877> "neurological system process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0050877> "neurophysiological process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050877> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0050877> "pan-neural process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050877> "GO:0050877")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/go#goslim_agr>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/go#goslim_chembl>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/go#goslim_generic>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/go#goslim_pir>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050877> "nervous system process")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/GO_0003008>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0050890> (cognition)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0721619908") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0050890> "The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0050890> "Wikipedia:Cognition")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0050890> "biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0050890> "GO:0050890")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0050890> <http://purl.obolibrary.org/obo/go#goslim_drosophila>)
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0050890> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050890> "cognition")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0050890> <http://purl.obolibrary.org/obo/GO_0050877>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000001> "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0000001> "PATO:0000072")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0000001> "PATO:0000001")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/COB_0000502>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001236> (process quality)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001236> "A quality which inheres in an process.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0001236> "PATO:0001239")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/PATO_0001236> "PATO:0001240")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001236> "quality of a process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001236> "quality of occurrent")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001236> "quality of process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001236> "relational quality of occurrent")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001236> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001236> "PATO:0001236")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PATO_0001236> "See comments of relational quality of a physical entity.")
+AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/PATO_0001236> <http://purl.obolibrary.org/obo/pato.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001236> "process quality")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001236> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+
+)
