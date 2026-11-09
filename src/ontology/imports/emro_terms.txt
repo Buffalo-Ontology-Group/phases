@@ -7,12 +7,14 @@ http://purl.obolibrary.org/obo/EMRO_0004003		#	shyness trait characteristic
 http://purl.obolibrary.org/obo/EMRO_0004010		#	societal culture characteristic
 http://purl.obolibrary.org/obo/EMRO_0004009		#	depression process
 http://purl.obolibrary.org/obo/EMRO_0004011		#	creativity
-http://purl.obolibrary.org/obo/EMRO_0004002		#	aloneliness process
 http://purl.obolibrary.org/obo/EMRO_0004017		#	loneliness process
-http://purl.obolibrary.org/obo/EMRO_0004013		#	social isolation process
+http://purl.obolibrary.org/obo/EMRO_0004013		#	physically socially isolated
 http://purl.obolibrary.org/obo/EMRO_0004016		#	social withdrawal process
+http://purl.obolibrary.org/obo/EMRO_0004014		#	happiness process
+http://purl.obolibrary.org/obo/EMRO_0000003		#	anxiety process
+http://purl.obolibrary.org/obo/EMRO_0003000		#	avoidance response behavior
+http://purl.obolibrary.org/obo/EMRO_0004021		#	motivation
 
 
-	
 
 
