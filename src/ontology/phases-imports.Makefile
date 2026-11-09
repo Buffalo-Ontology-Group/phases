@@ -6,7 +6,7 @@
 # Import assets
 # ----------------------------------------
 
-IMPORTS =  omo bcio mf
+IMPORTS =  omo bcio mf emro
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -121,4 +121,21 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
             --ontology-iri $(URIBASE)/$(ONT)/$@ \
 			--version-iri $(URIBASE)/$(ONT)/$@ \
         --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+## Emotion Response Ontology (EMRO)
+$(IMPORTDIR)/emro_import.owl: $(MIRRORDIR)/emro.owl $(IMPORTDIR)/emro_terms.txt
+	if [ $(IMP) = true ]; then $(ROBOT) \
+		remove \
+			--input $< \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		extract \
+			--method MIREOT \
+			--lower-terms $(word 2, $^) \
+		annotate \
+			--annotate-defined-by true \
+		annotate \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/imports/$(VERSION)/$(notdir $@) \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
